@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="547090be-324c-4708-bfb3-30b309304874" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Koha-IRS/legofy.bak.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Koha-IRS/templates/lego.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Koha-IRS/templates/newpixalatebackup.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Koha-IRS/templates/pixelate-backup.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Koha-IRS/templates/pixelate-edited.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/story/Pixelate.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer/JWT.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/detailsform.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/newreaction.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/subsbackend.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/koha.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aboutus.php" beforeDir="false" afterPath="$PROJECT_DIR$/aboutus.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aboutus.php.bak" beforeDir="false" afterPath="$PROJECT_DIR$/aboutus.php.bak" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aboutus.php.bak2" beforeDir="false" afterPath="$PROJECT_DIR$/aboutus.php.bak2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin_area/dashboard.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin_area/dashboard.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin_area/includes/db.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin_area/includes/db.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin_area/includes/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin_area/includes/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin_area/includes/sidebar.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin_area/includes/sidebar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin_area/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin_area/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin_area/insert_product.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin_area/insert_product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin_area/view_customers.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin_area/view_customers.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin_area/view_orders.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin_area/view_orders.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin_area/view_payments.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin_area/view_payments.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin_area/view_products.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin_area/view_products.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/customized-combined.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/customized-combined.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/blog/blog-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/blog/blog-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/blog/blog-inside-post.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/blog/blog-recent-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/blog/blog-recent-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/blog/blog-recent-5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/blog/comments-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/portfolio/portfolio-7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/portfolio/portfolio-details-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/portfolio/portfolio-details-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/story/pixelate.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/vendor/bootstrap-icons/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/assets/vendor/bootstrap-icons/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart.php" beforeDir="false" afterPath="$PROJECT_DIR$/cart.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkout.php" beforeDir="false" afterPath="$PROJECT_DIR$/checkout.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contactus.php" beforeDir="false" afterPath="$PROJECT_DIR$/contactus.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contactus.php.bak" beforeDir="false" afterPath="$PROJECT_DIR$/contactus.php.bak" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contactus.php.bak2" beforeDir="false" afterPath="$PROJECT_DIR$/contactus.php.bak2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/confirm.php" beforeDir="false" afterPath="$PROJECT_DIR$/customer/confirm.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/customer/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/customer_login.php" beforeDir="false" afterPath="$PROJECT_DIR$/customer/customer_login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/delete_account.php" beforeDir="false" afterPath="$PROJECT_DIR$/customer/delete_account.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/edit_account.php" beforeDir="false" afterPath="$PROJECT_DIR$/customer/edit_account.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/fonts/GivenyFree-Italic.svg" beforeDir="false" afterPath="$PROJECT_DIR$/customer/fonts/GivenyFree-Italic.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/fonts/GivenyFree.svg" beforeDir="false" afterPath="$PROJECT_DIR$/customer/fonts/GivenyFree.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/functions/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/customer/functions/functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/includes/db.php" beforeDir="false" afterPath="$PROJECT_DIR$/customer/includes/db.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/includes/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/customer/includes/footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/includes/footer.php.bak" beforeDir="false" afterPath="$PROJECT_DIR$/customer/includes/footer.php.bak" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/includes/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/customer/includes/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/includes/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/customer/includes/main.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/includes/main.php.bak" beforeDir="false" afterPath="$PROJECT_DIR$/customer/includes/main.php.bak" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/includes/sidebar.php" beforeDir="false" afterPath="$PROJECT_DIR$/customer/includes/sidebar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/my_account.php" beforeDir="false" afterPath="$PROJECT_DIR$/customer/my_account.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/my_orders.php" beforeDir="false" afterPath="$PROJECT_DIR$/customer/my_orders.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/my_wishlist.php" beforeDir="false" afterPath="$PROJECT_DIR$/customer/my_wishlist.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/pay_offline.php" beforeDir="false" afterPath="$PROJECT_DIR$/customer/pay_offline.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer_register.php" beforeDir="false" afterPath="$PROJECT_DIR$/customer_register.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customization.php" beforeDir="false" afterPath="$PROJECT_DIR$/customization.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customization.php.5.b4co" beforeDir="false" afterPath="$PROJECT_DIR$/customization.php.5.b4co" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customization.php.bak" beforeDir="false" afterPath="$PROJECT_DIR$/customization.php.bak" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customization.php.bak2" beforeDir="false" afterPath="$PROJECT_DIR$/customization.php.bak2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customization.php.bak3" beforeDir="false" afterPath="$PROJECT_DIR$/customization.php.bak3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customization.php.bak4" beforeDir="false" afterPath="$PROJECT_DIR$/customization.php.bak4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/database.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/details.php" beforeDir="false" afterPath="$PROJECT_DIR$/details.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/faq.php" beforeDir="false" afterPath="$PROJECT_DIR$/faq.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/faq.php.bak" beforeDir="false" afterPath="$PROJECT_DIR$/faq.php.bak" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/GivenyFree-Italic.svg" beforeDir="false" afterPath="$PROJECT_DIR$/fonts/GivenyFree-Italic.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/GivenyFree.svg" beforeDir="false" afterPath="$PROJECT_DIR$/fonts/GivenyFree.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/forgot_pass.php" beforeDir="false" afterPath="$PROJECT_DIR$/forgot_pass.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/functions/functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/howitworks.php" beforeDir="false" afterPath="$PROJECT_DIR$/howitworks.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/howitworks.php.bak" beforeDir="false" afterPath="$PROJECT_DIR$/howitworks.php.bak" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/paypal.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/paypal.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/db.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/db.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/footer.php.bak" beforeDir="false" afterPath="$PROJECT_DIR$/includes/footer.php.bak" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/main.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/main.php.bak" beforeDir="false" afterPath="$PROJECT_DIR$/includes/main.php.bak" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes_website/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes_website/footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes_website/footer.php.bak" beforeDir="false" afterPath="$PROJECT_DIR$/includes_website/footer.php.bak" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes_website/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes_website/main.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes_website/main.php.bak" beforeDir="false" afterPath="$PROJECT_DIR$/includes_website/main.php.bak" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php.bak" beforeDir="false" afterPath="$PROJECT_DIR$/index.php.bak" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php.bak2" beforeDir="false" afterPath="$PROJECT_DIR$/index.php.bak2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php.bak3" beforeDir="false" afterPath="$PROJECT_DIR$/index.php.bak3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php.bak4" beforeDir="false" afterPath="$PROJECT_DIR$/index.php.bak4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php.bak5" beforeDir="false" afterPath="$PROJECT_DIR$/index.php.bak5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php.bakc" beforeDir="false" afterPath="$PROJECT_DIR$/index.php.bakc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lets-pixelate.php" beforeDir="false" afterPath="$PROJECT_DIR$/lets-pixelate.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order.php" beforeDir="false" afterPath="$PROJECT_DIR$/order.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment_options.php" beforeDir="false" afterPath="$PROJECT_DIR$/payment_options.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/paypal_order.php" beforeDir="false" afterPath="$PROJECT_DIR$/paypal_order.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/privacypolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/privacypolicy.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reaction.php" beforeDir="false" afterPath="$PROJECT_DIR$/reaction.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/returnsandrefundspolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/returnsandrefundspolicy.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shippinginfo.php" beforeDir="false" afterPath="$PROJECT_DIR$/shippinginfo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop.php" beforeDir="false" afterPath="$PROJECT_DIR$/shop.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/u908947830_website.sql" beforeDir="false" afterPath="$PROJECT_DIR$/u908947830_website.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/upload_page.php" beforeDir="false" afterPath="$PROJECT_DIR$/upload_page.php" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="26oIxZKRJv4kxEHFOiktR6GM2xS" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="StructuralSearchPlugin">
+    <searchConfiguration name="Unnamed" created="1649073195818" text="footer.php&#10;" recursive="true" caseInsensitive="false" type="PHP" scope_type="PROJECT" scope_descriptor="" history="1">
+      <constraint name="__context__" within="" contains="" />
+    </searchConfiguration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="547090be-324c-4708-bfb3-30b309304874" name="Changes" comment="" />
+      <created>1648083758882</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1648083758882</updated>
+      <workItem from="1648083760206" duration="5848000" />
+      <workItem from="1648120960515" duration="1826000" />
+      <workItem from="1648224613323" duration="51000" />
+      <workItem from="1648306160481" duration="2305000" />
+      <workItem from="1648360652792" duration="594000" />
+      <workItem from="1648376074103" duration="1188000" />
+      <workItem from="1649064883127" duration="9783000" />
+      <workItem from="1649262561328" duration="1218000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

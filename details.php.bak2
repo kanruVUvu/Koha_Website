@@ -1,0 +1,1253 @@
+<?php
+
+session_start();
+
+include("includes/db.php");
+include("includes/header.php");
+include("functions/functions.php");
+include("includes/main.php");
+
+?>
+<?php
+include('database.php');
+session_start();
+?>
+<?php
+
+if(!isset($_SESSION['customer_email'])){
+    echo "<script>window.open('checkout.php','_self')</script>";
+}
+
+$em = $_SESSION['customer_email'];
+
+/*echo "<script>alert('<?php echo $em; ?>')</script>"*/
+
+?>
+
+
+
+<?php
+
+$product_id = @$_GET['pro_id'];
+
+$get_product = "select * from products where product_url='$product_id'";
+
+$run_product = mysqli_query($con,$get_product);
+
+$check_product = mysqli_num_rows($run_product);
+
+if($check_product == 0){
+
+    echo "<script> window.open('index.php','_self') </script>";
+
+}
+else{
+
+
+
+    $row_product = mysqli_fetch_array($run_product);
+
+    $p_cat_id = $row_product['p_cat_id'];
+
+    $pro_id = $row_product['product_id'];
+
+    $pro_type = $row_product['product_type'];
+
+    $pro_title = $row_product['product_title'];
+
+    $pro_price = $row_product['product_price'];
+
+    $pro_desc = $row_product['product_desc'];
+
+    $pro_img1 = $row_product['product_img1'];
+
+    $pro_img2 = $row_product['product_img2'];
+
+    $pro_img3 = $row_product['product_img3'];
+
+    $pro_label = $row_product['product_label'];
+
+    $pro_psp_price = $row_product['product_psp_price'];
+
+    $pro_features = $row_product['product_features'];
+
+    $pro_video = $row_product['product_video'];
+
+    $status = $row_product['status'];
+
+    $pro_url = $row_product['product_url'];
+
+    if($pro_label == ""){
+
+
+    }
+    else{
+
+        $product_label = "";
+
+    }
+
+    $get_p_cat = "select * from product_categories where p_cat_id='$p_cat_id'";
+
+    $run_p_cat = mysqli_query($con,$get_p_cat);
+
+    $row_p_cat = mysqli_fetch_array($run_p_cat);
+
+    $p_cat_title = $row_p_cat['p_cat_title'];
+
+
+
+
+    ?>
+
+    <!-- <main>
+       <!-- HERO -->
+    <!--  <div class="nero" data-aos="slide-right"
+      data-aos-offset="200"
+      data-aos-delay="50"
+      data-aos-duration="1000"
+      data-aos-easing="ease-in-out"
+      data-aos-mirror="true"
+      data-aos-once="false"
+      data-aos-anchor-placement="top-bottom">
+        <div class="nero__heading">
+          <span class="nero__bold">Product </span>View
+        </div>
+        <p class="nero__text">
+        </p>
+      </div>
+    </main>-->
+    <main id="main">
+
+        <div style="margin: 100px 0 20px 0">
+            <div style="background-color: black; color: white">
+                <div class="container">
+                    <div style="display: flex; justify-content: left">
+                        <h2 style="text-align:right; font-size: 16px !important;"><a style="color: #ddb253 !important;" href="index.php">Home&nbsp;</a></h2>
+                        <h2 style="color: white !important; font-size: 16px !important;"> / Product Details</h2>
+                        <!--<ol>
+                          <li><a href="index.html">Home</a></li>
+                          <li>Customer Registration</li>
+                        </ol>-->
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- <section class="breadcrumbs" style="background-color: black; color: white">-->
+        <!--      <div class="container">-->
+        <!---->
+        <!--        <div class="d-flex justify-content-between align-items-center">-->
+        <!--          <h2 style="text-align:right;"><a href="index.php">Home</a> / Product Details</h2>-->
+        <!--          <ol>-->
+        <!--            <li><a href="index.html">Home</a></li>-->
+        <!--            <li>Customer Registration</li>-->
+        <!--          </ol>-->
+        <!--        </div>-->
+        <!---->
+        <!--      </div>-->
+        <!--    </section>-->
+    </main>
+    <br/>
+    <br/>
+    <div id="content" data-aos="slide-right"
+         data-aos-offset="200"
+         data-aos-delay="50"
+         data-aos-duration="1000"
+         data-aos-easing="ease-in-out"
+         data-aos-mirror="true"
+         data-aos-once="false"
+         data-aos-anchor-placement="top-bottom"><!-- content Starts -->
+        <div class="container" ><!-- container Starts -->
+
+
+            <div class="row">
+
+
+                <div class="col-md-12" style="height:536px !important;"><!-- col-md-12 Starts -->
+
+                    <div class="row" id="productMain" style="padding-bottom: 30px"><!-- row Starts -->
+
+                        <div class="col-sm-6"><!-- col-sm-6 Starts -->
+
+                            <div id="mainImage" style="max-width: 480px; max-height: 480px"><!-- mainImage Starts -->
+                                <div id="img-small">
+                                    <img intrinsicsize="3236*3236" src="admin_area/product_images/<?php echo $pro_img1; ?>" class="img-responsive">
+                                </div>
+                                <div id="img-medium">
+                                    <img intrinsicsize="3236*3236" src="admin_area/product_images/<?php echo $pro_img2; ?>" class="img-responsive">
+                                </div>
+                                <div id="img-large">
+                                    <img intrinsicsize="3236*3236" src="admin_area/product_images/<?php echo $pro_img3; ?>" class="img-responsive">
+                                </div>
+                                <!-- <div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- carousel-indicators Starts
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+  <!-- carousel-indicators Ends
+  <!-- carousel-inner Starts
+  <div class="carousel-inner">
+    <div class="item active">
+    <center>
+    <img intrinsicsize="3236*3236" src="admin_area/product_images/<?php echo $pro_img1; ?>" class="img-responsive">
+    </center>
+    </div>
+
+    <div class="item">
+    <center>
+    <img intrinsicsize="3236*3236" src="admin_area/product_images/<?php echo $pro_img2; ?>" class="img-responsive">
+    </center>
+    </div>
+
+    <div class="item">
+    <center>
+    <img intrinsicsize="3236*3236" src="admin_area/product_images/<?php echo $pro_img3; ?>" class="img-responsive">
+    </center>
+    </div>
+
+  </div>
+  <!-- carousel-inner Ends
+
+  <a href="#myCarousel" class="left carousel-control" data-slide="prev"><!-- left carousel-control Start
+    <span class="glyphicon glyphicon-chevron-left"> </span>
+    <span class="sr-only"> Previous </span>
+  </a>
+  <!-- left carousel-control Ends
+  <a class="right carousel-control" href="#myCarousel" data-slide="next"><!-- right carousel-control Starts
+    <span class="glyphicon glyphicon-chevron-right"> </span>
+    <span class="sr-only"> Next </span>
+  </a><!-- right carousel-control Ends
+</div> -->
+                            </div>
+                            <!-- mainImage Ends -->
+
+                            <?php echo $product_label; ?>
+
+                        </div><!-- col-sm-6 Ends -->
+
+
+                        <div class="col-sm-5" ><!-- col-sm-6 Starts -->
+
+                            <div class="box" ><!-- box Starts -->
+
+                                <h1 class="text-center" style="padding-bottom: 20px; font-family: Roboto Serif !important" id="product_title" > <?php echo $pro_title; ?> </h1>
+
+                                <?php
+
+
+                                if(isset($_POST['add_cart'])){
+
+                                    $ip_add = getRealUserIp();
+
+                                    $p_id = $pro_id;
+
+                                    $p_type = $pro_type;
+
+                                    $product_qty = $_POST['product_qty'];
+
+                                    $product_size = $_POST['product_size'];
+
+                                    $check_product = "select * from cart where cust_email='$em' AND p_id='$p_id'";
+
+                                    $run_check = mysqli_query($con,$check_product);
+
+                                    if(mysqli_num_rows($run_check)>0){
+
+                                        echo "<script>alert('This Product is already added in cart')</script>";
+
+                                        echo "<script>window.open('$pro_url','_self')</script>";
+
+                                    }
+                                    else {
+
+                                        $get_price = "select * from products where product_id='$p_id'";
+
+                                        $run_price = mysqli_query($con,$get_price);
+
+                                        $row_price = mysqli_fetch_array($run_price);
+
+                                        $pro_price = $row_price['product_price'];
+
+                                        $pro_psp_price = $row_price['product_psp_price'];
+
+                                        $pro_label = $row_price['product_label'];
+
+
+
+                                        if($pro_label == "Sale" or $pro_label == "Gift"){
+
+                                            $product_price = $pro_psp_price;
+
+                                        }
+                                        else{
+
+                                            $product_price = $pro_price;
+                                            $u_price = 0;
+
+                                        }
+                                        if($pro_type == 'Marketplace'){
+                                            if ($product_size == 'Large') {
+                                                $x = 999;
+                                                $y = 16;
+                                                $z = $x*$y;
+                                                $product_price= $product_qty * $z;
+                                                $u_price = $z;
+//        echo "<script>alert('Large: '+ $x*$y)";
+                                            }
+                                            if ($product_size == 'Medium') {
+                                                $x = 999;
+                                                $y = 9;
+                                                $z = $x*$y;
+                                                $product_price=$product_qty * $z;
+                                                $u_price =  $z;
+//        echo "<script>alert('Medium: '+ $x*$y)";
+                                            }
+                                            if ($product_size == 'Small') {
+                                                $x = 999;
+                                                $y = 4;
+                                                $z = $x*$y;
+                                                $product_price= $product_qty * $z;
+                                                $u_price = $z;
+//        echo "<script>alert('Small: '+ $x*$y)";
+                                            }
+                                        }
+                                        else if($pro_type == 'Accessories'){
+                                            if ($product_size == 'WallMount') {
+                                                $x = 99;
+                                                $product_price= (int)$product_qty * $x;
+                                                $u_price = $x;
+//        echo "<script>alert('wall: '+ $x)";
+                                            }
+                                            if ($product_size == 'LED Backlight') {
+                                                $x = 499;
+                                                $product_price=(int)$product_qty * $x;
+                                                $u_price =  $x;
+//        echo "<script>alert('led: '+ $x)";
+                                            }
+                                        }
+
+
+                                        $email_add = $_SESSION['customer_email'];
+                                        echo "<script> alert($email_add)</script>";
+                                        $na = 'NA';
+
+                                        $query = "insert into cart (cust_email, p_id,p_type, image,ip_add,qty,p_price,u_price,size,uploaded_image,bg_1,bg_2,bg_3,bg_4,bg_5,bg_6,color_code,csv,lego,lego_gap,output_images) values ('$em','$p_id','$pro_type','Marketplace','$ip_add','$product_qty','$product_price','$u_price','$product_size','NA','NA','NA','NA','NA','NA','NA','NA','NA','NA','NA','NA')";
+
+                                        $run_query = mysqli_query($db,$query);
+
+                                        echo "<script>window.open('$pro_url','_self')</script>";
+
+                                    }
+
+                                }
+
+
+                                ?>
+
+                                <form action="" method="post" class="form-horizontal" ><!-- form-horizontal Starts -->
+
+                                    <?php
+
+                                    if($status == "product"){
+
+                                        ?>
+
+                                        <div class="form-group"><!-- form-group Starts -->
+                                            <div class="row">
+                                                <label class="col-md-5 control-label"  >Product Quantity </label>
+
+                                                <div class="col-md-7" ><!-- col-md-7 Starts -->
+
+                                                    <select name="product_qty" style="color:white ; background-color: #2c3034" id="product_quantity_select" onchange="changeProdValue()" class="form-control">
+
+                                                        <option style="color: white; background-color: #2c3034 !important;">Select quantity</option>
+                                                        <option  style="color: white; background-color: #2c3034">1</option>
+                                                        <option  style="color: white; background-color: #2c3034">2</option>
+                                                        <option  style="color: white; background-color: #2c3034">3</option>
+                                                        <option  style="color: white; background-color: #2c3034">4</option>
+                                                        <option  style="color: white; background-color: #2c3034">5</option>
+
+
+                                                    </select></div>
+
+                                            </div><!-- col-md-7 Ends -->
+
+                                        </div><!-- form-group Ends -->
+
+                                        <div class="form-group" ><!-- form-group Starts -->
+                                            <div class="row" style="padding-top: 20px">
+                                                <label class="col-md-5 control-label" id="p_size_label" >Product Size</label>
+
+                                                <div class="col-md-7" ><!-- col-md-7 Starts -->
+
+                                                    <select  style="color: white; background-color: #2c3034" name="product_size" class="form-control" id="product_size" onchange="size_change()">
+
+                                                        <!-- <option>Select a Size</option> -->
+                                                        <option value="Small" style="color: white; background-color: #2c3034">Small</option>
+                                                        <option value="Medium" style="color: white; background-color: #2c3034">Medium</option>
+                                                        <option value="Large" style="color: white; background-color: #2c3034">Large</option>
+
+
+                                                    </select>
+                                                </div>
+                                            </div><!-- col-md-7 Ends -->
+
+
+                                        </div><!-- form-group Ends -->
+
+                                    <?php }else { ?>
+
+
+                                        <div class="form-group"><!-- form-group Starts -->
+
+                                            <label class="col-md-5 control-label" >Bundle Quantity </label>
+
+                                            <div class="col-md-7" ><!-- col-md-7 Starts -->
+
+                                                <select name="product_qty" id="product_quantity_select" onchange="changeProdValue()" class="form-control" >
+
+                                                    <option>Select quantity</option>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+
+
+                                                </select>
+
+                                            </div><!-- col-md-7 Ends -->
+
+                                        </div><!-- form-group Ends -->
+
+                                        <div class="form-group" ><!-- form-group Starts -->
+
+                                            <label class="col-md-5 control-label" >Bundle Size</label>
+
+                                            <div class="col-md-7" ><!-- col-md-7 Starts -->
+
+                                                <select name="product_size" class="form-control" id="product_size">
+
+                                                    <option>Select a Size</option>
+                                                    <option>Small</option>
+                                                    <option>Medium</option>
+                                                    <option>Large</option>
+
+
+                                                </select>
+
+                                            </div><!-- col-md-7 Ends -->
+
+
+                                        </div><!-- form-group Ends -->
+
+
+                                    <?php } ?>
+
+
+                                    <?php
+
+                                    if($status == "product"){
+
+
+
+
+                                        if($pro_label == "Sale" or $pro_label == "Gift"){
+
+                                            echo "
+
+<p class='price' id='product_p' name='product_p'  >
+
+Product Price : <del>&#X20B9; $pro_price </del><br>
+
+Product sale Price : &#X20B9; $pro_psp_price
+
+</p>
+
+";
+
+                                        }
+                                        else{
+
+                                            echo "
+
+<p class='price' id='product_p' name='product_p'   style='color: white'>
+
+Product Price : <span style='color: #ddb253 !important; font-weight: bold'>₹</span> $pro_price
+
+</p>
+
+";
+
+                                        }
+
+                                    }
+                                    else{
+
+
+                                        if($pro_label == "Sale" or $pro_label == "Gift"){
+
+                                            echo "
+
+<p class='price' id='product_p' name='product_p' >
+
+Bundle Price : <del> &#X20B9; $pro_price </del><br>
+
+Bundle sale Price : &#X20B9; $pro_psp_price
+
+</p>
+
+";
+
+                                        }
+                                        else{
+
+                                            echo "
+
+<p class='price' id='product_p' name='product_p' >
+
+Bundle Price : &#X20B9; $pro_price
+
+</p>
+
+";
+
+                                        }
+
+
+                                    }
+
+                                    ?>
+                                    <div style="padding-top: 10px">
+                                        <p class="text-center buttons" ><!-- text-center buttons Starts -->
+
+                                            <button class="btn btn-primary" type="submit" name="add_cart" style=" background-color: #2c3034; border-color: #2c3034">
+
+                                                <i class="fa fa-shopping-cart" ></i> Add to Cart
+
+                                            </button>
+
+                                            <button class="btn btn-primary" type="submit" name="add_wishlist">
+
+                                                <i class="fa fa-heart" ></i> Add to Wishlist
+
+                                            </button>
+
+                                            <!--<button class="btn btn-primary" style="width:99px !important;height:38px !important;" name="customize" style="width: fit-content">-->
+                                            <!--    --><?php
+                                            //    if(isset($_SESSION['customer_email'])) {
+                                            //        $customer_email = $_SESSION['customer_email'];
+                                            //        $get_token = "select token from jwt_auth where email='$customer_email'; ";
+                                            //        $result = mysqli_query($con, $get_token);
+                                            //        $row = mysqli_fetch_assoc($result);
+                                            //        $token = $row['token'];
+                                            //        echo "<a href='https://create.thekoha.com/?token=$token' class='d-flex'
+                                            //                   style='position:relative;  color: white !important; font-size: 14px; font-weight: normal'>
+                                            //                    <i class='fa fa-cubes' style='padding-top: 3px'></i>&nbsp;Customize
+                                            //                </a>";
+                                            //    }
+                                            //    else
+                                            //    {
+                                            //        echo "<a href='checkout.php' class='d-flex'
+                                            //                   style='position:relative; color: white !important; font-size: 14px; font-weight: normal'>
+                                            //                    <i class='fa fa-cubes' style='padding-top: 3px'></i>&nbsp;Customize
+                                            //                </a>";
+                                            //    }
+                                            //    ?>
+                                            <!--</button>-->
+                                    </div>
+                                    <div style="display: flex; margin: 0 auto; justify-content: space-between;padding-top: 20px  ">
+                                        <div style="display: flex; margin: 0 auto; justify-content: center">
+                                            <img style="height: 30px; width:30px" src="assets/size.png"
+                                                 alt=""> &nbsp
+                                            <div >
+                                                <label id="t_size" class="form-label"
+                                                       style="font-size:20px;">Size : 51cm x 51cm</label>
+                                            </div>
+                                        </div>
+                                        <div style="display: flex; margin: 0 auto; justify-content: center">
+                                            <img style="height: 30px; width:30px" src="assets/nop.png"
+                                                 alt=""> &nbsp
+                                            <div>
+                                                <label id="pieces" class="form-label"
+                                                       style="font-size:20px;">Pieces : 4096</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div  id="hidewallmount" style="padding-top:20px; display: flex;
+  justify-content: center;">
+                                        <p style="font-size: 18px !important; color: white">Description : How do I Wall Mount it? <a href="howitworks.php" style="color: white;text-decoration:none !important;">Click here</a></p>
+
+                                    </div>
+
+                                    <?php
+
+                                    if(isset($_POST['add_wishlist'])){
+
+                                        if(!isset($_SESSION['customer_email'])){
+
+                                            echo "<script>alert('You Must Login To Add Product In Wishlist')</script>";
+
+                                            echo "<script>window.open('checkout.php','_self')</script>";
+
+                                        }
+                                        else{
+
+                                            $customer_session = $_SESSION['customer_email'];
+
+                                            $get_customer = "select * from customers where customer_email='$customer_session'";
+
+                                            $run_customer = mysqli_query($con,$get_customer);
+
+                                            $row_customer = mysqli_fetch_array($run_customer);
+
+                                            $customer_id = $row_customer['customer_id'];
+
+                                            $select_wishlist = "select * from wishlist where customer_id='$customer_id' AND product_id='$pro_id'";
+
+                                            $run_wishlist = mysqli_query($con,$select_wishlist);
+
+                                            $check_wishlist = mysqli_num_rows($run_wishlist);
+
+                                            if($check_wishlist == 1){
+
+                                                echo "<script>alert('This Product Has Been already Added In Wishlist')</script>";
+
+                                                echo "<script>window.open('$pro_url','_self')</script>";
+
+                                            }
+                                            else{
+
+                                                $insert_wishlist = "insert into wishlist (customer_id,product_id) values ('$customer_id','$pro_id')";
+
+                                                $run_wishlist = mysqli_query($con,$insert_wishlist);
+
+                                                if($run_wishlist){
+
+                                                    echo "<script> alert('Product Has Inserted Into Wishlist') </script>";
+
+                                                    echo "<script>window.open('$pro_url','_self')</script>";
+
+                                                }
+
+                                            }
+
+                                        }
+
+                                    }
+
+                                    ?>
+
+                                    </p><!-- text-center buttons Ends -->
+
+                                </form><!-- form-horizontal Ends -->
+
+                            </div><!-- box Ends -->
+
+
+                            <div class="row" id="thumbs" style="display: none; justify-content: center;"><!-- row Starts -->
+
+                                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4" id="thumb-small"><!-- col-xs-4 Starts -->
+
+                                    <a href="#" class="thumb">
+
+                                        <img intrinsicsize="3236*3236" src="admin_area/product_images/<?php echo $pro_img1; ?>" class="img-responsive" >
+
+                                    </a>
+
+                                </div><!-- col-xs-4 Ends -->
+
+                                <div class="col-xs-4" id="thumb-medium"><!-- col-xs-4 Starts -->
+
+                                    <a href="#" class="thumb">
+
+                                        <img intrinsicsize="3236*3236" src="admin_area/product_images/<?php echo $pro_img2; ?>" class="img-responsive" >
+
+                                    </a>
+
+                                </div><!-- col-xs-4 Ends -->
+
+                                <div class="col-xs-4" id="thumb-large"><!-- col-xs-4 Starts -->
+
+                                    <a href="#" class="thumb">
+
+                                        <img intrinsicsize="3236*3236" src="admin_area/product_images/<?php echo $pro_img3; ?>" class="img-responsive" >
+
+                                    </a>
+
+                                </div><!-- col-xs-4 Ends -->
+
+
+                            </div><!-- row Ends -->
+
+
+                        </div><!-- col-sm-6 Ends -->
+
+
+                    </div><!-- row Ends -->
+
+                    <!--<div class="box" id="details" style="background-color: black !important;"><!-- box Starts -->
+                    <!---->
+                    <!--<a class="btn btn-primary tab" style="margin-bottom:10px; color: white" href="#description" data-toggle="tab"><!-- btn btn-primary tab Starts -->
+                    <!---->
+                    <?php
+                    //
+                    //if($status == "product"){
+                    //
+                    //echo "Product Description";
+                    //
+                    //}
+                    //else{
+                    //
+                    //echo "Bundle Description";
+                    //
+                    //}
+                    //
+                    //?>
+
+                    </a><!-- btn btn-primary tab Ends -->
+
+                    <!--<a class="btn btn-primary tab" style="margin-bottom:10px;" href="#features" data-toggle="tab"><!-- btn btn-primary tab Starts -->
+
+                    <!--Features-->
+
+                    <!--</a><!-- btn btn-primary tab Ends -->
+
+                    <!--<a class="btn btn-primary tab" style="margin-bottom:10px;" href="#video" data-toggle="tab"><!-- btn btn-primary tab Starts -->
+
+                    <!--Sounds and Videos-->
+
+                    <!--</a><!-- btn btn-primary tab Ends -->
+
+                    <!--<hr style="margin-top:0px;">-->
+
+                    <!--<div class="tab-content"><!-- tab-content Starts -->
+                    <!---->
+                    <!--<div id="description" class="tab-pane fade in active" style="margin-top:7px; color: white !important; height: 50px" ><!-- description tab-pane fade in active Starts -->
+                    <!---->
+                    <?php // echo $pro_desc; ?>
+                    <!---->
+                    <!--</div><!-- description tab-pane fade in active Ends -->
+                    <!---->
+                    <!--<div id="features" class="tab-pane fade in" style="margin-top:7px;" ><!-- features tab-pane fade in  Starts -->
+                    <!---->
+                    <?php //echo $pro_features; ?>
+                    <!---->
+                    <!--</div><!-- features tab-pane fade in  Ends -->
+                    <!---->
+                    <!--<div id="video" class="tab-pane fade in" style="margin-top:7px;" ><!-- video tab-pane fade in Starts -->
+                    <!---->
+                    <?php //echo $pro_video; ?>
+                    <!---->
+                    <!--</div><!-- video tab-pane fade in  Ends -->
+                    <!---->
+                    <!--</div><!-- tab-content Ends -->
+                </div><!-- box Ends -->
+                <section class="contact" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
+                    <!-- <h3 style="text-align:center; font-size: 40px !important; padding-top: 20px">Get in Touch</h3>
+                     <div style="display: flex; justify-content: center">
+                         <p style="text-align: justify; width: 60% ; font-size: 20px !important; padding-top: 20px">We always love getting in touch with our customers, so please feel free to drop us a line. We respond to every message and every message is read and appreciated!<br/>
+                             We’re a small company so any support would mean the world to us! A ‘like’ on Facebook, a ‘pin’ on Pinterest or just sending our link to a friend would be super amazing! If there’s anything we can do in return, drop us an email!</p>
+                     </div>-->
+
+                    <div class="container">
+                        <div class="card " style="color: white; background-color: black">
+                            <div class="row" style="display: flex; justify-content: center">
+                                <div class="col-lg-6" style="border: 1px white solid; padding: 10px; border-radius: 10px">
+                                    <h5 style="font-family: Roboto Serif !important;">Ask a question</h5>
+                                    <form action="reaction.php" method="POST" id="contact-form" class="php-email-form" enctype="multipart/form-data">
+                                        <div class="row">
+                                            <div class="col-md-6 form-group">
+                                                <input style="background-color: #2c3034; color: white" type="text" name="testname5" class="form-control" id="name" placeholder="Your Name" required>
+                                            </div>
+                                            <div class="col-md-6 form-group mt-3 mt-md-0">
+                                                <input style="background-color: #2c3034; color: white" type="email" class="form-control" name="testemail5" id="email" placeholder="Your Email" required>
+                                            </div>
+                                        </div>
+                                        <div class="form-group mt-3">
+                                            <textarea style="background-color: #2c3034; color: white" class="form-control" name="testmessage5" rows="5" placeholder="Message" required></textarea>
+                                        </div>
+                                        <div class="form-group mt-3">
+                                            <input style="background-color: #2c3034; color: white" type="hidden" name="hellotestcontact5" value="hellotestconnect5">
+                                        </div>
+
+                                        <div class="form-group mt-3">
+                                            <div class="text-center" style="text-align:left !important;">
+                                                <button class="btn btn-primary" onclick="form_submit()" class="submit-button" style="padding:10px 15px !important;font-family: 'Georama' !important; background-color: #2c3034; border-color: #2c3034; font-size:15px;background-color:grey !important;color:#ffffff !important;">
+                                                    Send
+                                                </button>
+                                                <!--<input type="submit" value="Send Message" class="submit-button" style="font-family: 'Georama' !important;font-size:15px;background-color:grey !important;color:#ffffff !important;">--></div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+            </div>
+            </section><!-- End Contact Section -->
+            <script type="text/javascript">
+                function form_submit() {
+                    document.getElementById("contact-form").submit();
+                }
+            </script>
+            <section style="padding-bottom: 30px ; padding-top:40px"
+            >
+                <div style="margin: 0 0">
+                    <h3 style=";text-transform:uppercase;text-align:center; margin: 0px;color:#ffffff !important;">Recommended Products</h3>
+                </div>
+            </section>
+            <br/>
+            <div id="row same-height-row" class="row"><!-- row same-height-row Starts -->
+                <?php
+
+                if($status == "product"){
+
+
+
+                    ?>
+
+                    <!--<div class="col-md-3 col-sm-6"><!-- col-md-3 col-sm-6 Starts -->
+
+                    <!--<div class="box same-height headline" style="background-color:#000000 !important;border:1px solid #ffffff"><!-- box same-height headline Starts -->
+
+                    <!--<h3 class="text-center">Recommended Products</h3>
+
+                    </div><!-- box same-height headline Ends -->
+
+                    <!--</div><!-- col-md-3 col-sm-6 Ends -->
+
+                    <?php
+
+                    $get_products = "select * from products order by rand() LIMIT 0,3";
+
+                    $run_products = mysqli_query($con,$get_products);
+
+                    while($row_products = mysqli_fetch_array($run_products)) {
+
+                        $pro_id = $row_products['product_id'];
+
+                        $pro_title = $row_products['product_title'];
+
+                        $pro_price = $row_products['product_price'];
+
+                        $pro_img1 = $row_products['product_img1'];
+
+                        $pro_label = $row_products['product_label'];
+
+                        $manufacturer_id = $row_products['manufacturer_id'];
+
+                        $get_manufacturer = "select * from manufacturers where manufacturer_id='$manufacturer_id'";
+
+                        $run_manufacturer = mysqli_query($db,$get_manufacturer);
+
+                        $row_manufacturer = mysqli_fetch_array($run_manufacturer);
+
+                        $manufacturer_name = $row_manufacturer['manufacturer_title'];
+
+                        $pro_psp_price = $row_products['product_psp_price'];
+
+                        $pro_url = $row_products['product_url'];
+
+
+                        if($pro_label == "Sale" or $pro_label == "Gift"){
+
+                            $product_price = "<del> &#X20B9; $pro_price </del>";
+
+                            $product_psp_price = "| &#X20B9; $pro_psp_price";
+
+                        }
+                        else{
+
+                            $product_psp_price = "";
+
+                            $product_price = "&#X20B9; $pro_price";
+
+                        }
+
+
+                        if($pro_label == ""){
+
+
+                        }
+                        else{
+
+                            $product_label = "";
+
+                        }
+
+//    <p class='btn btn-primary' id='man_name'> $manufacturer_name </p>
+
+//    <hr>
+
+                        echo "
+
+<div class='col-md-4 col-sm-6 center-responsive'  style=' background-color: black; color: white'>
+
+<div class='product'  style=' background-color: #000000; color: white;border:none !important;' >
+
+<a href='$pro_url' >
+
+<img src='admin_area/product_images/$pro_img1' class='img-responsive' >
+
+</a>
+
+<div class='text' >
+
+<center>
+
+
+
+</center>
+
+
+<h3><a style=' background-color: #000000; color: white' href='$pro_url' id='p_tit'>$pro_title</a></h3>
+
+<p  style=' background-color: #000000; color: white' class='price' > $product_price $product_psp_price </p>
+
+<p class='buttons' >
+
+<a href='$pro_url' class='btn btn-secondary' >View details</a>
+
+<a href='$pro_url' class='btn btn-primary'>
+
+<i class='fa fa-shopping-cart'></i> Add to cart
+
+</a>
+
+
+</p>
+
+</div>
+
+$product_label
+
+
+</div>
+
+</div>
+
+";
+
+
+                    }
+
+
+                    ?>
+
+                <?php }else{ ?>
+
+                    <div class="box same-height"><!-- box same-height Starts -->
+
+                        <h3 class="text-center;color:#ffffff !important;"> Bundle Products </h3>
+
+                    </div><!-- box same-height Ends -->
+
+                    <?php
+
+                    $get_bundle_product_relation = "select * from bundle_product_relation where bundle_id='$pro_id'";
+
+                    $run_bundle_product_relation = mysqli_query($con,$get_bundle_product_relation);
+
+                    while($row_bundle_product_relation = mysqli_fetch_array($run_bundle_product_relation)){
+
+                        $bundle_product_relation_product_id = $row_bundle_product_relation['product_id'];
+
+                        $get_products = "select * from products where product_id='$bundle_product_relation_product_id'";
+
+
+                        $run_products = mysqli_query($con,$get_products);
+
+                        while($row_products = mysqli_fetch_array($run_products)){
+                            $pro_id = $row_products['product_id'];
+
+                            $pro_title = $row_products['product_title'];
+
+                            $pro_price = $row_products['product_price'];
+
+                            $pro_img1 = $row_products['product_img1'];
+
+                            $pro_label = $row_products['product_label'];
+
+                            $manufacturer_id = $row_products['manufacturer_id'];
+
+                            $get_manufacturer = "select * from manufacturers where manufacturer_id='$manufacturer_id'";
+
+                            $run_manufacturer = mysqli_query($db,$get_manufacturer);
+
+                            $row_manufacturer = mysqli_fetch_array($run_manufacturer);
+
+                            $manufacturer_name = $row_manufacturer['manufacturer_title'];
+
+                            $pro_psp_price = $row_products['product_psp_price'];
+
+                            $pro_url = $row_products['product_url'];
+
+
+                            if($pro_label == "Sale" or $pro_label == "Gift"){
+
+                                $product_price = "<del> &#X20B9; $pro_price </del>";
+
+                                $product_psp_price = "| &#X20B9; $pro_psp_price";
+
+                            }
+                            else{
+
+                                $product_psp_price = "";
+
+                                $product_price = "&#X20B9; $pro_price";
+
+                            }
+
+
+                            if($pro_label == ""){
+
+
+                            }
+                            else{
+
+                                $product_label = "";
+
+                            }
+
+
+                            echo "
+
+<div class='col-md-3 col-sm-6 center-responsive' >
+
+<div class='product' style='border:none !important;'>
+
+<a href='$pro_url' >
+
+<img src='admin_area/product_images/$pro_img1' class='img-responsive' >
+
+</a>
+
+<div class='text' >
+
+<center>
+
+<p class='btn btn-primary'> $manufacturer_name </p>
+
+</center>
+
+<hr>
+
+<h3><a href='$pro_url' >$pro_title</a></h3>
+
+<p class='price' id='product_p' name='product_p'  > $product_price $product_psp_price </p>
+
+<p class='buttons' >
+
+<a href='$pro_url' class='btn btn-secondary' >View details</a>
+
+<a href='$pro_url' class='btn btn-primary'>
+
+<i class='fa fa-shopping-cart'></i> Add to cart
+
+</a>
+
+
+</p>
+
+</div>
+
+$product_label
+
+
+</div>
+
+</div>
+
+";
+
+
+                        }
+
+
+                    }
+
+
+
+                    ?>
+
+
+                <?php } ?>
+
+            </div><!-- row same-height-row Ends -->
+
+        </div><!-- col-md-12 Ends -->
+    </div>
+
+    </div><!-- container Ends -->
+    </div><!-- content Ends -->
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+
+
+    <?php
+
+    include("includes/footer.php");
+
+    ?>
+
+
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/preloader.js"></script>
+    <script src="koha.js"></script>
+    <script src="js/init-round.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/plugin.js"></script>
+
+    <script src="js/jquery.min.js"> </script>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        (function(d, m){
+            var kommunicateSettings =
+                {"appId":"28697f7e85fe0fdff7aad97521eeac9c1","popupWidget":true,"automaticChatOpenOnNavigation":true};
+            var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
+            s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
+            var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
+            window.kommunicate = m; m._globals = kommunicateSettings;
+        })(document, window.kommunicate || {});
+        /* NOTE : Use web server to view HTML files as real-time update will not work if you directly open the HTML file in the browser. */
+    </script>
+    <script>
+        document.getElementById('img-small').style.display = "block";
+        document.getElementById('img-medium').style.display = "none";
+        document.getElementById('img-large').style.display = "none";
+        document.getElementById('thumb-small').style.display = "block";
+        document.getElementById('thumb-medium').style.display = "none";
+        document.getElementById('thumb-large').style.display = "none";
+        // var title = document.getElementById('product_title').innerText;
+
+        var p_type = '<?php echo $pro_type ?>';
+        var p_title = document.getElementById('product_title').innerText;
+        // console.log(p_type);
+        console.log(p_title);
+        if(p_type == 'Accessories'){
+            if (p_title == 'WallMount') {
+                var product_size = document.getElementById('product_size');
+                product_size.options[product_size.selectedIndex].value = "WallMount";
+                var o = new Option("WallMount", "WallMount");
+                $(o).html("WallMount");
+                $("#product_size").append(o);
+                document.getElementById('product_size').options[3].selected = 'selected';
+                document.getElementById('product_size').disabled = "disabled";
+                document.getElementById('hidewallmount').style.display = "none";
+
+            } else if (p_title == 'LED Backlight'){
+                var product_size = document.getElementById('product_size');
+                product_size.options[product_size.selectedIndex].value = "LED Backlight";
+                var o = new Option("LED Backlight", "LED Backlight");
+                $(o).html("LED Backlight");
+                $("#product_size").append(o);
+                document.getElementById('product_size').options[3].selected = 'selected';
+                document.getElementById('product_size').disabled = "disabled";
+
+            }
+        }
+
+        function size_change() {
+            var product_size = document.getElementById('product_size');
+            var value = product_size.options[product_size.selectedIndex].value;
+            var product_quantity = document.getElementById('product_quantity_select');
+            var quantity = product_quantity.options[product_quantity.selectedIndex].value;
+
+            // console.log(value)
+            if (value == 'Small'){
+                var x = quantity * 3996 ;
+                var t_size = document.getElementById("t_size");
+                var pieces = document.getElementById("pieces");
+                document.getElementById('product_p').innerHTML = "Product Price : ₹ "+x;
+                document.getElementById('img-small').style.display = "block";
+                document.getElementById('img-medium').style.display = "none";
+                document.getElementById('img-large').style.display = "none";
+                document.getElementById('thumb-small').style.display = "block";
+                document.getElementById('thumb-medium').style.display = "none";
+                document.getElementById('thumb-large').style.display = "none";
+                t_size.innerHTML = "Size : " + (2*25.6).toFixed() + " cm x " + (2*25.6).toFixed()+ " cm";
+                pieces.innerHTML = "Pieces : "+4*1024;
+                console.log("IN SMALL")
+            }
+            else if (value == 'Medium'){
+                var x = quantity * 8991 ;
+                var t_size = document.getElementById("t_size");
+                var pieces = document.getElementById("pieces");
+                document.getElementById('product_p').innerHTML = "Product Price : ₹ "+x;
+                document.getElementById('img-small').style.display = "none";
+                document.getElementById('img-medium').style.display = "block";
+                document.getElementById('img-large').style.display = "none";
+                document.getElementById('thumb-small').style.display = "none";
+                document.getElementById('thumb-medium').style.display = "block";
+                document.getElementById('thumb-large').style.display = "none";
+                t_size.innerHTML = "Size : " + (3*25.6).toFixed() + " cm x " + (3*25.6).toFixed()+ " cm";
+                pieces.innerHTML = "Pieces : "+9*1024;
+                console.log("IN MEDIUM")
+            }
+            else if (value == 'Large'){
+                var x = quantity * 15984 ;
+                var t_size = document.getElementById("t_size");
+                var pieces = document.getElementById("pieces");
+                document.getElementById('product_p').innerHTML = "Product Price : ₹ "+x;
+                document.getElementById('img-small').style.display = "none";
+                document.getElementById('img-medium').style.display = "none";
+                document.getElementById('img-large').style.display = "block";
+                document.getElementById('thumb-small').style.display = "none";
+                document.getElementById('thumb-medium').style.display = "none";
+                document.getElementById('thumb-large').style.display = "block";
+                t_size.innerHTML = "Size : " + (4*25.6).toFixed() + " cm x " + (4*25.6).toFixed()+ " cm";
+                pieces.innerHTML = "Pieces : "+16*1024;
+                console.log("IN LARGE")
+            }
+        }
+        function changeProdValue(){
+            var product_size = document.getElementById('product_size');
+            var value = product_size.options[product_size.selectedIndex].value;
+            var product_quantity = document.getElementById('product_quantity_select');
+            var quantity = product_quantity.options[product_quantity.selectedIndex].value;
+            if (value == 'Small'){
+                var x = quantity * 3996 ;
+                document.getElementById('product_p').innerHTML = "Product Price : <span style='color: #ddb253 !important; font-weight: bold'>₹</span> "+x;
+            }
+            else if (value == 'Medium'){
+                var x = quantity * 8991 ;
+                document.getElementById('product_p').innerHTML = "Product Price : <span style='color: #ddb253 !important; font-weight: bold'>₹</span> "+x;
+            }
+            else if (value == 'Large'){
+                var x = quantity * 15984 ;
+                document.getElementById('product_p').innerHTML = "Product Price : <span style='color: #ddb253 !important; font-weight: bold'>₹</span> "+x;
+            }
+            else if (value == 'WallMount'){
+                var x = quantity * 99 ;
+                document.getElementById('product_p').innerHTML = "Product Price : <span style='color: #ddb253 !important; font-weight: bold'>₹</span> "+x;
+                // alert(document.getElementById('product_size').innerHTML)
+            }
+            else if (value == 'LED Backlight'){
+                var x = quantity * 499 ;
+                document.getElementById('product_p').innerHTML = "Product Price : <span style='color: #ddb253 !important; font-weight: bold'>₹</span> "+x;
+            }
+        }
+        $("form").submit(function() {
+            $("#product_size").prop("disabled", false);
+        });
+
+
+        var t1 = document.getElementById('man_name').innerText;
+        console.log(t1)
+        if(t1 == "Koha Manufacturer"){
+            console.log(t1);
+            document.getElementById('man_name').style.display = "hide";
+        }
+
+    </script>
+    </body>
+    </html>
+
+<?php } ?>

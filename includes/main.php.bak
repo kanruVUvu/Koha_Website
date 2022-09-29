@@ -1,0 +1,137 @@
+<style> @font-face {
+  font-family: 'Georama';
+  font-style: italic;
+  font-weight: 100;
+  font-stretch: 100%;
+  src: url(https://fonts.gstatic.com/s/georama/v4/MCo_zAn438bIEyxFVaIC0ZMQ72G6xnvmodYVPOBB5nuzMdWs0rvF2zEHz_9Abg.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Georama';
+  font-style: italic;
+  font-weight: 100;
+  font-stretch: 100%;
+  src: url(https://fonts.gstatic.com/s/georama/v4/MCo_zAn438bIEyxFVaIC0ZMQ72G6xnvmodYVPOBB5nuzMdWs0rvF2zEGz_9Abg.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Georama';
+  font-style: italic;
+  font-weight: 100;
+  font-stretch: 100%;
+  src: url(https://fonts.gstatic.com/s/georama/v4/MCo_zAn438bIEyxFVaIC0ZMQ72G6xnvmodYVPOBB5nuzMdWs0rvF2zEIz_8.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Roboto Serif';
+  font-style: normal;
+  font-weight: 100;
+  font-stretch: 100%;
+  src: url(https://fonts.gstatic.com/s/robotoserif/v5/R71RjywflP6FLr3gZx7K8UyuXDs9zVwDmXCb8lxYgmuii32UGoVldX6UgfjL4-3sMM_kB_qXSEXTJQCFLH5-_bcEliosl698AM5f.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Roboto Serif';
+  font-style: normal;
+  font-weight: 100;
+  font-stretch: 100%;
+  src: url(https://fonts.gstatic.com/s/robotoserif/v5/R71RjywflP6FLr3gZx7K8UyuXDs9zVwDmXCb8lxYgmuii32UGoVldX6UgfjL4-3sMM_kB_qXSEXTJQCFLH5-_bcEliosl658AM5f.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Roboto Serif';
+  font-style: normal;
+  font-weight: 100;
+  font-stretch: 100%;
+  src: url(https://fonts.gstatic.com/s/robotoserif/v5/R71RjywflP6FLr3gZx7K8UyuXDs9zVwDmXCb8lxYgmuii32UGoVldX6UgfjL4-3sMM_kB_qXSEXTJQCFLH5-_bcEliosl6B8AA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+    body{
+        font-family: "Georama", sans-serif !important;
+    }
+    a, h1, h2, h3, h4, h5, h6,button {
+        font-family: 'Georama' !important;
+    }
+
+    .text-muted{
+        color:white;
+    }
+
+    .box{
+        background-color: #2c3034;
+        color: white;
+    }
+    .img-container {
+        text-align: center;
+        display: block;
+        position: relative;
+    }
+
+    .overlay {
+        z-index: 99;
+        width: 70%;
+        /* height: 100%; */
+        /* margin-left: 15%; */
+        /* vertical-align: middle; */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .quotation_div {
+        position: relative;
+        display: table;
+    }
+
+</style> </head>
+
+<body id="testbody" style="color: white; background-color: black">
+
+
+	<!--====== Header Section Start ======-->
+	<header class="header-section nav" style="background-color:#000000;">
+        <div class="logo"><a href="index.php">
+                <img style="padding-top:10px;" src="img/koha-logo-2.png" alt=""><!-- Logo -->
+            </a>
+        </div>
+		<div class="responsive"><i class="fa fa-bars"></i></div>
+		<!-- Navigation -->
+		<ul class="menu-list">
+			<li><a href="howitworks.php">How it works?</a></li>
+			<li><a href="shop.php">MarketPlace</a></li>
+			<!--<li>
+                 <select class="dropdown" onchange="location = this.value;"><a href="#market">MarketPlace</a>
+                    <option value="shop.php"><a>Marketplace</a></option>
+					<option value="shop.php"><a>Black Dog</a></option>
+					<option value="shop.php"><a>Buddha</a></option>
+                      <option value="shop.php"><a>White Dog</a></option>
+                      <option value="shop.php"><a>Fish</a></option>
+                      <option value="shop.php"><a>Shiva</a></option>
+                      <option value="shop.php"><a>Image number 6</a></option>
+					  <option value="shop.php"><a>Image number 7</a></option>
+                      <option value="shop.php"><a>Image number 8</a></option>
+                      <option value="shop.php"><a>Image number 9</a></option>
+					  <option value="shop.php"><a>Image number 10</a></option>
+                </select></li>-->
+				<li><a href="contactus.php">Get in Touch</a></li>
+            <button class="lets-pixelate" style="left:0;height:30px !important; width:140px;">
+                <a href="customization.php" class="d-flex" style="position:relative; height:30px !important; width: 140px;">
+                    <p style="font-size: 14px; position: relative; bottom:4px; padding-left: 0">&nbsp;<i class="fa fa-cubes"></i>&nbsp;Lets&nbsp;&nbsp;<img src="img/Pixelate_Logo-04-cropped.png" style="width: 60px; min-height: 4px;" alt="">&nbsp;&nbsp;
+                       </p>
+                </a>
+            </button>
+			<li><a href="aboutus.php">Our Story</a></li>
+			<li><a href="customer/my_account.php">My Account</a></li>
+			<li><a href="cart.php">My Cart</a></li>
+		</ul>
+	</header>
+	<script type="text/javascript">
+  AOS.init();
+</script>
+
+  

@@ -1,0 +1,1228 @@
+<!DOCTYPE html>
+
+<head>
+    <title>KOHA IMAGE PIXELATE Upload Image Page</title>
+    <link href="/static/assets/titleicon.png" rel="shortcut icon"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.min.css') }}"/>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.carousel.css') }}"/>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/magnific-popup.css') }}"/>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/animate.min.css') }}"/>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"/>
+<script src=https://code.jquery.com/jquery-3.2.1.slim.min.js
+            integrity=sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN
+            crossorigin=anonymous></script>
+    <script src=https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js
+            integrity=sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q
+            crossorigin=anonymous></script>
+    <script src=https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js
+            integrity=sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl
+            crossorigin=anonymous></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/ee27b093c2.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+
+    <style>
+	 .img-container {
+            text-align: center;
+            display: block;
+            position: relative;
+        }
+
+        .overlay {
+            z-index: 99;
+            width: 70%;
+            /* height: 100%; */
+            /* margin-left: 15%; */
+            /* vertical-align: middle; */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .quotation_div {
+            position: relative;
+            display: table;
+        }
+        section {
+            padding: 65px 0;
+        }
+
+        input #file-upload-button {
+            display: none
+        }
+
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 60%
+        }
+
+
+        @media only screen and (min-width: 768px) {
+		#custombannerimage
+{
+height: auto;
+    width: 100vw;
+    object-fit: cover;
+    filter: brightness(60%);
+    max-height: 60vh;
+}
+#bannertest{
+height: auto;
+    width: 100vw;
+    object-fit: cover;
+    filter: brightness(60%);
+    max-height: 60vh;
+}
+            .test1 {
+                position: relative;
+                right: 174px
+            }
+
+            .images {
+                height: 26vw;
+                width: 49vw
+            }
+
+            .test2 {
+                position: relative;
+                right: 105px
+            }
+        }
+
+        .lets-pixelate {
+            background-color: #000c0a;
+            box-shadow: none;
+            border: 2px solid #ddb253;
+            border-radius: 10px
+        }
+
+        .lets-pixelate a {
+            color: white;
+            text-decoration: none
+        }
+
+        .lets-pixelate a > i {
+            padding-top: 3px
+        }
+
+        .lets-pixelate a > p {
+            margin-bottom: 0;
+            padding-left: 8px
+        }
+
+        .lets-pixelate:hover a > p {
+            color: #fce9c0;
+            transition: all .3s ease;
+            -webkit-transition: all .3s ease
+        }
+
+        .p {
+            color: white
+        }
+
+        .flip-card {
+            background-color: transparent;
+            width: 300px;
+            height: 300px;
+            perspective: 1000px
+        }
+
+        .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform .6s;
+            transform-style: preserve-3d
+        }
+
+        .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg)
+        }
+
+        .flip-card-front, .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden
+        }
+
+        .flip-card-front {
+            background-color: transparent
+        }
+
+        .flip-card-back {
+            background-color: transparent;
+            transform: rotateY(180deg)
+        }
+
+        .active {
+            color: #ddb253 !important
+        }
+
+        .member-info {
+            text-align: center
+        }
+
+        .breadcrumbs {
+            padding: 15px 0;
+            background-color: #f3f8fa;
+            min-height: 40px
+        }
+
+        .breadcrumbs h2 {
+            font-size: 28px;
+            font-weight: 300
+        }
+
+        .breadcrumbs ol {
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+            padding: 0;
+            margin: 0
+        }
+
+        .breadcrumbs ol li + li {
+            padding-left: 10px
+        }
+
+        .breadcrumbs ol li + li::before {
+            display: inline-block;
+            padding-right: 10px;
+            color: #6c757d;
+            content: "/"
+        }
+
+        @media (max-width: 768px) {
+            .breadcrumbs .d-flex {
+                display: block !important
+            }
+
+            .breadcrumbs ol {
+                display: block
+            }
+
+            .breadcrumbs ol li {
+                display: inline-block
+            }
+
+            .test3 {
+                width: 30%
+            }
+        }
+
+        .logo {
+            width: 115px;
+            background-color: #000
+        }
+
+        .about-col2 img {
+            width: 400px;
+            height: 100%;
+            padding: 10px
+        }
+
+        .more {
+            margin: 30px;
+            padding: 10px
+        }
+
+        .btn1 {
+            padding: 10px;
+            border-radius: 20px;
+            background: black;
+            color: white;
+            cursor: pointer
+        }
+
+        .more2 {
+            margin: 30px;
+            padding: 10px
+        }
+
+        .btn2 {
+            padding: 10px;
+            border-radius: 20px;
+            background: black;
+            color: white;
+            cursor: pointer
+        }
+
+        #preloder {
+            background: #000 url("logo1.jpeg") no-repeat center center;
+            background-size: 15%;
+            height: 100vh;
+            width: 100%;
+            position: fixed;
+            z-index: 100;
+            top: 0;
+            text-shadow: 0 0 0 50px #eaece9, 0 0 0 100px #fff, 0 0 0 150px #fff, 0 0 0 200px #fff, 0 0 0 250px #fff;
+            animation: animate 5s linear infinite
+        }
+
+        @keyframes animate {
+            0% {
+                filter: hue-rotate(0deg)
+            }
+            100% {
+                filter: hue-rotate(360deg)
+            }
+        }
+
+        .dropdown {
+            background: #000;
+            color: rgba(194, 191, 188, 0.973);
+            border: 0
+        }
+
+        .footer-newsletter {
+            padding: 50px 0;
+            background: #000
+        }
+
+        .footer-newsletter h4 {
+            font-size: 24px;
+            margin: 0 0 20px 0;
+            padding: 0;
+            line-height: 1;
+            font-weight: 600;
+            color: #a2cce3
+        }
+
+        p {
+            font-family: Georama !important;
+            color: white !important
+        }
+
+        h4, h3, h2, h1 {
+            font-family: Georama !important;
+            margin-bottom: 17px;
+            color: #ddb253
+        }
+
+        .footer-newsletter form {
+            margin-top: 30px;
+            background: #fff;
+            padding: 6px 10px;
+            position: relative;
+            border-radius: 50px
+        }
+
+        .footer-newsletter form input[type=email] {
+            border: 0;
+            padding: 4px;
+            width: calc(100% - 100px)
+        }
+
+        .footer-newsletter form input[type=submit] {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            border: 0;
+            background: 0;
+            font-size: 16px;
+            padding: 0 20px;
+            margin: 3px;
+            background: #68a4c4;
+            color: #fff;
+            transition: .3s;
+            border-radius: 50px
+        }
+
+        .footer-newsletter form input[type=submit]:hover {
+            background: #468db3
+        }
+
+        .team h1 {
+            text-align: center;
+            margin-top: 25px;
+            font-family: Georama !important;
+            font-size: 58px
+        }
+
+        @media (min-width: 481px) and (max-width: 767px) {
+		#custombannerimage
+{
+height: auto;
+    width: 100vw;
+    object-fit: cover;
+    filter: brightness(60%);
+    max-height: 60vh;
+}
+#bannertest{
+height: auto;
+    width: 100vw;
+    object-fit: cover;
+    filter: brightness(60%);
+    max-height: 60vh;
+}
+            .test1 {
+                position: relative;
+                right: 30px
+            }
+
+            .images {
+                height: auto;
+                width: 47vw
+            }
+
+            .test2 {
+                position: relative;
+                right: 30px
+            }
+        }
+
+        @media (min-width: 50px) and (max-width: 480px) {
+		#custombannerimage
+{
+height: auto;
+    width: 100vw;
+    object-fit: cover;
+    filter: brightness(60%);
+    max-height: 60vh;
+}
+#bannertest{
+height: auto;
+    width: 100vw;
+    object-fit: cover;
+    filter: brightness(60%);
+    max-height: 60vh;
+}
+            .test1 {
+                position: relative;
+                right: 30px
+            }
+
+            .images {
+                height: auto;
+                width: 47vw
+            }
+
+            .test2 {
+                position: relative;
+                right: 30px
+            }
+        }
+
+        a, h5, h1, h2, h3, h4,h5,h6 {
+            text-align: center;
+            font-family: Georama !important;
+        }
+
+        p {
+            font-size: 25px !important;
+            font-family: Georama !important;
+            text-align: justify !important
+        }
+
+        h1, h2, h3 {
+            font-size: 45px !important
+        }
+
+
+        .img-container {
+            text-align: center;
+            display: block;
+            position: relative
+        }
+
+        .overlay {
+            z-index: 99;
+            width: 70%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%)
+        }
+
+        .quotation_div {
+            position: relative;
+            display: table
+        }
+
+        blockquote {
+            font-size: 3rem
+        }
+
+        cite {
+            display: block;
+            text-align: right;
+            font-family: Verdana, Arial, sans-serif;
+            margin-top: 1rem;
+            font-size: .9rem;
+            color: #aaa;
+            font-style: normal
+        }
+
+        blockquote q {
+            font-family: Georgia, serif;
+            font-style: italic;
+            letter-spacing: .1rem
+        }
+
+        blockquote q span {
+            will-change: opacity, filter;
+            opacity: 0;
+            filter: blur(0px)
+        }
+
+        q {
+            quotes: "“" "”" "‘" "’"
+        }
+
+        q:before {
+            content: open-quote;
+            margin-right: .8rem
+        }
+
+        q:after {
+            content: close-quote
+        }
+
+        q:before, q:after {
+            color: #ccc;
+            font-size: 4rem
+        }
+
+        div::-webkit-scrollbar {
+            width: 0;
+            height: 0
+        }
+
+        .center-block {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%)
+        }
+          @font-face {
+  font-family: 'Georama';
+  font-style: italic;
+  font-weight: 100;
+  font-stretch: 100%;
+  src: url(https://fonts.gstatic.com/s/georama/v4/MCo_zAn438bIEyxFVaIC0ZMQ72G6xnvmodYVPOBB5nuzMdWs0rvF2zEHz_9Abg.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Georama';
+  font-style: italic;
+  font-weight: 100;
+  font-stretch: 100%;
+  src: url(https://fonts.gstatic.com/s/georama/v4/MCo_zAn438bIEyxFVaIC0ZMQ72G6xnvmodYVPOBB5nuzMdWs0rvF2zEGz_9Abg.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Georama';
+  font-style: italic;
+  font-weight: 100;
+  font-stretch: 100%;
+  src: url(https://fonts.gstatic.com/s/georama/v4/MCo_zAn438bIEyxFVaIC0ZMQ72G6xnvmodYVPOBB5nuzMdWs0rvF2zEIz_8.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Roboto Serif';
+  font-style: normal;
+  font-weight: 100;
+  font-stretch: 100%;
+  src: url(https://fonts.gstatic.com/s/robotoserif/v5/R71RjywflP6FLr3gZx7K8UyuXDs9zVwDmXCb8lxYgmuii32UGoVldX6UgfjL4-3sMM_kB_qXSEXTJQCFLH5-_bcEliosl698AM5f.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Roboto Serif';
+  font-style: normal;
+  font-weight: 100;
+  font-stretch: 100%;
+  src: url(https://fonts.gstatic.com/s/robotoserif/v5/R71RjywflP6FLr3gZx7K8UyuXDs9zVwDmXCb8lxYgmuii32UGoVldX6UgfjL4-3sMM_kB_qXSEXTJQCFLH5-_bcEliosl658AM5f.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Roboto Serif';
+  font-style: normal;
+  font-weight: 100;
+  font-stretch: 100%;
+  src: url(https://fonts.gstatic.com/s/robotoserif/v5/R71RjywflP6FLr3gZx7K8UyuXDs9zVwDmXCb8lxYgmuii32UGoVldX6UgfjL4-3sMM_kB_qXSEXTJQCFLH5-_bcEliosl6B8AA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+        @media (max-width: 1000px) {
+            .image-col {
+                max-height: 700px;
+                width: 100%
+            }
+
+            .max-height {
+                max-height: 800px
+            }
+        }
+
+        @media (max-width: 700px) {
+            .max-height {
+                max-height: 700px
+            }
+        }
+
+        @media (max-width: 1000px) {
+            .max-height-about {
+                max-height: 700px
+            }
+        }
+
+        @media (max-width: 700px) {
+            .max-height-about {
+                max-height: 700px
+            }
+        }
+
+         @media (max-width: 970px) {
+            .mobile-nav { visibility: hidden ; width: 0 !important; height: 0 !important;}
+        }
+
+        @media (min-width: 971px) {
+            .desktop-nav { visibility: hidden; }
+        }
+        @media (max-width: 970px) {
+            .sec-2 { margin-top: 220px; }
+        }
+
+        @media (min-width: 971px) {
+            .sec-2 { margin-top: 100px; }
+        }
+
+        .testimonial-text {
+            font-size: 40px !important;
+            color: white !important
+        }
+         .lets-pixelate2{
+            background: black;
+
+            float: left;
+            border:0px;
+            color:#fff;
+            box-shadow: 0 0 1px #ccc;
+            -webkit-transition-duration: 0.5s;
+            -webkit-transition-timing-function: linear;
+            box-shadow:0px 0 0 white  inset !important;
+        }
+        .lets-pixelate2:hover{
+            box-shadow:170px 0 0 white inset !important;
+            color:black !important;
+
+        }
+
+        .lets-pixelate {
+            background-color: #000c0a;
+            box-shadow: none;
+            border: 2px solid #ddb253;
+            border-radius: 10px;
+        }
+
+        .lets-pixelate a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .lets-pixelate a > i {
+            padding-top: 3px;
+        }
+
+        .lets-pixelate a > p {
+            margin-bottom: 0px;
+            padding-left: 8px;
+        }
+        .sec-2 a{
+            text-decoration: none;
+        }
+        footer a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body style=" overflow-x:hidden; background-color: black">
+<script type="text/javascript">
+    AOS.init();
+</script>
+
+
+   <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-black navbar-static-top" style="position:fixed;width:100%;margin-top: 0; background-color: black !important; color: white; padding: 20px 1%">
+        <div class="container-fluid navbar-mini d-flex justify-content-between" style=" display: flex">
+            <a href="index.php" style="margin-right: auto">
+                <img style="height:45px; max-width:185px" src="../static/img/koha-logo-2.png" alt=""><!-- Logo -->
+            </a>
+            <div>
+                <a class="desktop-nav nav-item" style="margin-left: 10px; margin-right: 10px" href="https://www.thekoha.com/cart.php"><img src="../static/img/shoppingcarticon.png" style="width:20px !important;height:35px !important;"></a>
+                <a class="desktop-nav nav-item" style="margin-left: 10px; margin-right: 10px" href="https://www.thekoha.com/customer/my_account.php"><img src="../static/img/myaccounticon.png" style="width:20px !important;height:35px !important;"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" style="background-color: grey; aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </div>
+        <div class="d-flex justify-content-end" >
+            <div class="collapse navbar-collapse" id="navbarSupportedContent" style="background-color: black !important;">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="background-color: black !important;">
+                    <li class="nav-item" style="border-radius: 20px; width:100px">
+                        <a class="nav-link" style="color:#ffffff !important;background-color: black !important;font-family: Roboto Serif !important; border-radius: 20px" aria-current="page" href="https://www.thekoha.com/aboutus.php">Our Story</a>
+                    </li>
+                    <li class="nav-item" style="border-radius: 20px; width:130px">
+                        <a class="nav-link" style="color:#ffffff !important;background-color: black !important;font-family: Roboto Serif !important; border-radius: 20px" href="https://www.thekoha.com/howitworks.php">How it Works</a>
+                    </li>
+                    <li class="nav-item" style="border-radius: 20px; width:70px">
+                        <a class="nav-link" style="color:#ffffff !important;background-color: black !important;font-family: Roboto Serif !important; border-radius: 20px" href="https://www.thekoha.com/shop.php">Gallery</a>
+                    </li>
+                    <li class="nav-item" style="border-radius: 20px; width:120px; padding-right: 10px">
+                        <a class="nav-link" style="color:#ffffff !important;background-color: black !important;font-family: Roboto Serif !important; border-radius: 20px ; width:120px" href="https://www.thekoha.com/accessories.php">Accessories</a>
+                    </li>
+                    <li class="nav-item" style="border-radius: 20px; width:50px; padding-right: 10px">
+                        <a class="nav-link" style="color:#ffffff !important;background-color: black !important;font-family: Roboto Serif !important; border-radius: 20px ; width:50px" href="https://www.thekoha.com/faq.php">FAQ</a>
+                    </li>
+						 <li class="nav-item" style="border-radius: 20px;padding-right: 10px">
+                    <a class="nav-link" style="color:#ffffff !important;background-color: black !important;font-family: Roboto Serif !important; border-radius: 20px ; width:103px" href="https://www.thekoha.com/contactus.php">Contact Us</a>
+                </li>
+                    <li class="mobile-nav nav-item" style="border-radius: 20px; width:50px;margin: auto ">
+                        <a style="margin: auto" href="https://www.thekoha.com/cart.php"><img src="../static/img/shoppingcarticon.png" style="width:27px !important;height:35px !important;"></a>
+                    </li>
+                    <li class="mobile-nav nav-item" style="border-radius: 20px; width:50px;margin: auto">
+                    <a style="margin:auto" href="https://www.thekoha.com/customer/my_account.php"><img src="../static/img/myaccounticon.png" style="width:27px !important;height:35px !important;"></a>
+                    </li>
+                    <li class="nav-item" >
+                        <button class="lets-pixelate lets-pixelate2" style="background-color: black !important;font-family: Roboto Serif !important; left:0; text-align: center; vertical-align: middle ;height:35px !important; width:155px;">
+                            <a href='https://create.thekoha.com/?token=$token' class='d-flex lets-pixelate2'
+                   style='font-family: Roboto Serif !important;position:relative; border-radius: 10px ; background-color: transparent !important; height:30px !important; width: 145px; font-size: 17px; font-weight: bold; padding-top: 2px';>
+                    <i class='fa fa-cubes'></i>Click to Create
+                </a>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+<div class="sec-2">
+    <div style=background-color:black;color:white>
+        <div class=container>
+            <div style=display:flex;justify-content:left data-aos=fade-up data-aos-duration=30000>
+                <h2 style=text-align:right;font-size:20px!important><a style=color:#ddb253 href=index.php>Home&nbsp;</a>
+                </h2>
+                <h2 style=color:white!important;font-size:20px!important> / Customization</h2>
+            </div>
+        </div>
+    </div>
+</div>
+<main id=main style=background-color:black;color:white;margin-top:0>
+     <section>
+        <div class='quotation_div'>
+    <span class="img-container"> <!-- Inline parent element -->
+
+      <img id="bannertest" src="static/assets/customizationpageimage.webp" data-aos="fade-up" data-aos-duration="30000" alt="">
+        <div class='overlay'>
+            <h1 data-aos="fade-up" data-aos-duration="30000" class="aos-init aos-animate" style="font-size: 5vw !important;font-family: 'Roboto Serif' !important;  text-align: center; color: #ddb253 !important;">INSPIRE. CREATE. EXHIBIT</h1>
+
+            
+        </div>
+    </span>
+        </div>
+    </section>
+   <section data-aos="fade-up" style=" ">
+    <div style="display: flex; justify-content: center;">
+        <blockquote contenteditable="false"
+                    style="font-family: 'Georama';color:white;text-align:justify;font-size:26px;margin-top: 20px">
+            Your Journey into the World of Pixels starts here!
+        </blockquote>
+    </div>
+</section>
+
+   <!-- <section>
+        <div class=row>
+            <div class="col-lg-12 col-md-12 col-sm-24 col-xs-24 order-lg-3 order-md-3">
+                <div style=object-fit:cover;overflow:hidden>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#uploadmodal"
+                            style=color:black;background-color:black;border:0;margin:0;padding:0><img
+                            data-aos=fade-up data-aos-duration=30000
+                            style=width:100%;height:auto;object-fit:cover src=/static/assets/customization.jpg alt>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section> -->
+	  <section data-aos="fade-up" data-aos-duration="30000" style="padding-bottom: 60px" >
+
+        <div class="row">
+
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 max-height">
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#uploadmodal"
+                            style=color:black;background-color:black;border:0;margin:0;padding:0><img
+                            data-aos=fade-up data-aos-duration=30000
+                            style=width:100%;height:auto;object-fit:cover src="../static/img/midsidephoto.png" alt>
+                    </button>
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 max-height"
+                 style="display: flex; justify-content: center ;text-align: center; overflow-y: scroll; overflow-x: hidden; height: 750px; ">
+
+                <div class="container">
+                    <p style="margin-bottom: 20px;color:white !important;text-align:center !important;">
+                        Koha Gallery
+                    </p>
+					<br/>
+					
+					<div>
+                        <img src="../static/img/collage.png"
+                             style="object-fit:cover;width:100%;height:100%;" alt="">
+                    </div>
+					<br/>
+					<br/>
+                    <p style="margin-bottom: 20px;color:white !important;text-align:center !important;">
+                       Not sure what photo to upload? You can use our<br/> specially curated pictures from KOHA Gallery<br/> to add beauty to your walls. Piece of ART bound<br> to create a focal point in any space.
+                    </p>
+					<br/>
+                    <div style="display: flex; justify-content: center;">
+		<button style="border: 0; background-color: grey; color: white; border-radius: 6px;"><a href="https://www.thekoha.com/shop.php" style="color:white;text-decoration:none;font-size:25px;">View All</a></button>
+		</div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section style=text-align:center>
+        <br/>
+        <a href="https://www.thekoha.com/howitworks.php" style=text-decoration:none><h6 class=link1
+                                                                                        style=color:white;text-align:center;font-size:20px
+                                                                                        data-aos=fade-up
+                                                                                        data-aos-duration=30000>Click to
+            read our Tips and Tricks to select the best pictures to Pixelate.</h6></a>
+        <br/>
+    </section>
+
+    <div class="modal " id=uploadmodal tabindex=-1 role=dialog style="max-height: 100%;
+         overflow-y: auto;" aria-labelledby=exampleModalLabel
+         aria-hidden=true>
+        <div class=modal-dialog role=document>
+            <div class=modal-content>
+                <div class=modal-header style=background-color:black;color:white>
+                    <h1 class=modal-title id=exampleModalLabel>Upload Image</h1><img
+                        style=height:30px;max-width:165px;margin-left:auto src=/static/img/koha-logo-2.png alt>
+                </div>
+                <div class=modal-body style=background-color:#1a1e21;color:white>
+                    <form class="center" action="/pixelate" method="post" enctype="multipart/form-data">
+                        <div class=row>
+                            <input id=uploadFile placeholder="No File" type="hidden" disabled="disabled"/>
+                            <div class="col center" style=display:flex;justify-content:center>
+                                <div id=file-upload-filename></div>
+                                <input style=" text-align: center; color:transparent ; ;width: 600px; height: 200px; border: #808080;border-style: dotted; border-width: 2px; margin: 20px;  background-image:url(/static/assets/drag.png) ; background-size: contain "
+                                       type="file" onchange="onFileSelected(event)" name="imagefile" id="imagefile">
+                            </div>
+                            <div class=row style=text-align:center>
+                                <a href=http://www.thekoha.com/shop.php style=width:fit-content;color:#0a0c17
+                                   class="btn btn-primary center">Browse&nbsp;&nbsp;&nbsp;&nbsp;<i
+                                        class="fas fa-search"></i>&nbsp;&nbsp;</a>
+                                <button type=button style="width:fit-content;margin:0 10px" class="btn btn-secondary"
+                                        data-bs-dismiss=modal>Close
+                                </button>
+                                <button type=button style="width:fit-content;margin:0 10px" class="btn btn-secondary"
+                                        data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#uploadmodal2">
+                                    Next
+                                </button>
+                            </div>
+                        </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal " id=uploadmodal2 tabindex=-1 role=dialog style="max-height: 100%;
+         overflow-y: auto;" aria-labelledby=exampleModalLabel2
+         aria-hidden=true>
+        <div class=modal-dialog role=document>
+            <div class=modal-content>
+                <div class=modal-header style=background-color:black;color:white>
+                    <h1 class=modal-title id=exampleModalLabel>Preview Image</h1><img
+                        style=height:30px;max-width:165px;margin-left:auto src=/static/img/koha-logo-2.png alt>
+                </div>
+                <div class=modal-body style=background-color:#1a1e21;color:white>
+                    <div class=row>
+                        <img class=center style=width:600px;padding-top:20px;padding-bottom:20px id=myimage
+                             src=/static/assets/image-show.png>
+                    </div>
+                    <div class=row style=text-align:center>
+                            <span> <a class="btn btn-primary" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#uploadmodal"
+                            >Go Back</a>
+                    <a style="text-decoration:none;"><button
+                            type="submit" class="btn btn-secondary">Pixelate</button></a> </span>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</main>
+<!--<section>
+    <div class=row>
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 max-height">
+            <img class=image-col data-aos=fade-up data-aos-duration=30000 style=height:100%;width:100%
+                 src=/static/assets/art-image-bg.jpg alt>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 max-height"
+             style=display:flex;justify-content:center;text-align:center;overflow-y:scroll;overflow-x:hidden;height:710px>
+            <div class=container>
+                <h1 style=padding-top:20px data-aos=fade-up data-aos-duration=30000>KOHA GALLERY</h1>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <div data-aos=fade-up>
+                    <blockquote contenteditable=false style=text-align:justify><q
+                            style=font-size:1em;text-align:justify;font-family:Georama!important;font-style:normal;color:white>Not
+                        sure what photo to upload? You can use our specially curated pictures from KOHA Gallery
+                        to add beauty to your walls. Piece of ART bound to create a focal point in any
+                        space.</q>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class=row>
+        <div class="col-lg-12 col-md-12 col-sm-24 col-xs-24 order-lg-3 order-md-3">
+            <div>
+                <img data-aos=fade-up data-aos-duration=30000 src=/static/assets/quadruple.webp alt>
+            </div>
+<br/>
+<div style="display: flex; justify-content: center;">
+        <button style="border: 0; background-color: grey; color: white; border-radius: 6px;"><a href="https://www.thekoha.com/shop.php" style="color:white;text-decoration:none;font-size:25px;">View All</a></button>
+		</div>
+        </div>
+    </div>
+    <br/>
+</section>
+<br/>
+<h6 class=link1 style=color:white;text-align:center;font-size:20px data-aos=fade-up data-aos-duration=30000>Got a
+    project or artwork in mind? <a href=contactus.php style=text-decoration:none;color:white>Talk to
+        us</a>. We support every step of the creative process!</h6>
+<br/>
+<section>
+    <div class=row>
+        <div class="col-lg-12 col-md-12 col-sm-24 col-xs-24 order-lg-3 order-md-3">
+            <div>
+                <img data-aos=fade-up data-aos-duration=30000 style=width:100%;height:90vh
+                     src=/static/assets/trilingual.webp
+                     alt>
+            </div>
+<br/>
+ <div style="display: flex; justify-content: center;">
+        <button style="border: 0; background-color: grey; color: white; border-radius: 6px;"><a href="https://www.thekoha.com/shop.php" style="color:white;text-decoration:none;font-size:25px;">View All</a></button>
+		</div>
+        </div>
+    </div>
+    <br/>
+</section>-->
+<br/>
+<br/>
+
+
+<section style=text-align:center>
+    <div style="margin:0 0">
+        <h1 style=padding-top:20px data-aos=fade-up data-aos-duration=30000>Sweet Nothings</h1>
+        <br/>
+        <h6 style=padding-top:20px;color:#ffffff !important;font-size:20px data-aos=fade-up data-aos-duration=30000>Some
+            Clients Love</h6>
+    </div>
+</section>
+<section>
+    <div id=testimonial-carousel class="carousel slide" data-ride=false data-aos=fade-up>
+        <div class=carousel-inner>
+            <div class="carousel-item active">
+                <div class=row
+                     style=display:flex;justify-content:center;padding-left:20%;padding-right:20%;text-align:center>
+                    <h2 class=testimonial-text>I am impressed with the quality and resolution of the product.
+                        Definitely, it adds up to the ambience of the room. Delivery and installation was prompt and
+                        easy. I will surely suggest KOHA to my friends.</h2>
+                    <br><br><br>
+                    <em style=text-align:right;font-size:20px> - Ashwini purushotham</em>
+                    <em style=text-align:right;font-size:20px><span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span> <i class="fa fa-star"></i></span></em>
+                    <img class=testimonial-image src=/static/assets/dummy.JPG
+                         style=height:130px;width:150px;border-radius:50% alt=customer-profile>
+                </div>
+            </div>
+            <div class=carousel-item>
+                <div class=row
+                     style=display:flex;justify-content:center;padding-left:20%;padding-right:20%;text-align:center>
+                    <h2 class=testimonial-text>I loved the concept of Pixelate. Gives photo frames a new dimension
+                        and
+                        perspective when compare to the usual photo prints. Would have been amazing in 3D, I hope
+                        the
+                        makers will soon come up with 3D Pixelate.</h2>
+                    <br><br><br>
+                    <em style=text-align:right;font-size:20px> - Neethi Jain</em>
+                    <em style=text-align:right;font-size:20px><span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span> <i class="fa-regular fa-star"></i></span></em>
+                    <img class=testimonial-image src=/static/assets/dummy.JPG
+                         style=height:130px;width:150px;border-radius:50% alt=customer-profile>
+                </div>
+            </div>
+            <div class=carousel-item>
+                <div class=row
+                     style=display:flex;justify-content:center;padding-left:20%;padding-right:20%;text-align:center>
+                    <h2 class=testimonial-text>Good work, definitely worth the money. Web interface was user
+                        friendly
+                        and easy to customize your Pixelate photo gifts. Gives an artistic touch to the photos and
+                        my
+                        friend really love the gift.</h2>
+                    <br><br><br>
+                    <em style=text-align:right;font-size:20px> - Ashwin sathyan</em>
+                    <em style=text-align:right;font-size:20px><span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa-regular fa-star"></span></em>
+                    <img class=testimonial-image src=/static/assets/dummy.JPG
+                         style=height:130px;width:150px;border-radius:50% alt=customer-profile>
+                </div>
+            </div>
+        </div>
+        <a class=carousel-control-prev href=#testimonial-carousel role=button data-slide=prev>
+            <span class=carousel-control-prev-icon></span>
+        </a>
+        <a class=carousel-control-next href=#testimonial-carousel role=button data-slide=next>
+            <span class=carousel-control-next-icon></span>
+        </a>
+    </div>
+</section>
+   <section>
+    <div class='quotation_div'>
+    <span class="img-container"> <!-- Inline parent element -->
+
+      <img src="../static/img/uploadfooterbanner.png" id="custombannerimage" data-aos="fade-up" data-aos-duration="30000"
+            alt="">
+        <div class='overlay'>
+			 <p class="white-text-size" data-aos="fade-up" data-aos-duration="30000"
+                style="text-align: center !important;color:white;font-size:30px;">Got a project or artwork in mind?<a href="https://www.thekoha.com/contactus.php" style="text-decoration:none !important;color:#ffffff !important">Talk to<br/>us.</a> We support every step of the creative<br/>process!</p>
+        <div style="display: flex; justify-content: center;">
+		<button data-aos="fade-up" data-aos-duration="30000" style="border: 0; background-color: grey; color: white; border-radius: 6px;"><a href="https://www.thekoha.com/contactus.php" style="color:white;text-decoration:none;font-size:25px;">Contact Us</a></button>
+		</div>
+		</div>
+    </span>
+    </div>
+</section>
+    <!--Grid row-->
+    <div class="row">
+        <div class="col-lg-4 col-md-8 mb-4 mb-md-0"   style=" font-family: Roboto Serif !important;text-align: center !important;">
+            <h5 class="text-uppercase"   style=" font-family: Roboto Serif !important;color:white ;text-decoration:underline; font-size: 20px !important;font-family: Roboto Serif !important;">Lets Chat!</h5>
+
+            <ul class="list-unstyled mb-0">
+
+                <li   style=" font-family: Roboto Serif !important;text-align: center !important;text-align:left;">
+                    <a class="text-white"   style="text-decoration:none;font-family: Roboto Serif !important;font-family: Roboto Serif !important;color:white;line-height:50px;">Tell us about your project</a>
+                </li>
+
+                <li   style=" font-family: Roboto Serif !important;text-align: center !important;">
+                    <i style="color:#ddb253;" class="fa-solid fa-envelope"></i><a href = "mailto: info@thekoha.com" class="text-white"   style="text-decoration:none;font-family: Roboto Serif !important;font-family: Roboto Serif !important;color:white;line-height:50px;">&nbsp;&nbsp;info@thekoha.com</a>
+                </li>
+                <li   style=" font-family: Roboto Serif !important;text-align: center !important;">
+                    <i style="color:#ddb253;" class="fa-solid fa-phone"></i><a href="tel:9916299016" class="text-white"   style="text-decoration:none;font-family: Roboto Serif !important;color:white;line-height:50px;">&nbsp;&nbsp;+91-9916299016/</a><a href="tel:7676869730" class="text-white"   style="text-decoration:none;font-family: Roboto Serif !important;color:white;line-height:50px;">+91-7676869730</a>
+                </li>
+				<li   style=" font-family: Roboto Serif !important;text-align: center !important;">
+                    <!-- Facebook -->
+                    <a
+                            class="btn btn-link btn-floating btn-lg text-dark m-1"
+                            href="#!"
+                            role="button"
+                            data-mdb-ripple-color="dark"
+                    ><i class="fab fa-facebook-f"   style=" color:#ddb253;"></i
+                        ></a>
+
+                    <!-- Twitter -->
+                    <a
+                            class="btn btn-link btn-floating btn-lg text-dark m-1"
+                            href="#!"
+                            role="button"
+                            data-mdb-ripple-color="dark"
+                    ><i class="fab fa-twitter"   style=" color:#ddb253;"></i
+                        ></a>
+
+                    <!-- Google -->
+                    <a
+                            class="btn btn-link btn-floating btn-lg text-dark m-1"
+                            href="#!"
+                            role="button"
+                            data-mdb-ripple-color="dark"
+                    ><i class="fab fa-google"   style="color:#ddb253;"></i
+                        ></a>
+
+                    <!-- Instagram -->
+                    <a
+                            class="btn btn-link btn-floating btn-lg text-dark m-1"
+                            href="#!"
+                            role="button"
+                            data-mdb-ripple-color="dark"
+                    ><i class="fab fa-instagram"   style=" color:#ddb253;"></i
+                        ></a>
+
+                    <!-- Linkedin -->
+                    <a
+                            class="btn btn-link btn-floating btn-lg text-dark m-1"
+                            href="#!"
+                            role="button"
+                            data-mdb-ripple-color="dark"
+                    ><i class="fab fa-linkedin"   style="color:#ddb253;"></i
+                        ></a>
+                    <!-- Github -->
+                    <a
+                            class="btn btn-link btn-floating btn-lg text-dark m-1"
+                            href="#!"
+                            role="button"
+                            data-mdb-ripple-color="dark"
+                    ><i class="fab fa-github"   style=" color:#ddb253;"></i
+                        ></a>
+                </li>
+            </ul>
+        </div>
+        <!--Grid column-->
+		<div class="col-lg-4 col-md-8 mb-4 mb-md-0"   style=" font-family: Roboto Serif !important;text-align: center !important;">
+		<h5    style=" text-decoration:underline;color:white;font-family: Roboto Serif !important;font-family: Roboto Serif !important;text-align: center !important;font-size: 20px !important">Subscribe to our Newsletter</h4>
+		<br/>
+		<ul class="list-unstyled mb-0">
+		<li   style=" font-family: Roboto Serif !important;text-align: center !important;text-align:left;">
+                    <a style="text-decoration:none;color:white;font-family: Roboto Serif !important;font-family: Roboto Serif !important;text-align: center !important;">Stay in the loop for upcoming products</a>
+                </li></ul>
+				<br/>
+		 <div class="col-lg-12 col-md-12 col-sm-12 "style="display: flex; justify-content: center ;" >
+
+                    <form action="reaction.php" id="newsletter-form" class="newsletter-email-form" enctype="multipart/form-data" method="post"   style=" font-family: Roboto Serif !important;background-color: black; max-width: 750px; width:70%">
+
+                        <input type="email" style="font-family: Roboto Serif !important;color: black !important;background-color:white !important;width:70%; max-width: 1250px; text-align: center"
+                               name="useremail" placeholder="YourEmail" class="email-box" maxlength="600px"
+                               id="email_data">
+							   
+                        <input type="submit" class="submit-button"
+                               style=" font-family: Roboto Serif !important;background-color:grey !important; color:#ffffff !important; border-radius: 0px"
+                               id="email_submit" name="Subscribe">
+<!--                        <br>-->
+<!--                        <span class="email-message" id="email_msg"></span>-->
+<!--                        <br>-->
+<!--                        <input type="hidden" name="hellotestnews2" value="hellotest2">-->
+
+                    </form>
+                </div>
+		</div>
+
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-8 mb-4 mb-md-0"   style=" font-family: Roboto Serif !important;text-align: center !important;">
+            <h5 class="text-uppercase mb-0"   style=" font-family: Roboto Serif !important;color:white; text-decoration:underline; font-size: 20px !important;">MORE</h5>
+
+            <ul class="list-unstyled mb-0">
+                <li    style="font-family: Roboto Serif !important;text-align: center !important;">
+                    <a href="https://www.thekoha.com/shippinginfo.php" class="text-white"   style=" text-decoration:none;font-family: Roboto Serif !important;color:white;line-height:50px;">Shipping Information</a>
+                </li    style=" font-family: Roboto Serif !important;text-align: center !important;">
+                <li   style=" font-family: Roboto Serif !important;text-align: center !important;">
+                    <a href="https://www.thekoha.com/privacypolicy.php" class="text-white"   style="text-decoration:none;font-family: Roboto Serif !important;color:white;line-height:50px;">Privacy Policy</a>
+                </li>
+                <li   style=" font-family: Roboto Serif !important;text-align: center !important;">
+                    <a href="https://www.thekoha.com/returnsandrefundspolicy.php" class="text-white"   style="text-decoration:none;font-family: Roboto Serif !important;color:white;line-height:50px;">Return Policy</a>
+                </li>
+            </ul>
+        </div>
+        <!--Grid column-->
+    </div>
+    <!--Grid row-->
+</div>
+<!-- Copyright -->
+<div class="text-center p-3"   style=" font-family: Roboto Serif !important;background-color:#000000; ">
+    <a style="text-decoration:none;color:#ddb253 !important;font-family: Roboto Serif !important;line-height:20px;" href="#">Copyright © 2022, Koha Website. All Rights Reserved – Developed and Designed by Bleam Technologies Private Limited</a></div>
+<!-- Copyright -->
+</footer>
+
+<script type="text/javascript">
+    (function (d, m) {
+        var kommunicateSettings =
+            {"appId": "28697f7e85fe0fdff7aad97521eeac9c1", "popupWidget": true, "automaticChatOpenOnNavigation": true};
+        var s = document.createElement("script");
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
+        var h = document.getElementsByTagName("head")[0];
+        h.appendChild(s);
+        window.kommunicate = m;
+        m._globals = kommunicateSettings;
+    })(document, window.kommunicate || {});
+</script>
+<a href=# class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+<script>document.title = "Koha Website Customization";</script>
+<script>
+    function onFileSelected(d) {
+        var c = d.target.files[0];
+        var b = new FileReader();
+        var a = document.getElementById("myimage");
+        a.title = c.name;
+        document.getElementById("uploadFile").value = a.title;
+        b.onload = function (e) {
+            a.src = e.target.result
+        };
+        b.readAsDataURL(c);
+        // this.form.submit();
+        {#$('#uploadmodal').modal('hide');#}
+        {#$('#exampleModalToggle2').modal('toggle');#}
+
+    }
+
+    var input = document.getElementById("file-upload");
+    var infoArea = document.getElementById("file-upload-filename");
+    input.addEventListener("change", showFileName);
+    document.getElementById("imagefile").onchange = function () {
+        var b = this.value;
+        document.getElementById("uploadFile").value = b.replace(/^.*[\\\/]/, "");
+        // $('#exampleModalToggle2').modal('toggle');
+        // this.form.submit();
+        // ("#exampleModalToggle2").modal("toggle");
+    };
+
+    function showFileName(b) {
+        var a = b.srcElement;
+        var c = a.files[0].name;
+        infoArea.textContent = "File name: " + c
+    };</script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

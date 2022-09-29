@@ -1,0 +1,43 @@
+
+<!-- ======= Header ======= -->
+<header class="header-section nav" style="background-color:#000000;">
+    <div class="logo"><a href="index.php">
+            <img style="padding-top:10px;" src="img/koha-logo-2.png" alt=""><!-- Logo -->
+        </a>
+    </div>
+    <div class="responsive"><i class="fa fa-bars"></i></div>
+    <!-- Navigation -->
+    <ul class="menu-list">
+        <li><a href="howitworks.php">How it works?</a></li>
+        <li><a href="shop.php">MarketPlace</a></li>
+        <!--<li>
+             <select class="dropdown" onchange="location = this.value;"><a href="#market">MarketPlace</a>
+                <option value="shop.php"><a>Marketplace</a></option>
+                <option value="shop.php"><a>Black Dog</a></option>
+                <option value="shop.php"><a>Buddha</a></option>
+                  <option value="shop.php"><a>White Dog</a></option>
+                  <option value="shop.php"><a>Fish</a></option>
+                  <option value="shop.php"><a>Shiva</a></option>
+                  <option value="shop.php"><a>Image number 6</a></option>
+                  <option value="shop.php"><a>Image number 7</a></option>
+                  <option value="shop.php"><a>Image number 8</a></option>
+                  <option value="shop.php"><a>Image number 9</a></option>
+                  <option value="shop.php"><a>Image number 10</a></option>
+            </select></li>-->
+        <li><a href="contactus.php">Get in Touch</a></li>
+        <button class="lets-pixelate" style="left:0;height:30px !important; width:140px;">
+            <a href="customization.php" class="d-flex"
+               style="position:relative; height:30px !important; width: 140px;">
+                <p style="font-size: 14px !important; position: relative; bottom:4px !important;"><i class="fa fa-cubes"></i>&nbsp;Lets
+                    &nbsp;
+                    <span>
+                <img
+                        src="img/Pixelate_Logo-04-cropped.png" style="width: 60px; min-height: 4px; !important;" alt="">&nbsp;&nbsp;
+                </span></p>
+            </a>
+        </button>
+        <li><a href="aboutus.php">Our Story</a></li>
+        <li><a href="customer/my_account.php">My Account</a></li>
+        <li><a href="cart.php">My Cart</a></li>
+    </ul>
+</header>

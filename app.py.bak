@@ -1,0 +1,100 @@
+from flask import Flask, render_template, flash, request, redirect, url_for
+import legofy
+from PIL import Image
+import webcolors
+
+app = Flask(__name__)
+
+
+@app.route('/')
+def home():
+    return render_template('index.html', imglb='', bX=2, bY=2, rangeCol=20)
+
+
+@app.route('/legonizer', methods=['GET', 'POST'])
+def legonizer():
+    if request.method == "POST":
+        imagereq = request.files['imagefile']
+        if imagereq:
+            imgpath = "static/uploads/"+imagereq.filename
+            imagereq.save(imgpath)
+            imglb = imagereq.filename
+        else:
+            return render_template('index.html')
+
+        bY = 2
+        bX = 2
+        num_of_colors = 20
+        user_colors = []
+
+        palette = legofy.legonize(imglb, imgpath, (bY, bX), num_of_colors, user_colors)
+        out_img_path = "outputs/"+imglb[:-4]+"_lego_gap.png"
+        return render_template('legonizer.html', imagepath=out_img_path, imglb=imglb, bX=bX, bY=bY, rangeCol=num_of_colors, palette=palette, autoselect='on', autofit='on', bright=20, contrast=10, saturation=30, zoom=100, enlarge=20)
+
+
+@app.route('/legofied', methods=['GET', 'POST'])
+def legofied():
+    if request.method == "POST":
+        imglb = request.form['imglb']
+        if imglb == '':
+            imagereq = request.files['imagefile']
+            imgpath = "static/uploads/"+imagereq.filename
+            imagereq.save(imgpath)
+            imglb = imagereq.filename
+        else:
+            imgpath = 'static/uploads/'+imglb
+            imagereq = Image.open(imgpath)
+
+        bY = int(request.form['rangeY'])
+        bX = int(request.form['rangeX'])
+        num_of_colors = int(request.form['rangeCol'])
+        autofit = request.form.get('autofit')
+        autoselect = request.form.get('autoselect')
+        bright = int(request.form['bright'])
+        contrast = int(request.form['contrast'])
+        saturation = int(request.form['saturation'])
+        zoom = int(request.form['zoom'])
+        enlarge = int(request.form['enlarge'])
+        if autofit != "on":
+            autofit = ""
+        if autoselect != "on":
+            autoselect = ""
+
+        user_colors = []
+        for i in range(50):
+            if int(request.form[f'btn{i}_val']):
+                user_colors.append(request.form[f'btn{i}_col'])
+
+        if request.form.get('base_btn') == "" or request.form.get('btncol') == "":
+            palette = legofy.legonize(imglb, imgpath, (bY, bX), num_of_colors, user_colors, autoselect, autofit, zoom)
+            out_img_path = "outputs/"+imglb[:-4]+"_lego_gap.png"
+            return render_template('legonizer.html', imagepath=out_img_path, imglb=imglb, bX=bX, bY=bY, rangeCol=num_of_colors, 
+                                    palette=palette, autoselect=autoselect, autofit=autofit, bright=bright, contrast=contrast, 
+                                    saturation=saturation, zoom=zoom, enlarge=enlarge)
+
+        elif request.form.get('nxt') == 'Preview':
+            legofy.render(imglb, imgpath, (bY, bX), num_of_colors, user_colors, autoselect, autofit, zoom, finalize=True)
+            out_img_path = ["outputs/"+imglb[:-4]+"_bg1.png", "outputs/"+imglb[:-4]+"_bg2.png", "outputs/"+imglb[:-4]+"_bg3.png", "outputs/"+imglb[:-4]+"_bg4.png",
+                            "outputs/"+imglb[:-4]+"_bg5.png", "outputs/"+imglb[:-4]+"_bg6.png", "outputs/"+imglb[:-4]+"_bg7.png"]
+            return render_template('preview.html', image_filename=imglb, imagepath=out_img_path)
+
+        elif request.form.get('nxt') == 'Next -->':
+            palette = legofy.legonize(imglb, imgpath, (bY, bX), num_of_colors, user_colors, autoselect, autofit, zoom, finalize=True)
+            return render_template('index.html', imglb='', bX=2, bY=2, rangeCol=20)
+
+        else:
+            palette = legofy.legonize(imglb, imgpath, (bY, bX), num_of_colors, user_colors, autoselect, autofit, zoom)
+            out_img_path = "outputs/"+imglb[:-4]+"_lego_gap.png"
+            return render_template('legonizer.html', imagepath=out_img_path, imglb=imglb, bX=bX, bY=bY, rangeCol=num_of_colors, 
+                                    palette=palette, autoselect=autoselect, autofit=autofit, bright=bright, contrast=contrast, 
+                                    saturation=saturation, zoom=zoom, enlarge=enlarge)
+
+
+# @app.route('/picker', methods=['GET', 'POST'])
+# def picker():
+#     if request.method == "POST":
+#         imglb = request.form['imglb']
+#     return ('', 204)
+
+if __name__ == '__main__':
+    app.run(debug=True)

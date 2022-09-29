@@ -1,0 +1,158 @@
+
+<footer class="bg-primary text-white text-center text-lg-start" style="background-color:#000000;font-family:poppins;" id="testfooter">
+    <!-- Grid container -->
+    <div class="footer-newsletter">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6" class="test3">
+                    <h4 class="test1">Our Newsletter</h4>
+                    <p class="test2">Stay in the loop for upcoming products</p>
+                </div>
+                <div class="col-lg-6">
+                    <form action="../koha/reaction.php" id="newsletter-form" class="newsletter-email-form" enctype="multipart/form-data" method="post" style="background-color: black">
+                        <input type="email" style="color: black; border-radius: 20px; text-align: center"
+                               name="useremail" placeholder="YourEmail@email.com" class="email-box" maxlength="60"
+                               id="email_data">
+                        <br>
+                        <span class="email-message" id="email_msg"></span>
+                        <br>
+                        <input type="hidden" name="hellotestnews2" value="hellotest2">
+                        <input type="submit" class="submit-button"
+                               style="background-color: aquamarine; border-radius: 20px; color: black;height:33px;"
+                               id="email_submit" name="Subscribe">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container p-4" id="testmen">
+        <!--Grid row-->
+        <div class="row">
+            <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                <h5 class="text-uppercase" style="text-decoration:underline;">KOHA</h5>
+
+                <ul class="list-unstyled mb-0">
+                    <li>
+                        <a href="index.php" class="text-white" style="color:white;line-height:50px;">Home</a>
+                    </li>
+                    <li>
+                        <a href="aboutus.php" class="text-white" style="color:white;line-height:50px;">How it All Started</a>
+                    </li>
+                    <li>
+                        <a href="http://www.thekoha.in/" class="text-white" style="color:white;line-height:50px;">PIXEL ART</a>
+                    </li>
+                    <li>
+                        <a href="howitworks.php" class="text-white" style="color:white;line-height:50px;">How It Works</a>
+                    </li>
+                </ul>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                <h5 class="text-uppercase mb-0" style="text-decoration:underline;">MORE</h5>
+
+                <ul class="list-unstyled mb-0">
+                    <li>
+                        <a href="faq.php" class="text-white" style="color:white;line-height:50px;">FAQ</a>
+                    </li>
+                    <li>
+                        <a href="shippinginfo.php" class="text-white" style="color:white;line-height:50px;">Shipping Information</a>
+                    </li>
+                    <li>
+                        <a href="privacypolicy.php" class="text-white" style="color:white;line-height:50px;">Privacy Policy</a>
+                    </li>
+                    <li>
+                        <a href="returnsandrefundspolicy.php" class="text-white" style="color:white;line-height:50px;">Return Policy</a>
+                    </li>
+                </ul>
+            </div>
+            <!--Grid column-->
+        </div>
+        <!--Grid row-->
+    </div>
+    <!-- Grid container -->
+    <div class="container pt-4" style="line-height:50px;background-color:blue;width:100%;">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+            <!-- Facebook -->
+            <a
+                    class="btn btn-link btn-floating btn-lg text-dark m-1"
+                    href="#!"
+                    role="button"
+                    data-mdb-ripple-color="dark"
+            ><i class="fab fa-facebook-f" style="color:white;"></i
+                ></a>
+
+            <!-- Twitter -->
+            <a
+                    class="btn btn-link btn-floating btn-lg text-dark m-1"
+                    href="#!"
+                    role="button"
+                    data-mdb-ripple-color="dark"
+            ><i class="fab fa-twitter" style="color:white;"></i
+                ></a>
+
+            <!-- Google -->
+            <a
+                    class="btn btn-link btn-floating btn-lg text-dark m-1"
+                    href="#!"
+                    role="button"
+                    data-mdb-ripple-color="dark"
+            ><i class="fab fa-google" style="color:white;"></i
+                ></a>
+
+            <!-- Instagram -->
+            <a
+                    class="btn btn-link btn-floating btn-lg text-dark m-1"
+                    href="#!"
+                    role="button"
+                    data-mdb-ripple-color="dark"
+            ><i class="fab fa-instagram" style="color:white;"></i
+                ></a>
+
+            <!-- Linkedin -->
+            <a
+                    class="btn btn-link btn-floating btn-lg text-dark m-1"
+                    href="#!"
+                    role="button"
+                    data-mdb-ripple-color="dark"
+            ><i class="fab fa-linkedin" style="color:white;"></i
+                ></a>
+            <!-- Github -->
+            <a
+                    class="btn btn-link btn-floating btn-lg text-dark m-1"
+                    href="#!"
+                    role="button"
+                    data-mdb-ripple-color="dark"
+            ><i class="fab fa-github" style="color:white;"></i
+                ></a>
+        </section>
+        <!-- Section: Social media -->
+    </div>
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color:blue; font-family: 'Georama'">
+        <a class="text-white" style="color:#FFFFFF;line-height:20px;" href="#">Copyright © 2022, Koha Website. All Rights Reserved – Developed and Designed by Bleam Technologies Private Limited</a>
+    </div>
+    <!-- Copyright -->
+<!--    <iframe style="border: none; "-->
+<!--            src="https://widget.kommunicate.io/chat?appId=YOUR_APP_ID"-->
+<!--            allow="microphone; geolocation;">-->
+<!--    </iframe>-->
+
+</footer>
+
+<script>
+    (function (d, m) {
+        var kommunicateSettings =
+            {"appId": "28697f7e85fe0fdff7aad97521eeac9c1", "popupWidget": true, "automaticChatOpenOnNavigation": true};
+        var s = document.createElement("script");
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
+        var h = document.getElementsByTagName("head")[0];
+        h.appendChild(s);
+        window.kommunicate = m;
+        m._globals = kommunicateSettings;
+    })(document, window.kommunicate || {});
+</script>

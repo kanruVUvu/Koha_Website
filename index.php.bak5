@@ -1,0 +1,1148 @@
+<?php
+include("php_script.php");
+?>
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Koha Website Home Page</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="kohafavicon.jpeg" rel="shortcut icon"/>
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link
+            href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i&display=swap"
+            rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/home.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/owl.carousel.css"/>
+    <link rel="stylesheet" href="css/magnific-popup.css"/>
+    <link rel="stylesheet" href="css/animate.min.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/chatbot.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+
+    <!-- =======================================================
+    * Template Name: Moderna - v4.8.0
+    * Template URL: https://bootstrapmade.com/free-bootstrap-template-corporate-moderna/
+    * Author: BootstrapMade.com
+    * License: https://bootstrapmade.com/license/
+    ======================================================== -->
+    <style> @font-face {
+  font-family: 'Georama';
+  font-style: italic;
+  font-weight: 100;
+  font-stretch: 100%;
+  src: url(https://fonts.gstatic.com/s/georama/v4/MCo_zAn438bIEyxFVaIC0ZMQ72G6xnvmodYVPOBB5nuzMdWs0rvF2zEHz_9Abg.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Georama';
+  font-style: italic;
+  font-weight: 100;
+  font-stretch: 100%;
+  src: url(https://fonts.gstatic.com/s/georama/v4/MCo_zAn438bIEyxFVaIC0ZMQ72G6xnvmodYVPOBB5nuzMdWs0rvF2zEGz_9Abg.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Georama';
+  font-style: italic;
+  font-weight: 100;
+  font-stretch: 100%;
+  src: url(https://fonts.gstatic.com/s/georama/v4/MCo_zAn438bIEyxFVaIC0ZMQ72G6xnvmodYVPOBB5nuzMdWs0rvF2zEIz_8.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Roboto Serif';
+  font-style: normal;
+  font-weight: 100;
+  font-stretch: 100%;
+  src: url(https://fonts.gstatic.com/s/robotoserif/v5/R71RjywflP6FLr3gZx7K8UyuXDs9zVwDmXCb8lxYgmuii32UGoVldX6UgfjL4-3sMM_kB_qXSEXTJQCFLH5-_bcEliosl698AM5f.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Roboto Serif';
+  font-style: normal;
+  font-weight: 100;
+  font-stretch: 100%;
+  src: url(https://fonts.gstatic.com/s/robotoserif/v5/R71RjywflP6FLr3gZx7K8UyuXDs9zVwDmXCb8lxYgmuii32UGoVldX6UgfjL4-3sMM_kB_qXSEXTJQCFLH5-_bcEliosl658AM5f.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Roboto Serif';
+  font-style: normal;
+  font-weight: 100;
+  font-stretch: 100%;
+  src: url(https://fonts.gstatic.com/s/robotoserif/v5/R71RjywflP6FLr3gZx7K8UyuXDs9zVwDmXCb8lxYgmuii32UGoVldX6UgfjL4-3sMM_kB_qXSEXTJQCFLH5-_bcEliosl6B8AA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+        #preloader {
+            /*url("logo1.jpeg")*/
+            /* Firefox */
+
+            -webkit-animation: cssAnimation 1s ease-in 2s forwards;
+            /* Safari and Chrome */
+            -o-animation: cssAnimation 1s ease-in 2s forwards;
+            /* Opera */
+            animation: cssAnimation 1s ease-in 2s forwards;
+
+            -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+            /*background: #000 no-repeat center center;*/
+            background-color: black !important;
+            background-size: 100%;
+            height: 100vh;
+            width: 100%;
+            position: fixed;
+            z-index: 999999;
+            top: 0;
+            display: flex;
+            justify-content: center;
+
+            text-shadow: 0 0 0 50px rgb(234, 236, 233),
+            0 0 0 100px #fff,
+            0 0 0 150px #fff,
+            0 0 0 200px #fff,
+            0 0 0 250px #fff;
+            /*animation :animate 5s ;*/
+
+        }
+
+        @keyframes cssAnimation {
+            to {
+                width: 0;
+                height: 0;
+                overflow: hidden;
+            }
+        }
+
+        /* Medium devices (landscape tablets, 768px and up) */
+        @media only screen and (min-width: 768px) {
+            .test1 {
+                position: relative;
+                right: 174px;
+            }
+
+            .images {
+                height: 26vw;
+                width: 49vw;
+            }
+
+            .test2 {
+                position: relative;
+                right: 105px;
+            }
+        }
+
+        .lets-pixelate {
+            background-color: #000c0a;
+            box-shadow: none;
+            border: 2px solid #ddb253;
+            border-radius: 10px;
+        }
+
+        .lets-pixelate a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .lets-pixelate a > i {
+            padding-top: 3px;
+        }
+
+        .lets-pixelate a > p {
+            margin-bottom: 0px;
+            padding-left: 8px;
+        }
+
+        .accordion-button.collapsed {
+            background: white
+        }
+
+        .fa-angle-right:before {
+            color: white;
+        }
+
+        .fa-angle-left:before {
+            color: white;
+        }
+
+        .accordion-button.collapsed::after {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+        }
+
+        .lets-pixelate:hover a > p {
+            color: #fce9c0;
+            transition: all .3s ease;
+            -webkit-transition: all .3s ease;
+        }
+
+        .p {
+            color: white
+        }
+
+
+        .flip-card {
+            background-color: transparent;
+            width: 300px;
+            height: 300px;
+            perspective: 1000px;
+        }
+
+        .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+
+        }
+
+        .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+
+        .flip-card-front,
+        .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+
+        .flip-card-front {
+            background-color: transparent;
+
+        }
+
+        .flip-card-back {
+            background-color: transparent;
+
+            transform: rotateY(180deg);
+        }
+
+        .active {
+            color: #ddb253 !important;
+        }
+
+        .member-info {
+            text-align: center;
+        }
+
+        /*--------------------------------------------------------------
+# Breadcrumbs
+--------------------------------------------------------------*/
+        .breadcrumbs {
+            padding: 15px 0;
+            background-color: #f3f8fa;
+            min-height: 40px;
+        }
+
+        .breadcrumbs h2 {
+            font-size: 28px;
+            font-weight: 300;
+        }
+
+        .breadcrumbs ol {
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .breadcrumbs ol li + li {
+            padding-left: 10px;
+        }
+
+        .breadcrumbs ol li + li::before {
+            display: inline-block;
+            padding-right: 10px;
+            color: #6c757d;
+            content: "/";
+        }
+
+        @media (max-width: 768px) {
+            .breadcrumbs .d-flex {
+                display: block !important;
+            }
+
+            .breadcrumbs ol {
+                display: block;
+            }
+
+            .breadcrumbs ol li {
+                display: inline-block;
+            }
+
+            .test3 {
+                width: 30%;
+            }
+        }
+
+
+        .logo {
+            width: 115px;
+            background-color: #000000;
+        }
+
+        .about-col2 img {
+            width: 400px;
+            height: 100%;
+            padding: 10px;
+        }
+
+        .more {
+            margin: 30px;
+            padding: 10px;
+        }
+
+        .btn1 {
+            padding: 10px;
+            border-radius: 20px;
+            background: black;
+            color: white;
+            cursor: pointer;
+        }
+
+        .more2 {
+            margin: 30px;
+            padding: 10px;
+        }
+
+        .btn2 {
+            padding: 10px;
+            border-radius: 20px;
+            background: black;
+            color: white;
+            cursor: pointer;
+        }
+
+        /*  preloader*/
+
+        #preloder {
+            background: #000 url("logo1.jpeg") no-repeat center center;
+            background-size: 15%;
+            height: 100vh;
+            width: 100%;
+            position: fixed;
+            z-index: 100;
+            top: 0;
+            text-shadow: 0 0 0 50px rgb(234, 236, 233),
+            0 0 0 100px #fff,
+            0 0 0 150px #fff,
+            0 0 0 200px #fff,
+            0 0 0 250px #fff;
+            animation: animate 5s linear infinite;
+        }
+
+        @keyframes animate {
+            0% {
+                filter: hue-rotate(0deg);
+            }
+            100% {
+                filter: hue-rotate(360deg);
+            }
+
+        }
+
+        .dropdown {
+            background: #000;
+            color: rgba(194, 191, 188, 0.973);
+            border: none;
+        }
+
+        .footer-newsletter {
+            padding: 50px 0;
+            background: #000000;
+        }
+
+        .footer-newsletter h4 {
+            font-size: 24px;
+            margin: 0 0 20px 0;
+            padding: 0;
+            line-height: 1;
+            font-weight: 600;
+            color: #a2cce3;
+        }
+
+        p {
+            font-family: 'Georama' !important;
+            color: white !important;
+        }
+
+        h4, h3, h2, h1 {
+            font-family: 'Georama' !important;
+            margin-bottom: 17px;
+            color: #ddb253;
+        }
+
+        .footer-newsletter form {
+            margin-top: 30px;
+            background: #fff;
+            padding: 6px 10px;
+            position: relative;
+            border-radius: 50px;
+        }
+
+        .footer-newsletter form input[type=email] {
+            border: 0;
+            padding: 4px;
+            width: calc(100% - 100px);
+        }
+
+        .footer-newsletter form input[type=submit] {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            border: 0;
+            background: none;
+            font-size: 16px;
+            padding: 0 20px;
+            margin: 3px;
+            background: #68A4C4;
+            color: #fff;
+            transition: 0.3s;
+            border-radius: 50px;
+        }
+
+        .footer-newsletter form input[type=submit]:hover {
+            background: #468db3;
+        }
+
+        .team h1 {
+            text-align: center;
+            margin-top: 25px;
+            font-family: 'Georama' !important;
+            /*font-style: italic;*/
+            font-size: 58px;
+        }
+
+        @media (min-width: 481px) and (max-width: 767px) {
+            .test1 {
+                position: relative;
+                right: 30px;
+            }
+
+            .images {
+                height: auto;
+                width: 47vw;
+            }
+
+            .test2 {
+                position: relative;
+                right: 30px;
+            }
+        }
+
+        @media (min-width: 320px) and (max-width: 480px) {
+            .test1 {
+                position: relative;
+                right: 30px;
+            }
+
+            .images {
+                height: auto;
+                width: 47vw;
+            }
+
+            .test2 {
+                position: relative;
+                right: 30px;
+            }
+        }
+
+        a, h5, h1, h2, h3, h4 {
+            text-align: center;
+        }
+
+        p {
+            font-size: 25px !important;
+            text-align: justify !important;
+        }
+
+        h1, h2, h3 {
+            font-size: 45px !important;
+        }
+
+        @font-face {
+  font-family: 'Georama';
+  font-style: italic;
+  font-weight: 100;
+  font-stretch: 100%;
+  src: url(https://fonts.gstatic.com/s/georama/v4/MCo_zAn438bIEyxFVaIC0ZMQ72G6xnvmodYVPOBB5nuzMdWs0rvF2zEHz_9Abg.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Georama';
+  font-style: italic;
+  font-weight: 100;
+  font-stretch: 100%;
+  src: url(https://fonts.gstatic.com/s/georama/v4/MCo_zAn438bIEyxFVaIC0ZMQ72G6xnvmodYVPOBB5nuzMdWs0rvF2zEGz_9Abg.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Georama';
+  font-style: italic;
+  font-weight: 100;
+  font-stretch: 100%;
+  src: url(https://fonts.gstatic.com/s/georama/v4/MCo_zAn438bIEyxFVaIC0ZMQ72G6xnvmodYVPOBB5nuzMdWs0rvF2zEIz_8.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Roboto Serif';
+  font-style: normal;
+  font-weight: 100;
+  font-stretch: 100%;
+  src: url(https://fonts.gstatic.com/s/robotoserif/v5/R71RjywflP6FLr3gZx7K8UyuXDs9zVwDmXCb8lxYgmuii32UGoVldX6UgfjL4-3sMM_kB_qXSEXTJQCFLH5-_bcEliosl698AM5f.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Roboto Serif';
+  font-style: normal;
+  font-weight: 100;
+  font-stretch: 100%;
+  src: url(https://fonts.gstatic.com/s/robotoserif/v5/R71RjywflP6FLr3gZx7K8UyuXDs9zVwDmXCb8lxYgmuii32UGoVldX6UgfjL4-3sMM_kB_qXSEXTJQCFLH5-_bcEliosl658AM5f.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Roboto Serif';
+  font-style: normal;
+  font-weight: 100;
+  font-stretch: 100%;
+  src: url(https://fonts.gstatic.com/s/robotoserif/v5/R71RjywflP6FLr3gZx7K8UyuXDs9zVwDmXCb8lxYgmuii32UGoVldX6UgfjL4-3sMM_kB_qXSEXTJQCFLH5-_bcEliosl6B8AA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+        .img-container {
+            text-align: center;
+            display: block;
+            position: relative;
+        }
+
+        .overlay {
+            z-index: 99;
+            width: 70%;
+            /* height: 100%; */
+            /* margin-left: 15%; */
+            /* vertical-align: middle; */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .quotation_div {
+            position: relative;
+            display: table;
+        }
+
+
+        blockquote {
+            font-size: 3rem;
+        }
+
+        cite {
+            display: block;
+            text-align: right;
+            font-family: Verdana, Arial, sans-serif;
+            margin-top: 1rem;
+            font-size: .9rem;
+            color: #aaa;
+            font-style: normal;
+        }
+
+        blockquote q {
+            font-family: Georgia, serif;
+            font-style: italic;
+            letter-spacing: .1rem;
+        }
+
+        blockquote q span {
+            will-change: opacity, filter;
+            opacity: 0;
+            filter: blur(0px);
+        }
+
+        button {
+            background-color: #191c1f !important;
+            color: white;
+        }
+
+        .accordion-button {
+            color: white !important;
+        }
+
+        .accordion-item > h2 > button {
+            font-size: 20px;
+        }
+
+        .accordion-body {
+            font-size: 18px;
+            background-color: #2c3034;
+            color: white;
+        }
+
+        q {
+            quotes: "“" "”" "‘" "’";
+        }
+
+        q:before {
+            content: open-quote;
+            margin-right: .8rem;
+        }
+
+        q:after {
+            content: close-quote;
+        }
+
+        q:before, q:after {
+            color: #ccc;
+            font-size: 4rem;
+        }
+
+        div::-webkit-scrollbar { /* WebKit */
+            width: 0;
+            height: 0;
+        }
+
+        @media (max-width: 1000px) {
+            .image-col {
+                max-height: 700px;
+                width: 100%;
+            }
+
+            .max-height {
+                max-height: 800px;
+            }
+        }
+
+        @media (max-width: 700px) {
+            .max-height {
+                max-height: 700px;
+            }
+        }
+
+        @media (max-width: 1000px) {
+            .max-height-about {
+                max-height: 700px;
+            }
+        }
+
+        @media (max-width: 700px) {
+            .max-height-about {
+                max-height: 700px;
+            }
+        }
+
+         @font-face {
+  font-family: 'Georama';
+  font-style: italic;
+  font-weight: 100;
+  font-stretch: 100%;
+  src: url(https://fonts.gstatic.com/s/georama/v4/MCo_zAn438bIEyxFVaIC0ZMQ72G6xnvmodYVPOBB5nuzMdWs0rvF2zEHz_9Abg.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Georama';
+  font-style: italic;
+  font-weight: 100;
+  font-stretch: 100%;
+  src: url(https://fonts.gstatic.com/s/georama/v4/MCo_zAn438bIEyxFVaIC0ZMQ72G6xnvmodYVPOBB5nuzMdWs0rvF2zEGz_9Abg.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Georama';
+  font-style: italic;
+  font-weight: 100;
+  font-stretch: 100%;
+  src: url(https://fonts.gstatic.com/s/georama/v4/MCo_zAn438bIEyxFVaIC0ZMQ72G6xnvmodYVPOBB5nuzMdWs0rvF2zEIz_8.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Roboto Serif';
+  font-style: normal;
+  font-weight: 100;
+  font-stretch: 100%;
+  src: url(https://fonts.gstatic.com/s/robotoserif/v5/R71RjywflP6FLr3gZx7K8UyuXDs9zVwDmXCb8lxYgmuii32UGoVldX6UgfjL4-3sMM_kB_qXSEXTJQCFLH5-_bcEliosl698AM5f.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Roboto Serif';
+  font-style: normal;
+  font-weight: 100;
+  font-stretch: 100%;
+  src: url(https://fonts.gstatic.com/s/robotoserif/v5/R71RjywflP6FLr3gZx7K8UyuXDs9zVwDmXCb8lxYgmuii32UGoVldX6UgfjL4-3sMM_kB_qXSEXTJQCFLH5-_bcEliosl658AM5f.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Roboto Serif';
+  font-style: normal;
+  font-weight: 100;
+  font-stretch: 100%;
+  src: url(https://fonts.gstatic.com/s/robotoserif/v5/R71RjywflP6FLr3gZx7K8UyuXDs9zVwDmXCb8lxYgmuii32UGoVldX6UgfjL4-3sMM_kB_qXSEXTJQCFLH5-_bcEliosl6B8AA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+
+    </style>
+</head>
+
+<body style="overflow-x:hidden; background-color: black !important; font-family: 'Georama' ;color: #ddb253">
+<div id="preloader" style=" height:100vh; width: 100vw ;background: url('assets/Koha_preloader.mp4')">
+    <video autoplay muted id="myVideo" class="preloader_img" style="-webkit-animation: cssAnimation 2s ease-in 6s forwards;
+            /* Safari and Chrome */
+            -o-animation: cssAnimation 2s ease-in 6s forwards;
+            /* Opera */
+            animation: cssAnimation 2s ease-in 6s forwards;
+ height: auto; width: 100vw">
+        <source src="assets/Koha_preloader.mp4" type="video/mp4">
+    </video>
+</div>
+
+<?php include 'includes_website/main.php' ?>
+
+<script type="text/javascript">
+    AOS.init();
+</script>
+<section class="home-banner-sec " style="height: 100vh; width: 100vw">
+    <div class="wrapper d-flex px-4 mt-4">
+        <!--        <div class="left-desc" >-->
+        <!--            <h1 >Pixelate your pics today!</h1>-->
+        <!--<!--            margin-top: 10vh-->
+        <!--            <div class="para-content">-->
+        <!--                Upload your photo, customise the size and colours as per your choice and get a pre–assembled package-->
+        <!--                of happiness and brighten up your home.-->
+        <!--            </div>-->
+        <!--            <div class="action-btn" >-->
+        <!--                <a href="http://www.thekoha.in" >-->
+        <!--                    <i class="fa fa-cubes"></i>-->
+        <!--                    Pixel Art Software!-->
+        <!--                    <i class="fa fa-arrow-right"></i>-->
+        <!--                </a>-->
+        <!--            </div>-->
+        <!--        </div>-->
+        <video autoplay playsinline loop muted id="myVideo" style="object-fit: fill ; height: 100vh; width: 100vw">
+            <source src="assets/Koha_banner.mp4" type="video/mp4">
+        </video>
+		<div class='overlay'>
+            <!-- <h1 style="font-size: 10vw !important;" data-aos="fade-up" data-aos-duration="30000">HOME PAGE</h1> -->
+        </div>
+    </div>
+</section>
+    <section style=" margin: 10px 20%">
+    
+        <div data-aos="fade-up">
+            <blockquote contenteditable="false" style="font-family: 'Georama';color:white;"><q style="font-size: 1em; font-family: 'Georama' !important;color:white; font-style: normal">Design is thinking made visual.</q>
+                      <cite style="font-size:20px;font-family: 'Georama' !important; font-style: normal;color:white;">– Saul Bass</cite>
+            </blockquote>
+        </div>
+    </section>
+
+    <section>
+
+        <div class="row" >
+
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 max-height" >
+                <img class="image-col" style="height: 100%;width: 100%" src="assets/homepage1.JPG" alt="">
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 max-height" style="display: flex; justify-content: center ;text-align: center; overflow-y: scroll; overflow-x: hidden; height: 710px; ">
+
+                <div class="container">
+				<br/>
+				<br/>
+				<br/>
+				<br/>
+				<br/>
+				<br/>
+                    <p>
+                        Upload your photo, customize the size and colors as per your choice and get a pre-assembled package of happiness to add UNIQUENESS to your walls.</p>
+                    <br/>
+					<br/>
+					<div data-aos="fade-up">
+                        <blockquote contenteditable="false" style="text-align: justify;color:white;">Create Moments. <br/>Tell Stories.<br/>Pixel by Pixel.
+                            <!--            <cite>Gautama Buddha</cite>-->
+                        </blockquote>
+                    </div>
+					<br/>
+				<br/>
+				<br/>
+				<br/>
+				<br/>
+				<br/>
+					<a href="http://www.thekoha.in/" style="text-decoration:none;"><h1 style="padding-top: 20px;font-size:25px;">CLICK TO CREATE</h1></a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section>
+
+        <div class="row" style="text-align: center; display: flex; justify-content: center">
+ <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 max-height-about" style="display: flex; justify-content: center ;text-align: center; overflow-y: scroll; overflow-x: hidden; height: 700px; ">
+
+                <div class="container" style="padding: 0 10%">
+<div data-aos="fade-up">
+                        <blockquote contenteditable="false" style="text-align: justify;color:white;">Three Simple Steps
+                            <!--            <cite>Gautama Buddha</cite>-->
+                        </blockquote>
+                    </div>
+                    <h1 style="padding-top: 20px;font-size:25px;color:white;">UPLOAD.</h1>
+					<h1 style="padding-top: 20px;font-size:25px;color:grey;">CUSTOMIZE.</h1>
+					<h1 style="padding-top: 20px;font-size:25px;color:white;">ORDER.</h1>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 max-height-about" style="object-fit: cover">
+                <video class="myVideo" autoplay playsinline loop muted id="myVideo" style="object-fit: fill;">
+            <source src="assets/homepage4.mp4" type="video/mp4">
+        </video>
+            </div>
+        </div>
+
+    </section>
+	<div style="margin: 0 0">
+	<h1 style="padding-top: 20px;text-transform:uppercase;text-align:center;">Discover our Gallery</h1>
+	<br/>
+	<h6 style="padding-top: 20px;color:grey;font-size:20px;text-transform:uppercase;color:white;text-align:center;">Simple appreciation for vibrant colors.</h6>
+	</div>
+	<section>
+
+        <div class="row">
+
+            <div class="col-lg-12 col-md-12 col-sm-24 col-xs-24 order-lg-3 order-md-3">
+                <div>
+                    <img data-aos="fade-up" data-aos-duration="30000" src="assets/trilingual.png" alt="">
+                </div>
+            </div>
+        </div>
+		<br/>
+		<a href="shop.php" style="text-decoration:none;"><h6 class="link1" data-aos="fade-up" data-aos-duration="30000" style="color:white;text-align:center;font-size:18px;">View All</h6></a>
+    </section>
+	 <section style=" margin: 10px 20%">
+	  <div data-aos="fade-up">
+            <blockquote contenteditable="false" style="font-family: 'Georama';color:white;text-align:justify;font-size:26px;">
+              Art influences how we think, How we feel and How we see.     
+            </blockquote>
+        </div>
+		</section>
+		<section style="text-align: center;">
+        <h1 data-aos="fade-up" data-aos-duration="30000">KOHA DIGEST</h1>
+		<br/>
+<br/>
+        <h1 style="color:white;" data-aos="fade-up" data-aos-duration="30000">The intersection of colors and Moments.</h1>
+		</section>
+		<section>
+
+        <div class="row">
+
+            <div class="col-lg-12 col-md-12 col-sm-24 col-xs-24 order-lg-3 order-md-3">
+                <div>
+                    <img data-aos="fade-up" data-aos-duration="30000" src="assets/homepage3.jpg" alt="">
+                </div>
+            </div>
+        </div>
+		<br/>
+		<a href="blog.php" style="text-decoration:none;"><h6 class="link1" data-aos="fade-up" data-aos-duration="30000" style="color:white;text-align:center;font-size:18px;">View All</h6></a>
+    </section>
+ 	<!-- FAQ+TESTIMONIAL -->
+<section class="faq-testimonial-sec" style="width: 70%; justify-content: center; margin: 0 auto;">
+    <div class="row" data-aos="fade-up"
+         data-aos-duration="20000">
+
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="padding: 20px 20px;">
+            <div class="faq text-center">
+                <h1 class="mb-5">Frequently asked questions</h1>
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header mt-0" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <i class="fa fa-question-circle" aria-hidden="true"></i> &nbsp
+                                How big can I go?
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                             data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                You can add up to 20 plates in the horizontal and vertical direction using our Pixelate
+                                Tool. That is pretty big!!! Wantt to go bigger? <a href="contactus.php"
+                                                                                   style="text-decoration:none;"><b>Contact
+                                        us</b></a> and we provide a custom code.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header mt-0" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <i class="fa fa-question-circle" aria-hidden="true"></i> &nbsp
+                                How many colours does the Pixelate Palette have?
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                             data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                The palette has 50 colours. Most pictures look just as good with 20 colours. You are
+                                given the freedom to add or remove any colours of your choice during customization. Get
+                                Creative! Get Artistic! #yourphotoyourway!
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header mt-0" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <i class="fa fa-question-circle" aria-hidden="true"></i> &nbsp
+                                How can I mount it?
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                             data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                You can get your product framed or buy our custom developed mounts. The instructions for
+                                mounting the product using our mounts can be found <a href="contactus.php"
+                                                                                      style="text-decoration:none;"> <a
+                                            href="howitworks.php"> <b>here</b></a></a>.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header mt-0" id="headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                <i class="fa fa-question-circle" aria-hidden="true"></i> &nbsp
+                                What are the dimensions?
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                             data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Each plate measures 25.6*25.6 cm. The more plates you add, the larger it gets. Don’t
+                                worry! Our tool does the math for you and tells you the dimensions.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header mt-0" id="headingFive">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                <i class="fa fa-question-circle" aria-hidden="true"></i> &nbsp
+                                How do I select the best image to Pixelate?
+                            </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                             data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Follow our <a href="#" style="text-decoration:none;"><b>expert tips and tricks</b></a>
+                                to select the best image to pixelate!
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header mt-0" id="headingSix">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                <i class="fa fa-question-circle" aria-hidden="true"></i> &nbsp
+                                How can I improve the resolution?
+                            </button>
+                        </h2>
+                        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                             data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                The resolution of the image can be improved by increasing the number of base plates.
+                                Images with intricate details will appear pixelated in small configurations. Hence we
+                                recommend choosing images with fewer details (for example close up image of one’s face)
+                                for small configurations and large configurations for images with loads of details. We
+                                recommend using our crop tool to give preference to important areas and hence improve
+                                the resolution.<br/>Use our preview option to see how your image looks when mounted.
+                                Take a step back and enjoy the beauty of your Pixelate.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div style="display: flex; justify-content: center">
+                <button class="get-started" style=" border-radius: 15px">
+                    <a href="faq.php">
+                        See All FAQ
+                    </a>
+                </button>
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="padding: 20px 20px;">
+            <div class="testimonial text-center">
+                <h1 class="mb-5">What our customers say</h1>
+                <div class="">
+                    <div class="customer-testimonial">
+                        <div class="cust-icon">
+                        </div>
+                        <div class="cust-quote d-flex">
+                            <i class="fa fa-quote-left" aria-hidden="true"></i>
+                            <p>Really impressed in the manner the Koha product turned out to be. Apart from being unique, the quality was top notch & easy to assemble. A shout out to the customer support as well.
+                                <br><span>- Disha Prabhakar</span><br>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                            </p>
+                            <i class="fa fa-quote-right" aria-hidden="true"></i>
+                        </div>
+                    </div>
+
+                    <div class="customer-testimonial">
+                        <div class="cust-icon">
+                        </div>
+                        <div class="cust-quote d-flex">
+                            <i class="fa fa-quote-left" aria-hidden="true"></i>
+                            <p>Though skeptical early on, I was drawn to Koha as it was both attractive & creative. My worries were put to rest as the product delivered what it promised. Will surely recommend it to my friends & family.
+                                <br><span>- Abhilash sheshagiri</span><br>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </p>
+                            <i class="fa fa-quote-right" aria-hidden="true"></i>
+                        </div>
+                    </div>
+
+                    <div class="customer-testimonial">
+                        <div class="cust-icon">
+                        </div>
+                        <div class="cust-quote d-flex">
+                            <i class="fa fa-quote-left" aria-hidden="true"></i>
+                            <p>The unique design and the creativity driving the product are excellent. I am looking forward to ordering more from KOHA soon.
+                                <br><span>- Aishwarya Sai</span><br>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </p>
+                            <i class="fa fa-quote-right" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+        <div class="row">
+
+            <div class="col-lg-12 col-md-12 col-sm-24 col-xs-24 order-lg-3 order-md-3">
+                <div>
+                  <a href="contactus.php" style="text-decoration:none;"><img src="assets/latestfooterbannerhome.jpg" data-aos="fade-up" data-aos-duration="30000" style="height: auto; width: 100%" alt=""> </a>
+                </div>
+				<!--<div class='overlay'>
+            <h1 style="font-size: 5vw !important;color:#000000;" data-aos="fade-up" data-aos-duration="30000">INSPIRED AND GOT AN IDEA IN MIND?<br/>PIXELATE FOR YOUR BUSINESS? WE'D<br/>LOVE TO HEAR FROM YOU</h1>
+        </div>-->
+            </div>
+        </div>
+    <?php include 'includes_website/footer.php' ?>
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+                class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="assets/vendor/purecounter/purecounter.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+<script>
+    var vid = document.getElementById("myVideo");
+    vid.playbackRate = 4.5;
+
+
+    // jQuery(document).ready(function ($) {
+    //     $(window).load(function () {
+    //         setTimeout(function(){
+    //             $('#preloader').fadeOut('slow', function () {
+    //             });
+    //         },10000);
+    //
+    //     });
+
+    // $('#myVideo').delay(5000).fadeOut('slow');
+    $(document).ready(function () {
+
+        $('#itemslider').carousel({interval: 3000});
+
+        $('.carousel-showmanymoveone .item').each(function () {
+            var itemToClone = $(this);
+
+            for (var i = 1; i < 4; i++) {
+                itemToClone = itemToClone.next();
+
+                if (!itemToClone.length) {
+                    itemToClone = $(this).siblings(':first');
+                }
+
+                itemToClone.children(':first-child').clone()
+                    .addClass("cloneditem-" + (i))
+                    .appendTo($(this));
+            }
+        });
+    });
+
+</script>
+
+</body>
+
+</html>

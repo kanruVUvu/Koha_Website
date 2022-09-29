@@ -1,0 +1,131 @@
+ @font-face {
+            font-family: 'GivenyFree';
+            src: url('/static/fonts/GivenyFree.eot'); /* IE9 Compat Modes */
+            src: url('/static/fonts/GivenyFree.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('/static/fonts/GivenyFree.woff2') format('woff2'), /* Super Modern Browsers */
+            url('/static/fonts/GivenyFree.woff') format('woff'), /* Pretty Modern Browsers */
+            url('/static/fonts/GivenyFree.ttf')  format('truetype'), /* Safari, Android, iOS */
+            url('/static/fonts/GivenyFree.svg#svgFontName') format('svg'); /* Legacy iOS */
+            font-weight: 400;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'GivenyFree';
+            src: url('/fonts/GivenyFree-italic.eot'); /* IE9 Compat Modes */
+            /*src: url('/fonts/GivenyFree-italic?#iefix') format('embedded-opentype'), !* IE6-IE8 *!*/
+        url('/fonts/GivenyFree-italic.woff2') format('woff2'), /* Super Modern Browsers */
+        url('/fonts/GivenyFree-italic.woff') format('woff'), /* Pretty Modern Browsers */
+        url('/fonts/GivenyFree-italic.ttf')  format('truetype'), /* Safari, Android, iOS */
+        url('/fonts/GivenyFree-italic.svg#svgFontName') format('svg'); /* Legacy iOS */
+            font-weight: 400;
+            font-style: italic;
+        }
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
+.button-19 {
+    appearance: button;
+    background-color: #1899D6;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: din-round,sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: .8px;
+    line-height: 20px;
+    margin: 0;
+    outline: none;
+    overflow: visible;
+    padding: 6px 6px;
+    text-align: center;
+    text-transform: uppercase;
+    touch-action: manipulation;
+    transform: translateZ(0);
+    transition: filter .2s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.button-19:after {
+    background-clip: padding-box;
+    background-color: #1CB0F6;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    bottom: -4px;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.button-19:main,
+.button-19:focus {
+    user-select: auto;
+}
+
+.button-19:hover:not(:disabled) {
+    filter: brightness(1.1);
+}
+
+.button-19:disabled {
+    cursor: auto;
+}
+
+
+
+
+input[type=range][orient=vertical] {
+            writing-mode: bt-lr;
+            /* IE */
+            -webkit-appearance: slider-vertical;
+            /* WebKit */
+            width: 8px;
+            height: 100px;
+            padding: 11px;
+        }
+
+        input[type=range][orient=horizontal] {
+            writing-mode: bt-lr;
+            /* IE */
+            -webkit-appearance: slider-horizontal;
+            /* WebKit */
+            width: 180px;
+            height: 8px;
+            padding: 10px;
+        }
+
+
+        input[type=range][orient=vertical] {
+            writing-mode: bt-lr;
+            /* IE */
+            -webkit-appearance: slider-vertical;
+            /* WebKit */
+            width: 8px;
+            height: 100px;
+            padding: 11px;
+        }
+
+        input[type=range][orient=horizontal] {
+            writing-mode: bt-lr;
+            /* IE */
+            -webkit-appearance: slider-horizontal;
+            /* WebKit */
+            width: 180px;
+            height: 8px;
+            padding: 10px;
+        }

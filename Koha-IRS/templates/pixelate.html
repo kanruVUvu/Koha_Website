@@ -1,0 +1,3199 @@
+<!DOCTYPE html>
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z4HQ11G1RT"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-Z4HQ11G1RT');
+    </script>
+    <title>KOHA | Image Customization</title>
+	<meta content="Have fun exploring the various options and customise your picture with our pixelate software" name="description">
+    <meta content="Koha Image Customization Webpage, Koha Customization, Koha Image Customization" name="keywords">
+    <link href="/static/assets/titleicon.png" rel="shortcut icon" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/styles.css') }}">
+    {#
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" #} {#
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">#}
+    {#
+    <meta charset="UTF-8">#}
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {#
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}" />#}
+    {#
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.min.css') }}" />#}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.carousel.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/magnific-popup.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/animate.min.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://kit.fontawesome.com/9c20e164cb.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    {#
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" #} {#
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">#}
+
+    <style>
+	@media only screen and (min-width: 50px) and (max-width: 992px) {
+#testrx
+{
+width:103px;
+}
+}
+@media only screen and (min-width: 993px)  {
+#testrx
+{
+
+}
+}
+        @font-face {
+            font-family: 'Georama';
+            font-style: italic;
+            font-weight: 100;
+            font-stretch: 100%;
+            src: url(https://fonts.gstatic.com/s/georama/v4/MCo_zAn438bIEyxFVaIC0ZMQ72G6xnvmodYVPOBB5nuzMdWs0rvF2zEHz_9Abg.woff2) format('woff2');
+            unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+        }
+
+        /* latin-ext */
+        @font-face {
+            font-family: 'Georama';
+            font-style: italic;
+            font-weight: 100;
+            font-stretch: 100%;
+            src: url(https://fonts.gstatic.com/s/georama/v4/MCo_zAn438bIEyxFVaIC0ZMQ72G6xnvmodYVPOBB5nuzMdWs0rvF2zEGz_9Abg.woff2) format('woff2');
+            unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+        }
+
+        /* latin */
+        @font-face {
+            font-family: 'Georama';
+            font-style: italic;
+            font-weight: 100;
+            font-stretch: 100%;
+            src: url(https://fonts.gstatic.com/s/georama/v4/MCo_zAn438bIEyxFVaIC0ZMQ72G6xnvmodYVPOBB5nuzMdWs0rvF2zEIz_8.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+
+        @font-face {
+            font-family: 'Roboto Serif';
+            font-style: normal;
+            font-weight: 100;
+            font-stretch: 100%;
+            src: url(https://fonts.gstatic.com/s/robotoserif/v5/R71RjywflP6FLr3gZx7K8UyuXDs9zVwDmXCb8lxYgmuii32UGoVldX6UgfjL4-3sMM_kB_qXSEXTJQCFLH5-_bcEliosl698AM5f.woff2) format('woff2');
+            unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+        }
+
+        /* latin-ext */
+        @font-face {
+            font-family: 'Roboto Serif';
+            font-style: normal;
+            font-weight: 100;
+            font-stretch: 100%;
+            src: url(https://fonts.gstatic.com/s/robotoserif/v5/R71RjywflP6FLr3gZx7K8UyuXDs9zVwDmXCb8lxYgmuii32UGoVldX6UgfjL4-3sMM_kB_qXSEXTJQCFLH5-_bcEliosl658AM5f.woff2) format('woff2');
+            unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+        }
+
+        /* latin */
+        @font-face {
+            font-family: 'Roboto Serif';
+            font-style: normal;
+            font-weight: 100;
+            font-stretch: 100%;
+            src: url(https://fonts.gstatic.com/s/robotoserif/v5/R71RjywflP6FLr3gZx7K8UyuXDs9zVwDmXCb8lxYgmuii32UGoVldX6UgfjL4-3sMM_kB_qXSEXTJQCFLH5-_bcEliosl6B8AA.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+ @media only screen and (min-width: 50px) and (max-width: 768px) {
+ #testry
+ {
+ position: relative;
+   
+ }
+ #hubblepic
+ {
+}
+ }
+ @media only screen and (min-width: 769px) and (max-width: 992px) {
+ #testry
+ {
+ position: relative;
+    top: 187px;
+ }
+ #hubblepic
+ {
+ padding: 20px;
+    position: relative;
+    top: 12px;
+}
+ }
+ @media only screen and (min-width: 993px) {
+ #testry
+ {
+ position: relative;
+    
+ }
+ #hubblepic
+ {
+}
+ }
+ @media only screen and (min-width: 50px) and (max-width: 768px) {
+		
+	#testgg1
+	{
+	width:100px;
+	}
+        }
+@media only screen and (min-width: 769px) {
+		#testgg1
+	{
+	width:150px;
+	}
+		
+        }
+        @media only screen and (min-width: 50px) and (max-width: 599px) {
+		
+		#amex
+		{
+		width:100%;
+		}
+            #headerlogotest {
+                max-width: 130px;
+                height: 35px;
+            }
+        }
+
+        @media only screen and (min-width: 599px) and (max-width: 767px) {
+
+		#amex
+		{
+		width:100%;
+		}
+            #headerlogotest {
+                max-width: 160px;
+                height: 40px;
+            }
+        }
+
+        @media only screen and (min-width: 767px) and (max-width: 991px) {
+			
+		#amex
+		{
+		width:100%;
+		}
+		#t_size
+		{
+		font-size:20px !important;
+		position:relative;
+		left:10px;
+		}
+		#p_price
+		{
+		font-size:20px !important;
+		position:relative;
+		left:10px;
+		}
+		#pieces
+		{
+		font-size:20px !important;
+		position:relative;
+		left:10px;
+		}
+            #headerlogotest {
+                max-width: 185px;
+                height: 45px;
+            }
+        }
+
+        @media only screen and (min-width: 991px) {
+			
+		#amex
+		{
+	
+		}
+		#t_size
+		{
+		font-size:20px !important;
+		position:relative;
+		left:10px;
+		}
+		#p_price
+		{
+		font-size:20px !important;
+		position:relative;
+		left:10px;
+		}
+		#pieces
+		{
+		font-size:20px !important;
+		position:relative;
+		left:10px;
+		}
+            #headerlogotest {
+                max-width: 185px;
+                height: 45px;
+            }
+        }
+
+        @media (max-width: 1000px) {
+            .image-col {
+                max-height: 700px;
+                width: 100%
+            }
+
+            .max-height {
+                max-height: 800px
+            }
+        }
+
+        @media (max-width: 700px) {
+            .max-height {
+                max-height: 700px
+            }
+        }
+
+        @media (max-width: 1000px) {
+            .max-height-about {
+                max-height: 700px
+            }
+        }
+
+        @media (max-width: 700px) {
+            .max-height-about {
+                max-height: 700px
+            }
+        }
+
+        @media (max-width: 970px) {
+            .mobile-nav {
+                visibility: hidden;
+                width: 0 !important;
+                height: 0 !important;
+            }
+        }
+
+        @media (min-width: 971px) {
+            .desktop-nav {
+                visibility: hidden;
+            }
+        }
+
+        @media (max-width: 970px) {
+            .sec-2 {
+                margin-top: 220px;
+            }
+        }
+
+        @media (min-width: 971px) {
+            .sec-2 {
+                margin-top: 100px;
+            }
+        }
+
+        div::-webkit-scrollbar {
+  display: none;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;
+}
+
+        .img-cntnr {
+            /* {#position: relative;#}{#width: 500px;#}{#height: 500px;#} 
+        {#border-style: dashed;#}  */
+            overflow: hidden;
+            width: 83%;
+
+            display: flex;
+            height: 500px;
+            justify-content: center;
+            margin: 0 auto;
+            position: relative;
+
+            /* {
+                #border-color: grey;
+                #
+            } */
+        }
+
+        .img-cntnr img {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 0;
+            bottom: 0;
+            margin: 0 auto;
+
+            /* {
+                #cursor: -webkit-grab;
+                #
+            } */
+        }
+
+        .container-kc {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -moz-transform: translateX(-50%) translateY(-50%);
+            -webkit-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
+        }
+
+
+        .container-kc {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -moz-transform: translateX(-50%) translateY(-50%);
+            -webkit-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
+        }
+
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 60%;
+        }
+
+        .lets-pixelate {
+            background-color: #000c0a;
+            box-shadow: none;
+            border: 2px solid #ddb253;
+            border-radius: 10px;
+        }
+
+        .lets-pixelate a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .lets-pixelate a>i {
+            padding-top: 3px;
+        }
+
+        .lets-pixelate a>p {
+            margin-bottom: 0px;
+            padding-left: 8px;
+        }
+
+        .lets-pixelate:hover a>p {
+            color: #fce9c0;
+            transition: all .3s ease;
+            -webkit-transition: all .3s ease;
+        }
+
+        .team h1 {
+            text-align: center;
+            margin-top: 25px;
+            font-style: italic;
+            font-size: 58px;
+        }
+
+        .flip-card {
+            background-color: transparent;
+            width: 300px;
+            height: 300px;
+            perspective: 1000px;
+        }
+
+        .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+
+        }
+
+        .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+
+        .flip-card-front,
+        .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+
+        .flip-card-front {
+            background-color: transparent;
+
+        }
+
+        .flip-card-back {
+            background-color: transparent;
+
+            transform: rotateY(180deg);
+        }
+
+        .active {
+            color: #ddb253 !important;
+        }
+
+        .member-info {
+            text-align: center;
+        }
+
+        /*--------------------------------------------------------------
+# Breadcrumbs
+--------------------------------------------------------------*/
+        .breadcrumbs {
+            padding: 15px 0;
+            background-color: #f3f8fa;
+            min-height: 40px;
+        }
+
+        .breadcrumbs h2 {
+            font-size: 28px;
+            font-weight: 300;
+        }
+
+        .breadcrumbs ol {
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .breadcrumbs ol li+li {
+            padding-left: 10px;
+        }
+
+        .breadcrumbs ol li+li::before {
+            display: inline-block;
+            padding-right: 10px;
+            color: #6c757d;
+            content: "/";
+        }
+
+        .pixelizer-mobile-controls {
+            display: none;
+        }
+
+        .pixelizer-image-holder {
+           height:100vh;
+
+            #pih-image {
+                min-height: 300px;
+            }
+        
+}
+
+        @media (max-width: 768px) {
+
+            .left-pixelizer-controls,
+            .right-pixelizer-controls {
+                display: none;
+            }
+
+            .pixelizer-image-holder {
+               height: 55vh;
+
+                #pih-image {
+                    min-height: 300px;
+                }
+            }
+
+            .pixelizer-mobile-controls {
+                display: block !important;
+            }
+
+
+
+            .breadcrumbs .d-flex {
+                display: block !important;
+            }
+
+            .breadcrumbs ol {
+                display: block;
+            }
+
+            .breadcrumbs ol li {
+                display: inline-block;
+            }
+
+            .test1 {
+                position: relative;
+                right: 489px;
+            }
+
+            .test2 {
+                position: relative;
+                right: 409px;
+            }
+
+            .test3 {
+                width: 30%;
+            }
+        }
+
+
+        .logo {
+            width: 115px;
+            background-color: #000000;
+        }
+
+        .about-col2 img {
+            width: 400px;
+            height: 100%;
+            padding: 10px;
+        }
+
+        .more {
+            margin: 30px;
+            padding: 10px;
+        }
+
+        .btn {
+            font-size: 16px;
+            font-weight: 900;
+            background-color: #ddb253;
+            border: none;
+            outline: none;
+        }
+
+        .btn1 {
+            padding: 10px;
+            border-radius: 20px;
+            background: black;
+            color: white;
+            cursor: pointer;
+        }
+
+        .more2 {
+            margin: 30px;
+            padding: 10px;
+        }
+
+        .btn2 {
+            padding: 10px;
+            border-radius: 20px;
+            background: black;
+            color: white;
+            cursor: pointer;
+        }
+
+        /*  preloader*/
+
+        #preloder {
+            /* {
+                #background: #000 url("logo1.jpeg") no-repeat center center;
+                #
+            } */
+
+            background-size: 15%;
+            height: 100vh;
+            width: 100%;
+            position: fixed;
+            z-index: 100;
+            top: 0;
+            text-shadow: 0 0 0 50px rgb(234, 236, 233),
+                0 0 0 100px #fff,
+                0 0 0 150px #fff,
+                0 0 0 200px #fff,
+                0 0 0 250px #fff;
+            animation: animate 5s linear infinite;
+        }
+
+        @keyframes animate {
+            0% {
+                filter: hue-rotate(0deg);
+            }
+
+            100% {
+                filter: hue-rotate(360deg);
+            }
+
+        }
+
+        .dropdown {
+            background: #000;
+            color: rgba(194, 191, 188, 0.973);
+            border: none;
+        }
+
+        .footer-newsletter {
+            padding: 50px 0;
+            background: #000000;
+        }
+
+        .footer-newsletter h4 {
+            font-size: 24px;
+            margin: 0 0 20px 0;
+            padding: 0;
+            line-height: 1;
+            font-weight: 600;
+            color: #a2cce3;
+        }
+
+        .footer-newsletter form {
+            margin-top: 30px;
+            background: #fff;
+            padding: 6px 10px;
+            position: relative;
+            border-radius: 50px;
+        }
+
+        .footer-newsletter form input[type=email] {
+            border: 0;
+            padding: 4px;
+            width: calc(100% - 100px);
+        }
+
+        .footer-newsletter form input[type=submit] {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            border: 0;
+            background: none;
+            font-size: 16px;
+            padding: 0 20px;
+            margin: 3px;
+            background: #68A4C4;
+            color: #fff;
+            transition: 0.3s;
+            border-radius: 50px;
+        }
+
+        .footer-newsletter form input[type=submit]:hover {
+            background: #468db3;
+        }
+
+        .accordion-button {
+            font-size: 20px;
+            font-weight: bold;
+            color: black;
+            height: 70px;
+        }
+
+        .accordion-button::after {
+            flex-shrink: 0;
+            width: 1.25rem;
+            height: 1rem;
+            margin-left: auto;
+            content: "";
+            background: #00000000;
+            background-repeat: no-repeat;
+            background-size: 1.25rem;
+            transition: transform .2s ease-in-out;
+        }
+
+        .accordion-button:not(.collapsed) {
+            background: #00000000;
+        }
+
+        .accordion-button:not(.collapsed)::after {
+            background: #00000000;
+            transform: rotate(-180deg);
+        }
+
+        .accordion::-webkit-scrollbar {
+            width: 5px;
+            background-color: yellow;
+            border-radius: 8px;
+        }
+
+        .accordion {
+            scrollbar-color: grey yellow;
+            border-radius: 8px;
+        }
+
+        .accordion::-webkit-scrollbar-track {
+            /* {
+                #background-color: antiquewhite;
+                #
+            } */
+        }
+
+        .accordion::-webkit-scrollbar-thumb {
+            box-shadow: inset 0 0 5px black;
+
+            border-radius: 8px;
+        }
+
+
+
+        #enlarger {
+            display: block;
+            width: 180px;
+
+            /* {
+                #margin: 2rem auto;
+                #
+            } */
+        }
+
+        @media all and (max-width: 500px) {
+
+            #enlarger,
+            #hubble-container {
+                width: 100%;
+            }
+        }
+
+        #hubble-container {
+            /* {
+                #width: 40%;
+                #
+            } */
+
+            font-size: 0;
+            justify-content: center;
+            justify-items: center;
+            overflow: hidden;
+            margin: 0 auto;
+        }
+
+        @media (min-width: 1000px) and (max-width: 2600px) {
+            #testswap {
+                position: relative;
+                bottom: 131px;
+            }
+        }
+
+        @media (min-width: 50px) and (max-width: 480px) {
+		#t_size
+		{
+		font-size:15.5px !important;
+		position:relative;
+		left:0px;
+		}
+		#p_price
+		{
+		font-size:15.5px !important;
+		position:relative;
+		left:0px;
+		}
+		#pieces
+		{
+		font-size:15.5px !important;
+		position:relative;
+		left:0px;
+		}
+            #testswap {
+                position: relative;
+                bottom: 0px;
+            }
+        }
+
+        @media (min-width: 481px) and (max-width: 767px) {
+            #testswap {
+                position: relative;
+                bottom: 0px;
+            }
+        }
+
+        @media (min-width: 481px) and (max-width: 767px) {
+		#t_size
+		{
+		font-size:15.5px !important;
+		position:relative;
+		left:0px;
+		}
+		#p_price
+		{
+		font-size:15.5px !important;
+		position:relative;
+		left:0px;
+		}
+		#pieces
+		{
+		font-size:15.5px !important;
+		position:relative;
+		left:0px;
+		}
+            .test1 {
+                position: relative;
+                right: 30px;
+            }
+
+            .test2 {
+                position: relative;
+                right: 30px;
+            }
+        }
+
+        @media (min-width: 320px) and (max-width: 480px) {
+		
+		
+            .test1 {
+                position: relative;
+                right: 30px;
+            }
+
+            .test2 {
+                position: relative;
+                right: 30px;
+            }
+        }
+
+        .accordion-button {
+            background-color: #191c1f;
+            color: white;
+        }
+
+        .accordion-button:not(.collapsed) {
+            background-color: #191c1f;
+            color: white;
+        }
+
+        .accordion-body {
+            min-height: 120px;
+
+            justify-content: center;
+            color: white;
+            background-color: #2c3034;
+        }
+
+        body {
+            font-family: Georama, sans-serif !important;
+            background-color: black;
+            color: white;
+        }
+
+        p,
+        a,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        button {
+            font-family: Georama !important;
+        }
+
+        input[type=number]:hover::-webkit-inner-spin-button {
+            width: 105px;
+            height: 50px;
+        }
+
+        input[type=number]::-webkit-inner-spin-button {
+            width: 105px;
+            height: 50px;
+        }
+
+
+        input[type=range].yellow-slider {
+            height: 1px;
+            -webkit-appearance: none;
+        }
+
+        /*progress support*/
+        input[type=range].yellow-slider.slider-progress {
+            --range: calc(var(--max) - var(--min));
+            --ratio: calc((var(--value) - var(--min)) / var(--range));
+            --sx: calc(0.5 * 2em + var(--ratio) * (100% - 2em));
+        }
+
+        input[type=range].yellow-slider:focus {
+            outline: none;
+        }
+
+        /*webkit*/
+        input[type=range].yellow-slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            width: 10px;
+            height: 10px;
+            border-radius: 20px;
+            background: #FFFFFF;
+            border: none;
+            box-shadow: 0 0 2px black;
+            margin-top: calc(max((1.7em - 1px - 1px) * 0.5, 0px) - 2em * 0.5);
+        }
+
+        input[type=range].yellow-slider::-webkit-slider-runnable-track {
+            height: 5px;
+            border: 1px solid #b2b2b2;
+            border-radius: 1em;
+            background: #efefef;
+            box-shadow: none;
+        }
+
+        input[type=range].yellow-slider::-webkit-slider-thumb:hover {
+            background: #8D8D8D;
+        }
+
+        input[type=range].yellow-slider:hover::-webkit-slider-runnable-track {
+            background: #e5e5e5;
+            border-color: #9a9a9a;
+        }
+
+        input[type=range].yellow-slider::-webkit-slider-thumb:active {
+            background: #8D8D8D;
+        }
+
+        input[type=range].yellow-slider:active::-webkit-slider-runnable-track {
+            background: #f5f5f5;
+            border-color: #c1c1c1;
+        }
+
+        input[type=range].yellow-slider.slider-progress::-webkit-slider-runnable-track {
+            background: linear-gradient(#F8F600, #F8F600) 0/var(--sx) 100% no-repeat, #efefef;
+        }
+
+        input[type=range].yellow-slider.slider-progress:hover::-webkit-slider-runnable-track {
+            background: linear-gradient(#F8F600, #F8F600) 0/var(--sx) 100% no-repeat, #e5e5e5;
+        }
+
+        input[type=range].yellow-slider.slider-progress:active::-webkit-slider-runnable-track {
+            background: linear-gradient(#F8F600, #F8F600) 0/var(--sx) 100% no-repeat, #f5f5f5;
+        }
+
+        /*mozilla*/
+        input[type=range].yellow-slider::-moz-range-thumb {
+            width: 2em;
+            height: 5px;
+            border-radius: 1em;
+            background: #FFFFFF;
+            border: none;
+            box-shadow: 0 0 2px black;
+        }
+
+        input[type=range].yellow-slider::-moz-range-track {
+            height: max(calc(1em - 1px - 1px), 0px);
+            border: 1px solid #b2b2b2;
+            border-radius: 1em;
+            background: #efefef;
+            box-shadow: none;
+        }
+
+        input[type=range].yellow-slider::-moz-range-thumb:hover {
+            background: #8D8D8D;
+        }
+
+        input[type=range].yellow-slider:hover::-moz-range-track {
+            background: #e5e5e5;
+            border-color: #9a9a9a;
+        }
+
+        input[type=range].yellow-slider::-moz-range-thumb:active {
+            background: #8D8D8D;
+        }
+
+        input[type=range].yellow-slider:active::-moz-range-track {
+            background: #f5f5f5;
+            border-color: #c1c1c1;
+        }
+
+        input[type=range].yellow-slider.slider-progress::-moz-range-track {
+            background: linear-gradient(#F8F600, #F8F600) 0/var(--sx) 100% no-repeat, #efefef;
+        }
+
+        input[type=range].yellow-slider.slider-progress:hover::-moz-range-track {
+            background: linear-gradient(#F8F600, #F8F600) 0/var(--sx) 100% no-repeat, #e5e5e5;
+        }
+
+        input[type=range].yellow-slider.slider-progress:active::-moz-range-track {
+            background: linear-gradient(#F8F600, #F8F600) 0/var(--sx) 100% no-repeat, #f5f5f5;
+        }
+
+        /*ms*/
+        input[type=range].yellow-slider::-ms-fill-upper {
+            background: transparent;
+            border-color: transparent;
+        }
+
+        input[type=range].yellow-slider::-ms-fill-lower {
+            background: transparent;
+            border-color: transparent;
+        }
+
+        input[type=range].yellow-slider::-ms-thumb {
+            width: 1em;
+            height: 1em;
+            border-radius: 1em;
+            background: #FFFFFF;
+            border: none;
+            box-shadow: 0 0 2px black;
+            margin-top: 0;
+            box-sizing: border-box;
+        }
+
+        input[type=range].yellow-slider::-ms-track {
+            height: 1em;
+            border-radius: 1em;
+            background: #efefef;
+            border: 1px solid #b2b2b2;
+            box-shadow: none;
+            box-sizing: border-box;
+        }
+
+        input[type=range].yellow-slider::-ms-thumb:hover {
+            background: #8D8D8D;
+        }
+
+        input[type=range].yellow-slider:hover::-ms-track {
+            background: #e5e5e5;
+            border-color: #9a9a9a;
+        }
+
+        input[type=range].yellow-slider::-ms-thumb:active {
+            background: #8D8D8D;
+        }
+
+        input[type=range].yellow-slider:active::-ms-track {
+            background: #f5f5f5;
+            border-color: #c1c1c1;
+        }
+
+        input[type=range].yellow-slider.slider-progress::-ms-fill-lower {
+            height: 5px;
+            border-radius: 1em 0 0 1em;
+            margin: -1px 0 -1px -1px;
+            background: #F8F600;
+            border: 1px solid #b2b2b2;
+            border-right-width: 0;
+        }
+
+        input[type=range].yellow-slider.slider-progress:hover::-ms-fill-lower {
+            background: #F8F600;
+            border-color: #9a9a9a;
+        }
+
+        input[type=range].yellow-slider.slider-progress:active::-ms-fill-lower {
+            background: #F8F600;
+            border-color: #c1c1c1;
+        }
+
+        input[type=range].red-slider {
+            height: 1px;
+            -webkit-appearance: none;
+        }
+
+        /*progress support*/
+        input[type=range].red-slider.slider-progress {
+            --range: calc(var(--max) - var(--min));
+            --ratio: calc((var(--value) - var(--min)) / var(--range));
+            --sx: calc(0.5 * 2em + var(--ratio) * (100% - 2em));
+        }
+
+        input[type=range].red-slider:focus {
+            outline: none;
+        }
+
+        /*webkit*/
+        input[type=range].red-slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            width: 10px;
+            height: 10px;
+            border-radius: 20px;
+            background: #FFFFFF;
+            border: none;
+            box-shadow: 0 0 2px black;
+            margin-top: calc(max((1.7em - 1px - 1px) * 0.5, 0px) - 2em * 0.5);
+        }
+
+        input[type=range].red-slider::-webkit-slider-runnable-track {
+            height: 5px;
+            border: 1px solid #b2b2b2;
+            border-radius: 1em;
+            background: #efefef;
+            box-shadow: none;
+        }
+
+        input[type=range].red-slider::-webkit-slider-thumb:hover {
+            background: #8D8D8D;
+        }
+
+        input[type=range].red-slider:hover::-webkit-slider-runnable-track {
+            background: #e5e5e5;
+            border-color: #9a9a9a;
+        }
+
+        input[type=range].red-slider::-webkit-slider-thumb:active {
+            background: #8D8D8D;
+        }
+
+        input[type=range].red-slider:active::-webkit-slider-runnable-track {
+            background: #f5f5f5;
+            border-color: #c1c1c1;
+        }
+
+        input[type=range].red-slider.slider-progress::-webkit-slider-runnable-track {
+            background: linear-gradient(#ff0820, #ff0820) 0/var(--sx) 100% no-repeat, #efefef;
+        }
+
+        input[type=range].red-slider.slider-progress:hover::-webkit-slider-runnable-track {
+            background: linear-gradient(#ff0820, #ff0820) 0/var(--sx) 100% no-repeat, #e5e5e5;
+        }
+
+        input[type=range].red-slider.slider-progress:active::-webkit-slider-runnable-track {
+            background: linear-gradient(#ff0820, #ff0820) 0/var(--sx) 100% no-repeat, #f5f5f5;
+        }
+
+        /*mozilla*/
+        input[type=range].red-slider::-moz-range-thumb {
+            width: 2em;
+            height: 5px;
+            border-radius: 1em;
+            background: #FFFFFF;
+            border: none;
+            box-shadow: 0 0 2px black;
+        }
+
+        input[type=range].red-slider::-moz-range-track {
+            height: max(calc(1em - 1px - 1px), 0px);
+            border: 1px solid #b2b2b2;
+            border-radius: 1em;
+            background: #efefef;
+            box-shadow: none;
+        }
+
+        input[type=range].red-slider::-moz-range-thumb:hover {
+            background: #8D8D8D;
+        }
+
+        input[type=range].red-slider:hover::-moz-range-track {
+            background: #e5e5e5;
+            border-color: #9a9a9a;
+        }
+
+        input[type=range].red-slider::-moz-range-thumb:active {
+            background: #8D8D8D;
+        }
+
+        input[type=range].red-slider:active::-moz-range-track {
+            background: #f5f5f5;
+            border-color: #c1c1c1;
+        }
+
+        input[type=range].red-slider.slider-progress::-moz-range-track {
+            background: linear-gradient(#ff0820, #ff0820) 0/var(--sx) 100% no-repeat, #efefef;
+        }
+
+        input[type=range].red-slider.slider-progress:hover::-moz-range-track {
+            background: linear-gradient(#ff0820, #ff0820) 0/var(--sx) 100% no-repeat, #e5e5e5;
+        }
+
+        input[type=range].red-slider.slider-progress:active::-moz-range-track {
+            background: linear-gradient(#ff0820, #ff0820) 0/var(--sx) 100% no-repeat, #f5f5f5;
+        }
+
+        /*ms*/
+        input[type=range].red-slider::-ms-fill-upper {
+            background: transparent;
+            border-color: transparent;
+        }
+
+        input[type=range].red-slider::-ms-fill-lower {
+            background: transparent;
+            border-color: transparent;
+        }
+
+        input[type=range].red-slider::-ms-thumb {
+            width: 1em;
+            height: 1em;
+            border-radius: 1em;
+            background: #FFFFFF;
+            border: none;
+            box-shadow: 0 0 2px black;
+            margin-top: 0;
+            box-sizing: border-box;
+        }
+
+        input[type=range].red-slider::-ms-track {
+            height: 1em;
+            border-radius: 1em;
+            background: #efefef;
+            border: 1px solid #b2b2b2;
+            box-shadow: none;
+            box-sizing: border-box;
+        }
+
+        input[type=range].red-slider::-ms-thumb:hover {
+            background: #8D8D8D;
+        }
+
+        input[type=range].red-slider:hover::-ms-track {
+            background: #e5e5e5;
+            border-color: #9a9a9a;
+        }
+
+        input[type=range].red-slider::-ms-thumb:active {
+            background: #8D8D8D;
+        }
+
+        input[type=range].red-slider:active::-ms-track {
+            background: #f5f5f5;
+            border-color: #c1c1c1;
+        }
+
+        input[type=range].red-slider.slider-progress::-ms-fill-lower {
+            height: 5px;
+            border-radius: 1em 0 0 1em;
+            margin: -1px 0 -1px -1px;
+            background: #ff0820;
+            border: 1px solid #b2b2b2;
+            border-right-width: 0;
+        }
+
+        input[type=range].red-slider.slider-progress:hover::-ms-fill-lower {
+            background: #ff0820;
+            border-color: #9a9a9a;
+        }
+
+        input[type=range].red-slider.slider-progress:active::-ms-fill-lower {
+            background: #ff0820;
+            border-color: #c1c1c1;
+        }
+
+        input[type=range].blue-slider {
+            height: 1px;
+            -webkit-appearance: none;
+        }
+
+        /*progress support*/
+        input[type=range].blue-slider.slider-progress {
+            --range: calc(var(--max) - var(--min));
+            --ratio: calc((var(--value) - var(--min)) / var(--range));
+            --sx: calc(0.5 * 2em + var(--ratio) * (100% - 2em));
+        }
+
+        input[type=range].blue-slider:focus {
+            outline: none;
+        }
+
+        /*webkit*/
+        input[type=range].blue-slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            width: 10px;
+            height: 10px;
+            border-radius: 20px;
+            background: #FFFFFF;
+            border: none;
+            box-shadow: 0 0 2px black;
+            margin-top: calc(max((1.7em - 1px - 1px) * 0.5, 0px) - 2em * 0.5);
+        }
+
+        input[type=range].blue-slider::-webkit-slider-runnable-track {
+            height: 5px;
+            border: 1px solid #b2b2b2;
+            border-radius: 1em;
+            background: #efefef;
+            box-shadow: none;
+        }
+
+        input[type=range].blue-slider::-webkit-slider-thumb:hover {
+            background: #8D8D8D;
+        }
+
+        input[type=range].blue-slider:hover::-webkit-slider-runnable-track {
+            background: #e5e5e5;
+            border-color: #9a9a9a;
+        }
+
+        input[type=range].blue-slider::-webkit-slider-thumb:active {
+            background: #8D8D8D;
+        }
+
+        input[type=range].blue-slider:active::-webkit-slider-runnable-track {
+            background: #f5f5f5;
+            border-color: #c1c1c1;
+        }
+
+        input[type=range].blue-slider.slider-progress::-webkit-slider-runnable-track {
+            background: linear-gradient(#085eff, #085eff) 0/var(--sx) 100% no-repeat, #efefef;
+        }
+
+        input[type=range].blue-slider.slider-progress:hover::-webkit-slider-runnable-track {
+            background: linear-gradient(#085eff, #085eff) 0/var(--sx) 100% no-repeat, #e5e5e5;
+        }
+
+        input[type=range].blue-slider.slider-progress:active::-webkit-slider-runnable-track {
+            background: linear-gradient(#085eff, #085eff) 0/var(--sx) 100% no-repeat, #f5f5f5;
+        }
+
+        /*mozilla*/
+        input[type=range].blue-slider::-moz-range-thumb {
+            width: 2em;
+            height: 5px;
+            border-radius: 1em;
+            background: #FFFFFF;
+            border: none;
+            box-shadow: 0 0 2px black;
+        }
+
+        input[type=range].blue-slider::-moz-range-track {
+            height: max(calc(1em - 1px - 1px), 0px);
+            border: 1px solid #b2b2b2;
+            border-radius: 1em;
+            background: #efefef;
+            box-shadow: none;
+        }
+
+        input[type=range].blue-slider::-moz-range-thumb:hover {
+            background: #8D8D8D;
+        }
+
+        input[type=range].blue-slider:hover::-moz-range-track {
+            background: #e5e5e5;
+            border-color: #9a9a9a;
+        }
+
+        input[type=range].blue-slider::-moz-range-thumb:active {
+            background: #8D8D8D;
+        }
+
+        input[type=range].blue-slider:active::-moz-range-track {
+            background: #f5f5f5;
+            border-color: #c1c1c1;
+        }
+
+        input[type=range].blue-slider.slider-progress::-moz-range-track {
+            background: linear-gradient(#085eff, #085eff) 0/var(--sx) 100% no-repeat, #efefef;
+        }
+
+        input[type=range].blue-slider.slider-progress:hover::-moz-range-track {
+            background: linear-gradient(#085eff, #085eff) 0/var(--sx) 100% no-repeat, #e5e5e5;
+        }
+
+        input[type=range].blue-slider.slider-progress:active::-moz-range-track {
+            background: linear-gradient(#085eff, #085eff) 0/var(--sx) 100% no-repeat, #f5f5f5;
+        }
+
+        /*ms*/
+        input[type=range].blue-slider::-ms-fill-upper {
+            background: transparent;
+            border-color: transparent;
+        }
+
+        input[type=range].blue-slider::-ms-fill-lower {
+            background: transparent;
+            border-color: transparent;
+        }
+
+        input[type=range].blue-slider::-ms-thumb {
+            width: 1em;
+            height: 1em;
+            border-radius: 1em;
+            background: #FFFFFF;
+            border: none;
+            box-shadow: 0 0 2px black;
+            margin-top: 0;
+            box-sizing: border-box;
+        }
+
+        input[type=range].blue-slider::-ms-track {
+            height: 1em;
+            border-radius: 1em;
+            background: #efefef;
+            border: 1px solid #b2b2b2;
+            box-shadow: none;
+            box-sizing: border-box;
+        }
+
+        input[type=range].blue-slider::-ms-thumb:hover {
+            background: #8D8D8D;
+        }
+
+        input[type=range].blue-slider:hover::-ms-track {
+            background: #e5e5e5;
+            border-color: #9a9a9a;
+        }
+
+        input[type=range].blue-slider::-ms-thumb:active {
+            background: #8D8D8D;
+        }
+
+        input[type=range].blue-slider:active::-ms-track {
+            background: #f5f5f5;
+            border-color: #c1c1c1;
+        }
+
+        input[type=range].blue-slider.slider-progress::-ms-fill-lower {
+            height: 5px;
+            border-radius: 1em 0 0 1em;
+            margin: -1px 0 -1px -1px;
+            background: #085eff;
+            border: 1px solid #b2b2b2;
+            border-right-width: 0;
+        }
+
+        input[type=range].blue-slider.slider-progress:hover::-ms-fill-lower {
+            background: #085eff;
+            border-color: #9a9a9a;
+        }
+
+        input[type=range].blue-slider.slider-progress:active::-ms-fill-lower {
+            background: #085eff;
+            border-color: #c1c1c1;
+        }
+
+        ul.tabs {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            height: 50px;
+            border-bottom: 1px solid #333;
+            width: 100%;
+        }
+
+        ul.tabs li {
+            float: left;
+            border-radius: 10px 10px 0 0;
+            font-size: 20px;
+            caret-color: rgba(0, 0, 0, 0);
+            margin: 0;
+            width: 100%;
+            cursor: pointer;
+
+            /* {
+                #padding: 0px 21px;
+                #
+            } */
+
+            height: 50px;
+            text-align: center;
+            line-height: 31px;
+            border-top: 1px solid #333;
+            border-left: 1px solid #333;
+            border-right: 1px solid #333;
+            border-bottom: 1px solid black;
+            background-image: linear-gradient(#191c1f, black 100%);
+            color: white;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .tab_last {
+            border: 1px solid #333;
+        }
+
+        ul.tabs li:hover {
+            background-color: black;
+            color: white;
+        }
+
+        ul.tabs li.active {
+            background-color: black;
+            color: #ddb253;
+            border-bottom: 1px solid #000000;
+            display: block;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .tab_container {
+            border: 1px solid #333;
+            border-top: none;
+            clear: both;
+            float: left;
+            width: 100%;
+            padding-bottom: 20px;
+            background: black;
+            color: white;
+            overflow: hidden auto;
+        }
+
+        .tab_content {
+           
+            text-align: center;
+           
+
+        }
+
+        .tab_drawer_heading {
+            display: none;
+        }
+
+        @media screen and (max-width: 1070px) {
+            .hide {
+                display: none;
+            }
+        }
+
+        @media screen and (max-width: 760px) {
+            /* #hubblepic {
+                width: 60% !important;
+                height: auto !important;
+                ;
+            } */
+
+
+
+            #hubble-container {
+
+
+                width: 100% !important;
+                height: auto !important;
+
+            }
+
+            .tab_container {
+                padding-top: 20px;
+            }
+
+            .content-section {
+                padding-top: 20px;
+                padding-bottom: 20px;
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+        }
+
+
+
+        .tooltip {
+            font-family: Georama !important;
+
+        }
+
+        .tooltip .tooltip-inner {
+            font-family: Georama !important;
+        }
+    </style>
+</head>
+
+<body style="overflow-x:hidden;caret-color: rgba(0,0,0,0);" onload="flashMessage()">
+
+
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-black navbar-static-top"
+        style="position:fixed;width:100%;margin-top: 0; background-color: black !important; color: white; padding: 20px 1%">
+        <div class="container-fluid navbar-mini d-flex justify-content-between" style=" display: flex">
+            <a href="https://www.thekoha.com" style="margin-right: auto">
+                <img id="headerlogotest" src="../static/img/koha-logo-2.png" alt=""><!-- Logo -->
+            </a>
+            <div>
+               {% if counttest %}
+            <a class="desktop-nav nav-item" style="color:#000000 !important;"
+               href="https://www.thekoha.com/cart.php"><img src="../static/img/shoppingcarticon.png"
+                                                            style="width:30px !important;height:30px !important;">
+<span class="badge badge-secondary" style="position:relative; top: -15px;left: -15px; color: black; background-color: white;border-radius: 50%;padding: 0.35em 0.60em !important; ">{{ counttest }}</span>
+															</a>
+															{% else %}
+            <a class="desktop-nav nav-item" style="color:#000000 !important;"
+               href="https://www.thekoha.com/cart.php"><img src="../static/img/shoppingcarticon.png"
+                                                            style="width:30px !important;height:30px !important;">
+<span class="badge badge-secondary" style="position:relative; top: -15px;left: -15px; color: black; background-color: white;border-radius: 50%;padding: 0.35em 0.60em !important; ">0</span>
+															</a>
+															{% endif %} 
+                <a class="desktop-nav nav-item" style="margin-left: 5px; margin-right: 5px"
+                    href="https://www.thekoha.com/customer/my_account.php"><img src="../static/img/myaccounticon.png"
+                        style="width:30px !important;height:30px !important;"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" style="background-color: grey;" aria-controls="
+navbarSupportedConten" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </div>
+        <div class="d-flex justify-content-end" id="amex">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent"
+                style="background-color: black !important;">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="background-color: black !important;display: flex;
+    align-items: center;">
+                    <li class="nav-item" style="border-radius: 20px; width:100px">
+                        <a class="nav-link"
+                            style="color:#ffffff !important;background-color: black !important;font-family: Roboto Serif !important; border-radius: 20px"
+                            aria-current="page" href="https://www.thekoha.com/aboutus.php">Our Story</a>
+                    </li>
+                    <li class="nav-item" style="border-radius: 20px; width:130px">
+                        <a class="nav-link"
+                            style="color:#ffffff !important;background-color: black !important;font-family: Roboto Serif !important; border-radius: 20px"
+                            href="https://www.thekoha.com/howitworks.php">How it Works</a>
+                    </li>
+                    <li class="nav-item" style="border-radius: 20px; width:70px">
+                        <a class="nav-link"
+                            style="color:#ffffff !important;background-color: black !important;font-family: Roboto Serif !important; border-radius: 20px"
+                            href="https://www.thekoha.com/shop.php">Gallery</a>
+                    </li>
+                    <li class="nav-item" style="border-radius: 20px; width:110px; padding-right: 10px">
+                        <a class="nav-link"
+                            style="color:#ffffff !important;background-color: black !important;font-family: Roboto Serif !important; border-radius: 20px ; width:110px"
+                            href="https://www.thekoha.com/accessories.php">Accessories</a>
+                    </li>
+                    <li class="nav-item" style="border-radius: 20px; width:50px; padding-right: 10px">
+                        <a class="nav-link"
+                            style="color:#ffffff !important;background-color: black !important;font-family: Roboto Serif !important; border-radius: 20px ; width:50px"
+                            href="https://www.thekoha.com/faq.php">FAQ</a>
+                    </li>
+                    <li class="nav-item" style="border-radius: 20px;padding-right: 10px" id="testrx">
+                        <a class="nav-link"
+                            style="color:#ffffff !important;background-color: black !important;font-family: Roboto Serif !important; border-radius: 20px ; width:103px"
+                            href="https://www.thekoha.com/contactus.php">Contact Us</a>
+                    </li>
+                    {% if counttest %}
+                <li class="mobile-nav nav-item" style="border-radius: 20px; width:60px;margin: auto ">
+                    <a style="margin: auto;color:#000000 !important;" href="https://www.thekoha.com/cart.php"><img
+                            src="../static/img/shoppingcarticon.png"
+                            style="width:27px !important;height:35px !important;">
+<span class="badge badge-secondary" style="position:relative; top: -15px;left: -15px; color: black; background-color: white;border-radius: 50%;padding: 0.35em 0.60em !important;">{{ counttest }}</span>							
+							</a>
+                </li>
+				{% else %}
+                <li class="mobile-nav nav-item" style="border-radius: 20px; width:60px;margin: auto ">
+                    <a style="margin: auto;color:#000000 !important;" href="https://www.thekoha.com/cart.php"><img
+                            src="../static/img/shoppingcarticon.png"
+                            style="width:27px !important;height:35px !important;">
+<span class="badge badge-secondary" style="position:relative; top: -15px;left: -15px; color: black; background-color: white;border-radius: 50%;padding: 0.35em 0.60em !important;">0</span>							
+							</a>
+                </li>
+				{% endif %}
+                    <li class="mobile-nav nav-item" style="border-radius: 20px; width:50px;margin: auto">
+                        <a style="margin:auto" href="https://www.thekoha.com/customer/my_account.php"><img
+                                src="../static/img/myaccounticon.png"
+                                style="width:27px !important;height:35px !important;"></a>
+                    </li>
+					{% if tokentest %}
+                 <li class="nav-item" >
+                    <button class="lets-pixelate lets-pixelate2" style="background-color: black !important;font-family: Roboto Serif !important; left:0; text-align: center; vertical-align: middle ;height:35px !important; width: 155px; overflow: hidden;padding: 0;">
+                        <a href="https://create.thekoha.com/?token={{ tokentest }}" class="d-flex lets-pixelate2"
+                   style="font-family: Roboto Serif !important;position:relative; border-radius: 10px ;justify-content: center; background-color: transparent !important; height:30px !important; width: 145px; font-size: 17px; font-weight: bold; padding-top: 2px;">
+                    <i class="fa fa-cubes"></i>&nbsp;&nbsp;Start Here
+                </a>
+                    </button>
+                </li>   
+				{% else %}
+				<li class="nav-item" >
+                    <button class="lets-pixelate lets-pixelate2" style="background-color: black !important;font-family: Roboto Serif !important; left:0; text-align: center; vertical-align: middle ;height:35px !important; width: 155px; overflow: hidden;padding: 0;">
+                       <a href="https://www.thekoha.com/checkout.php" class="d-flex lets-pixelate2"
+                   style="font-family: Roboto Serif !important;position:relative; border-radius: 10px ;justify-content: center; background-color: transparent !important; height:30px !important; width: 145px; font-size: 17px; font-weight: bold; padding-top: 2px;">
+                    <i class="fa fa-cubes"></i>&nbsp;&nbsp;Start Here
+                </a>
+                    </button>
+                </li>  
+{% endif %}				
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+    <script type="text/javascript">
+        AOS.init();
+    </script>
+    <br />
+    <br />
+    <br />
+    <br />
+
+
+    <div>
+        <form id="para" style="width: 100%; float: left; padding: 0 0 0 0" action="/pixelizer" method="post"
+            enctype="multipart/form-data">
+            {% if mi %}
+            <input onchange="document.getElementById('para').submit()" name="mobileIndicator"
+                style="display: none;" id="mobileIndicator" type="checkbox" checked=false>
+            {% else %}
+            <input onchange="document.getElementById('para').submit()" name="mobileIndicator"
+                style="display: none;" id="mobileIndicator" type="checkbox">
+            {% endif %}
+        <div class=" row" style="max-height:700px">
+
+            <div class="col-lg-3 col-md-12 col-sm-12  left-pixelizer-controls" style="height: 75vh;">
+
+                <div style="height: 100%">
+                    <ul class="tabs" style="border-radius: 0 20px 0 0 !important;">
+                        {# <li class="active" rel="tab1">Image Filename</li>#}
+                        <li rel="tab2"
+                            style="padding-top: 7px ;padding-left:10px; border-radius: 0 20px 0 0 !important;"><span
+                                style="float: center;"> <img style="height: 30px; width:30px"
+                                    src="static/assets/baseplate-size.png" alt="">Size</span><i
+                                class="fas fa-info-circle" style="float:right;width: 50px;padding-top: 7px ;"
+                                data-toggle="tooltip" data-placement="top" title="The size of the image is determined by the baseplate in the vertical and horizontal direction.
+"></i>
+                        </li>
+                    </ul>
+
+                    <div class="tab_container"
+                        style="background-image: linear-gradient(black, #191c1f); padding-bottom:0px; min-height:200px !important;height:40%; display: flex;">
+                        {# <h3 class="d_active tab_drawer_heading" rel="tab1">Image Filename</h3>#}
+                        {# <div id="tab1" class="tab_content">#}
+                            {# <h2>Tab 1 content</h2>#}
+                            <div ><label for="imagefile" class="form-label"
+                                    style="font-size:20px;" hidden>Image
+                                    Filename: {{ imglb }}</label><br>
+
+                                <input type="hidden" name="imglb" id="imglb" value="{{ imglb }}">
+                            </div>
+                            {#
+                        </div>#}
+                        {# </div>#}
+
+                    <!-- #tab1 -->
+                    <h3 class="d_active tab_drawer_heading" rel="tab2"><img style="height: 30px; width:30px"
+                            src="static/assets/enhancedet.png" alt="">Enhance and Edit</h3>
+                    <div id="tab2" class="tab_container"
+                        style="overflow-x: hidden; padding-bottom:0px;display: flex;">
+                        <!--class="tab_content" -->
+
+
+                        <div class="row" style="height: 130px; align-self:center; display:flex;justify-content:center;width:100%;">
+                            {# <div class="col-lg-3 col-md-3" rel="1">#}
+                                <div class="row"
+                                    style="width: 100%; display:flex ;justify-content: center; padding-bottom: 7px">
+                                    <div style="width: 50px;position:relative;left:0px">
+                                        <button id="vplus" name="base_btn"
+                                            style="height: 25px; width: 25px; float: left; font-family: Roboto Serif !important; border-radius: 100%; font-size:20px; padding: 0 0 10px 0 ">
+                                            +
+                                        </button>
+                                    </div>
+                                    <div style="width: 50px;position:relative;left:0px">
+
+                                        <button id="hplus" name="base_btn"
+                                            style="height: 25px; width: 25px; float: left; font-family: Roboto Serif !important; border-radius: 100%; font-size:20px; padding: 0 0 10px 0 ">
+                                            +
+                                        </button>
+                                    </div>
+
+                                </div>
+
+                                <div class="row">
+                                    <div style=" display:flex ;justify-content: center; ">
+                                        <input id="range-X"
+                                            style="visibility: hidden; display: none;height: 0px !important; ; width: 0px !important;"
+                                            name="rangeX" min="1" max="20" value="{{ bX }}" step="1"
+                                            onchange="document.getElementById('para').submit()" type="range"
+                                            orient="vertical">
+                                        <input
+                                            style="visibility: hidden; display: none; height: 0px !important; ; width: 0px !important;"
+                                            id="range-Y" name="rangeY" min="1" max="20" value="{{ bY }}" step="1"
+                                            onchange="document.getElementById('para').submit()" type="range"
+                                            orient="vertical">
+                                        <div
+                                            style="padding-left: 10px; padding-right: 10px; width:70px; padding-top: 3px">
+                                            <div style="justify-content: center; display: flex">
+                                                <i class="fas fa-arrows-alt-v" style="align-content: center"></i>
+                                            </div>
+                                            <div style="justify-content: center; display: flex; font-size:15px;">
+                                                Vertical
+                                            </div>
+                                        </div>
+                                        <label id="baseplate" name="baseplate" class="form-label"
+                                            style="color: white; border: 2px solid white; padding: 5.2px; max-width: 120px; max-height: 435px;width: 110px;text-align: center"></label>
+                                        <input type="hidden" style="width: 20%" name="rangeY" id="rangeY"
+                                            value="{{ bY }}">
+                                        <input type="hidden" style="width: 20%" name="rangeX" id="rangeX"
+                                            value="{{ bX }}">
+                                        <div
+                                            style="padding-left: 10px; padding-right: 10px; width:70px; padding-top: 3px">
+                                            <div style="justify-content: center; display: flex">
+                                                <i class="fas fa-arrows-alt-h" style="align-content: center"></i>
+                                            </div>
+                                            <div style="justify-content: center; display: flex; font-size:15px;">
+                                                Horizontal
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="row" style="width: 100%; display:flex ;justify-content: center;">
+                                    <div style="width: 50px;position:relative;left:0px">
+                                        <button id="vminus" name="base_btn"
+                                            style="height: 25px; width: 25px;  font-family: Roboto Serif !important; border-radius: 100%; font-size:20px; padding: 0 0 10px 0 ">
+                                            -
+                                        </button>
+
+                                    </div>
+                                    <div style="width: 50px;position:relative;left:0px">
+
+                                        <button id="hminus" name="base_btn"
+                                            style="height: 25px; width: 25px;  font-family: Roboto Serif !important; border-radius: 100%; font-size:20px; padding: 0 0 10px 0 ">
+                                            - <p><i class="fa-regular fa-circle-minus"></i></p>
+                                        </button>
+                                    </div>
+
+                                </div>
+
+
+                                {#
+                            </div>#}
+                        </div>
+                    </div>
+                </div>
+
+                <ul class="tabs" style="border-radius: 0 0 0 0 !important;">
+                    <li rel="tab2" style="padding-top: 7px ;padding-left:10px ;border-radius: 0 0 0 0 !important;">
+                        <span style="float: center;"> <img style="height: 30px; width:30px"
+                                src="static/assets/colurs.png" alt="">Colours</span><i class="fas fa-info-circle"
+                            style="float:right;width: 50px;padding-top: 7px ;" data-toggle="tooltip"
+                            data-placement="top"
+                            title="Automatically select the best colours using the slider . Manually select or deselect colours from the palette."></i>
+                    </li>
+                </ul>
+
+                <div class="tab_container"
+                    style="background-image: linear-gradient(black, #191c1f); border-radius: 0 0 20px 0 !important; display: flex; height: 80%; min-height: 400px; flex-direction: column;
+                    justify-content: space-evenly;
+                    ">
+
+                    <div style=" display: flex ;justify-content: center">
+                        {% if autoselect %}
+                        {# <div style=" display: flex ;justify-content: center">#}
+
+                            <input onchange="document.getElementById('para').submit()" name="autoselect"
+                                style=" margin-top: 0px !important " id="autoselect" type="checkbox" checked=true>
+
+                            {% else %}
+                            <input onchange="document.getElementById('para').submit()" name="autoselect" id="autoselect"
+                                type="checkbox" style="margin-top: 0px !important">
+
+                            {% endif %}
+
+                            <label style="position:relative;left:10px;font-size:20px;">Auto Colour Select</label>
+                        </div>
+                        {# </div>#}
+
+                    <div
+                        style=" display: flex ;justify-content: center;padding-bottom:10px;position:relative;top:10px;">
+                        <label id="user_col" class="form-label"
+                            style="position:relative;left:10px;font-size:20px;">Colours Used:
+                            20</label>
+                    </div>
+                    <div style=" display: flex ;justify-content: center; max-width:93%">
+                        <div style="width: 50px;position:relative;left:24px !important;">
+                            <button id="colminus" name="colminusbase_btn"
+                                style="height: 25px; width: 25px;  font-family: Roboto Serif !important; border-radius: 100%; font-size:20px; padding: 0 0 10px 0 ">
+                                -
+                            </button>
+
+                        </div>
+                        <input class="blue-slider slider-progress" onchange="document.getElementById('para').submit()"
+                            id="rangeCol" name="rangeCol" min="1" max="50" value="{{ rangeCol }}" step="1" type="range"
+                            orient="horizontal" style="background-color: transparent;position:relative;left:10px;" {#
+                            style="position:relative;left:10px; height: 20% !important;width: 100% !important; padding: 0 !important; border-radius: 100%"
+                            #}>
+                        <div style="width: 50px;position:relative;left:20px !important;">
+
+                            <button id="colplus" name="colplusbase_btn"
+                                style="height: 25px; width: 25px; float: left; font-family: Roboto Serif !important; border-radius: 100%; font-size:20px; padding: 0 0 10px 0 ">
+                                +
+                            </button>
+                        </div>
+                    </div>
+
+                    <div style=" display: flex ;justify-content: center; padding-top:10px">
+                        <div>
+                            <label class="form-label" style="position:relative;left:10px;font-size:20px;">Manual
+                                Colours Select:</label>
+                        </div>
+                    </div>
+
+                    {# <div style="display:flex; justify-content: center; ">#}
+                        <container style="margin: 0 auto;">
+                            {% for i in range(5) %}
+                            <div style="float: top; max-width: 400px;margin:0 auto !important;">
+                                {% for ii in range(10) %}
+                                {% if palette[(i*10)+ii][1] %}
+                                <button type="submit"
+                                    onclick="onbtnclick('btn{{ (i*10)+ii }}','btn{{ (i*10)+ii }}_val')"
+                                    id="btn{{ (i*10)+ii }}" name="btncol"
+                                    style="border: 2px solid red; background-color: rgb({{ palette[(i*10)+ii][0] }}); height: 30px; width: 30px; float: left; margin: 1px 1px;">
+                                    <input type="hidden" name="btn{{ (i*10)+ii }}_col"
+                                        value="{{ palette[(i*10)+ii][0] }}">
+                                    <input type="hidden" name="btn{{ (i*10)+ii }}_val" id="btn{{ (i*10)+ii }}_val"
+                                        value="1">
+                                </button>
+                                {% else %}
+                                <button type="submit"
+                                    onclick="onbtnclick('btn{{ (i*10)+ii }}','btn{{ (i*10)+ii }}_val')"
+                                    id="btn{{ (i*10)+ii }}" name="btncol"
+                                    style="border: 2px solid white; background-color: rgb({{ palette[(i*10)+ii][0] }}); height: 30px; width: 30px; float: left; margin: 1px 1px;">
+                                    <input type="hidden" name="btn{{ (i*10)+ii }}_col"
+                                        value="{{ palette[(i*10)+ii][0] }}">
+                                    <input type="hidden" name="btn{{ (i*10)+ii }}_val" id="btn{{ (i*10)+ii }}_val"
+                                        value="0">
+                                </button>
+                                {% endif %}
+                                {% endfor %}
+                            </div>
+                            {% endfor %}
+                        </container>
+                        {#
+                    </div>#}
+                </div>
+
+
+            </div>
+
+    </div>
+    <div class="col-lg-6 col-md-12 col-sm-12 pixelizer-image-holder" id="testry">
+        {# <img style="position: absolute; width: 300px; padding-left:20px; left:0" src="static/assets/legobinimg.png"
+            alt="">#}
+        <div id='pih-image' style="position:relative; padding-bottom: 20px; height: 60%;">
+            <div style="text-align: center; display: flex; justify-content: center; border: 15px white !important; border-style: solid; object-fit: cover !important;
+  border-color: white; height:100%">
+                <div id="hubble-container" style="height:100%;">
+                    <img id="hubblepic" style=" cursor: grab;
+    object-fit: contain;
+    height: 100%;" class="my-img" src="{{ url_for('static', filename=imagepath) }}">
+                </div>
+            </div>
+        </div>
+        <div style="display: flex; justify-content: center; ">
+		<div
+                style="padding-left: 10px; display: flex; justify-content: center; align-content: center; align-items: center">
+			<button class="btn" type="submit" name="nxt" id="testgg1">
+                        <a href='https://www.thekoha.com/'
+                           style="text-decoration:none !important;color:#212529 !important;cursor: pointer;">
+                            Start Over
+                        </a></button>
+						</div>
+            <div
+                style="padding-left: 10px; display: flex; justify-content: center; align-content: center; align-items: center">
+                <input class="btn" type="submit" name="nxt" value="Preview" id="testgg1">
+            </div>
+            <div
+                style="padding-left: 10px; display: flex; justify-content: center; align-content: center; align-items: center">
+                <input class="btn" type="submit" name="nxt" value="Add to Cart" id="testgg1">               
+            </div>
+			
+        </div>
+        <div style="display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 20px 10px">
+
+            <div style="display: flex; width:280px ">
+                <img style="height: 26px; width:22px" src="static/assets/size.png" alt=""> &nbsp
+                <div style="width: 100%">
+                    <label id="t_size" class="form-label">Size : 32
+                        x 32</label>
+                </div>
+                <!--<div style="justify-items: right; width: 5px; padding-right: 20px">
+                        <i class="fas fa-info-circle" data-toggle="tooltip"
+                           title="The Image file which is being uploaded in the Koha Image PIXELATE software"></i>
+                    </div>-->
+
+            </div>
+            <div style="display: flex; width:200px  ">
+                <img style="height: 26px; width:22px" src="static/assets/nop.png" alt=""> &nbsp
+                <div style="width: 100%">
+                    <label id="pieces" class="form-label">Pieces :
+                        4096</label>
+                    {# <div style="display:flex">
+                        <p style="color:#ffffff !important;padding-top:15px">Quantity :&nbsp; </p>#}
+                        {# <input onkeyup='saveValue(this);' id="p_qty"
+                            onchange="document.getElementById('para').submit()" #} {# name="p_qty" type="number" min="1"
+                            style="height: 40px; width: 100px; background-color: #0b0b0b; color: white; border-radius: 10px;margin-top:10px"
+                            data-theme="dark" #} {# value="1">
+                    </div>#}
+                </div>
+                <!--<div style="justify-items: right; width: 5px; padding-right: 20px">
+                        <i class="fas fa-info-circle" data-toggle="tooltip"
+                           title="The Image file which is being uploaded in the Koha Image PIXELATE software"></i>
+                    </div>-->
+
+            </div>
+            <div style="display: flex;width:195px !important; ">
+                <img style="height: 26px; width:22px" src="static/assets/rupee.png" alt=""> &nbsp
+                <div style="width: 100%">
+                    <label id="p_price" class="form-label">Price:
+                        ₹ 3996</label>
+                </div>
+                <!--<div style="justify-items: right; width: 5px; padding-right: 20px">
+                        <i class="fas fa-info-circle" data-toggle="tooltip"
+                           title="The Image file which is being uploaded in the Koha Image PIXELATE software"></i>
+                    </div>-->
+
+            </div>
+            
+
+        </div>
+        <h3 class="tab_drawer_heading" style="display:none" rel="tab7"><img style="height: 30px; width:30px"
+            src="static/assets/size.png" alt="">Size</h3>
+    <div id="tab7" class="tab_content">
+        <div>
+            <label id="t_size" class="form-label" style="position:relative;left:10px;font-size:20px;" hidden>Size : 32 x
+                32</label><br />
+        </div>
+    </div>
+        
+        <div class='pixelizer-mobile-controls' style="position:fixed;width:100%;max-height: 30%;bottom:0px;
+    overflow: auto;" name='pixelizer-mobile-controls'>
+            <!--<div class='pmc-header' style=" display: grid; grid-template-columns: auto auto auto auto;
+    text-align: center;">
+			<div class="pmc-header-item selected" onclick="function selectMobileTabControl(ev,'Size')">Size</div>
+			<div class="pmc-header-item " onclick="function selectMobileTabControl(ev,'Colour')">Colours</div>
+			<div class="pmc-header-item " onclick="function selectMobileTabControl(ev,'Emhance')">Enhancement</div>
+			<div class="pmc-header-item " onclick="function selectMobileTabControl(ev,'Zoom')">Zoom</div>
+		
+			</div> -->
+
+            <div id="pmcMain">
+                <div id='pmcSize' style="display: block">
+                    <div rel="tab2" style="padding-top: 7px ;padding-left:10px; border-radius: 0 20px 0 0 !important;">
+                        <span style="float: center;"> <img style="height: 30px; width:30px"
+                                src="static/assets/baseplate-size.png" alt="">Size</span><i class="fas fa-info-circle"
+                            style="float:right;width: 50px;padding-top: 7px ;" data-toggle="tooltip"
+                            data-placement="top" title="The size of the image is determined by the baseplate in the vertical and horizontal direction.
+"></i>
+                    </div>
+                    <div id="tab2" class="tab_container"
+                        style="overflow-x: auto; padding-bottom:0px;min-height:155px !important;">
+                        <div class="row">
+                            {# <div class="col-lg-3 col-md-3" rel="1">#}
+                                <div class="row"
+                                    style="width: 100%; display:flex ;justify-content: center; padding-bottom: 7px">
+                                    <div style="width: 50px;position:relative;left:0px">
+                                        <button id="vplus-mob" name="base_btn"
+                                            style="height: 25px; width: 25px; float: left; font-family: Roboto Serif !important; border-radius: 100%; font-size:20px; padding: 0 0 10px 0 ">
+                                            +
+                                        </button>
+                                    </div>
+                                    <div style="width: 50px;position:relative;left:0px">
+
+                                        <button id="hplus-mob" name="base_btn"
+                                            style="height: 25px; width: 25px; float: left; font-family: Roboto Serif !important; border-radius: 100%; font-size:20px; padding: 0 0 10px 0 ">
+                                            +
+                                        </button>
+                                    </div>
+
+                                </div>
+
+                                <div class="row">
+                                    <div style=" display:flex ;justify-content: center; ">
+                                        <input id="range-X-mob"
+                                            style="visibility: hidden; display: none;height: 0px !important; ; width: 0px !important;"
+                                            name="rangeX" min="1" max="20" value="{{ bX }}" step="1"
+                                            onchange="document.getElementById('para').submit()" type="range"
+                                            orient="vertical">
+                                        <input
+                                            style="visibility: hidden; display: none; height: 0px !important; ; width: 0px !important;"
+                                            id="range-Y-mob" name="rangeY" min="1" max="20" value="{{ bY }}" step="1"
+                                            onchange="document.getElementById('para').submit()" type="range"
+                                            orient="vertical">
+                                        <div
+                                            style="padding-left: 10px; padding-right: 10px; width:70px; padding-top: 3px">
+                                            <div style="justify-content: center; display: flex">
+                                                <i class="fas fa-arrows-alt-v" style="align-content: center"></i>
+                                            </div>
+                                            <div style="justify-content: center; display: flex; font-size:15px;">
+                                                Vertical
+                                            </div>
+                                        </div>
+                                        <label id="baseplate-mob" name="baseplate" class="form-label"
+                                            style="color: white; border: 2px solid white; padding: 5.2px; max-width: 120px; max-height: 435px; text-align: center;width: 110px;"></label>
+                                        <input type="hidden" style="width: 20%" name="rangeY" id="rangeY"
+                                            value="{{ bY }}">
+                                        <input type="hidden" style="width: 20%" name="rangeX" id="rangeX"
+                                            value="{{ bX }}">
+                                        <div
+                                            style="padding-left: 10px; padding-right: 10px; width:70px; padding-top: 3px">
+                                            <div style="justify-content: center; display: flex">
+                                                <i class="fas fa-arrows-alt-h" style="align-content: center"></i>
+                                            </div>
+                                            <div style="justify-content: center; display: flex; font-size:15px;">
+                                                Horizontal
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="row" style="width: 100%; display:flex ;justify-content: center;">
+                                    <div style="width: 50px;position:relative;left:0px">
+                                        <button id="vminus-mob" name="base_btn"
+                                            style="height: 25px; width: 25px;  font-family: Roboto Serif !important; border-radius: 100%; font-size:20px; padding: 0 0 10px 0 ">
+                                            -
+                                        </button>
+
+                                    </div>
+                                    <div style="width: 50px;position:relative;left:0px">
+
+                                        <button id="hminus-mob" name="base_btn"
+                                            style="height: 25px; width: 25px;  font-family: Roboto Serif !important; border-radius: 100%; font-size:20px; padding: 0 0 10px 0 ">
+                                            - <p><i class="fa-regular fa-circle-minus"></i></p>
+                                        </button>
+                                    </div>
+
+                                </div>
+
+
+                                {#
+                            </div>#}
+                        </div>
+                    </div>
+                </div>
+
+                <div id='pmcColour' style="display: block">
+                    <div rel="tab2" style="padding-top: 7px ;padding-left:10px ;border-radius: 0 0 0 0 !important;">
+                        <span style="float: center;"> <img style="height: 30px; width:30px"
+                                src="static/assets/colurs.png" alt="">Colours</span><i class="fas fa-info-circle"
+                            style="float:right;width: 50px;padding-top: 7px ;" data-toggle="tooltip"
+                            data-placement="top"
+                            title="Automatically select the best colours using the slider . Manually select or deselect colours from the palette."></i>
+                    </div>
+                    <div class="tab_container"
+                        style="background-image: linear-gradient(black, #191c1f); border-radius: 0 0 20px 0 !important;">
+
+                        <div style=" display: flex ;justify-content: center">
+                            {% if autoselect %}
+                            {# <div style=" display: flex ;justify-content: center">#}
+
+                                <input onchange="document.getElementById('para').submit()" name="autoselect-mob"
+                                    style=" margin-top: 0px !important " id="autoselect-mob" type="checkbox"
+                                    checked=true>
+
+                                {% else %}
+                                <input onchange="document.getElementById('para').submit()" name="autoselect-mob"
+                                    id="autoselect-mob" type="checkbox" style="margin-top: 0px !important">
+
+                                {% endif %}
+
+                                <label style="position:relative;left:10px;font-size:20px;">Auto Colour Select</label>
+                            </div>
+                            {# </div>#}
+
+                        <div
+                            style=" display: flex ;justify-content: center;padding-bottom:10px;position:relative;top:10px;">
+                            <label id="user_col-mob" class="form-label"
+                                style="position:relative;left:10px;font-size:20px;">Colours Used:
+                                20</label>
+                        </div>
+                        <div style=" display: flex ;justify-content: center; max-width:93%">
+                            <div style="width: 50px;position:relative;left:24px !important;">
+                                <button id="colminus-mob" name="colminusbase_btn"
+                                    style="height: 25px; width: 25px;  font-family: Roboto Serif !important; border-radius: 100%; font-size:20px; padding: 0 0 10px 0 ">
+                                    -
+                                </button>
+
+                            </div>
+                            <input class="blue-slider slider-progress"
+                                onchange="document.getElementById('para').submit()" id="rangeCol-mob" name="rangeCol-mob"
+                                min="1" max="50" value="{{ rangeCol }}" step="1" type="range" orient="horizontal"
+                                style="background-color: transparent;position:relative;left:10px;" {#
+                                style="position:relative;left:10px; height: 20% !important;width: 100% !important; padding: 0 !important; border-radius: 100%"
+                                #}>
+                            <div style="width: 50px;position:relative;left:20px !important;">
+
+                                <button id="colplus-mob" name="colplusbase_btn"
+                                    style="height: 25px; width: 25px; float: left; font-family: Roboto Serif !important; border-radius: 100%; font-size:20px; padding: 0 0 10px 0 ">
+                                    +
+                                </button>
+                            </div>
+                        </div>
+
+                        <div style=" display: flex ;justify-content: center; padding-top:10px">
+                            <div>
+                                <label class="form-label" style="position:relative;left:10px;font-size:20px;">Manual
+                                    Colours Select:</label>
+                            </div>
+                        </div>
+
+                        {# <div style="display:flex; justify-content: center; ">#}
+                            <container style="margin: 0 auto;">
+                                {% for i in range(5) %}
+                                <div style="float: top; max-width: 400px;margin:0 auto !important;">
+                                    {% for ii in range(10) %}
+                                    {% if palette[(i*10)+ii][1] %}
+                                    <button type="submit"
+                                        onclick="onbtnclick('btn{{ (i*10)+ii }}','btn{{ (i*10)+ii }}_val')"
+                                        id="btn{{ (i*10)+ii }}-mob" name="btncol-mob"
+                                        style="border: 2px solid red; background-color: rgb({{ palette[(i*10)+ii][0] }}); height: 30px; width: 30px; float: left; margin: 1px 1px;">
+                                        <input type="hidden" name="btn{{ (i*10)+ii }}_col-mob"
+                                            value="{{ palette[(i*10)+ii][0] }}">
+                                        <input type="hidden" name="btn{{ (i*10)+ii }}_val-mob"
+                                            id="btn{{ (i*10)+ii }}_val-mob" value="1">
+                                    </button>
+                                    {% else %}
+                                    <button type="submit"
+                                        onclick="onbtnclick('btn{{ (i*10)+ii }}','btn{{ (i*10)+ii }}_val')"
+                                        id="btn{{ (i*10)+ii }}-mob" name="btncol-mob"
+                                        style="border: 2px solid white; background-color: rgb({{ palette[(i*10)+ii][0] }}); height: 30px; width: 30px; float: left; margin: 1px 1px;">
+                                        <input type="hidden" name="btn{{ (i*10)+ii }}_col-mob"
+                                            value="{{ palette[(i*10)+ii][0] }}">
+                                        <input type="hidden" name="btn{{ (i*10)+ii }}_val-mob"
+                                            id="btn{{ (i*10)+ii }}_val-mob" value="0">
+                                    </button>
+                                    {% endif %}
+                                    {% endfor %}
+                                </div>
+                                {% endfor %}
+                            </container>
+                            {#
+                        </div>#}
+                    </div>
+
+                </div>
+
+                <div id='pmcEnhance' style="display: block">
+                    <div rel="tab2" style="padding-top: 7px ;padding-left:10px;border-radius: 20px 0 0 0 !important; ">
+                        <span style="float: center;"> <img style="height: 30px; width:30px"
+                                src="static/assets/enhancedet.png" alt="">Enhancements</span><i
+                            class="fas fa-info-circle" style="float:right;width: 50px;padding-top: 7px ; "
+                            data-toggle="tooltip" data-placement="top"
+                            title="Play around with the brightness, contrast and saturation of the image to bring out more details."></i>
+                    </div>
+                    <div class="tab_container" style="background-image: linear-gradient(black, #191c1f);height:300px;">
+                        <container class="row" style="max-width: 400px; margin: 0 auto;">
+                            {% if bright %}
+                            <div class="row mt-3">
+                                <div style="display:flex; justify-content: center">
+                                    <label id="brightness_col-mob" class="form-label"
+                                        style="position:relative;left:10px;font-size:20px;">Brightness: 50</label>
+                                </div>
+                                <div style="display:flex; justify-content: center;max-width:93%;">
+                                    <div style="width: 50px;position:relative;left:15px !important;">
+                                        <button id="brightminus-mob" name="brightminusbase_btn"
+                                            style="height: 25px; width: 25px;  font-family: Roboto Serif !important; border-radius: 100%; font-size:20px; padding: 0 0 10px 0 ">
+                                            -
+                                        </button>
+                                    </div>
+                                    <input class="yellow-slider slider-progress" id="bright-mob" name="bright-mob" min="1"
+                                        max="100" value="{{ bright }}" step="1" type="range"
+                                        onchange="document.getElementById('para').submit()" orient="horizontal"
+                                        style="background-color: transparent;position:relative;left:10px;">
+                                    <div style="width: 50px;position:relative;left:15px !important;">
+                                        <button id="brightplus-mob" name="brightplusbase_btn"
+                                            style="height: 25px; width: 25px; float: left; font-family: Roboto Serif !important; border-radius: 100%; font-size:20px; padding: 0 0 10px 0 ">
+                                            +
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            {% endif %}
+                            {% if contrast %}
+                            <div class="row mt-3">
+                                <div style="display:flex; justify-content: center">
+                                    <label id="contrast_col-mob" class="form-label"
+                                        style="position:relative;left:10px;font-size:20px;">Contrast: 50</label>
+                                </div>
+                                <div style="display:flex; justify-content: center;max-width:93%;">
+                                    <div style="width: 50px;position:relative;left:15px !important;">
+                                        <button id="contrastminus-mob" name="contrastminusbase_btn"
+                                            style="height: 25px; width: 25px;  font-family: Roboto Serif !important; border-radius: 100%; font-size:20px; padding: 0 0 10px 0 ">
+                                            -
+                                        </button>
+                                    </div>
+                                    <input class="red-slider slider-progress" id="contrast-mob" name="contrast-mob" min="1"
+                                        max="100" value="{{ contrast }}"
+                                        onchange="document.getElementById('para').submit()" step="1" type="range"
+                                        orient="horizontal"
+                                        style="background-color: transparent;position:relative;left:10px;">
+                                    <div style="width: 50px;position:relative;left:15px !important;">
+                                        <button id="contrastplus-mob" name="contrastplusbase_btn"
+                                            style="height: 25px; width: 25px; float: left; font-family: Roboto Serif !important; border-radius: 100%; font-size:20px; padding: 0 0 10px 0 ">
+                                            +
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            {% endif %}
+                            {% if saturation %}
+                            <div class="row mt-3">
+                                <div style="display:flex; justify-content: center">
+                                    <label id="saturation_col-mob" class="form-label"
+                                        style="position:relative;left:10px;font-size:20px;">Saturation: 50</label>
+                                </div>
+                                <div style="display:flex; justify-content: center;max-width:93%;">
+                                    <div style="width: 50px;position:relative;left:15px !important;">
+                                        <button id="saturationminus-mob" name="saturationminusbase_btn"
+                                            style="height: 25px; width: 25px;  font-family: Roboto Serif !important; border-radius: 100%; font-size:20px; padding: 0 0 10px 0 ">
+                                            -
+                                        </button>
+                                    </div>
+                                    <input class="blue-slider slider-progress" id="saturation-mob" name="saturation-mob"
+                                        min="1" max="100" value="{{ saturation }}"
+                                        onchange="document.getElementById('para').submit()" step="1" type="range"
+                                        orient="horizontal"
+                                        style="background-color: transparent;position:relative;left:10px;">
+                                    <div style="width: 50px;position:relative;left:15px !important;">
+                                        <button id="saturationplus-mob" name="saturationplusbase_btn"
+                                            style="height: 25px; width: 25px; float: left; font-family: Roboto Serif !important; border-radius: 100%; font-size:20px; padding: 0 0 10px 0 ">
+                                            +
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            {% endif %}
+                        </container>
+                    </div>
+                </div>
+                <div id='pmcZoom' style="display: block">
+                    <div rel="tab2" style="padding-top: 7px ;padding-left:10px ; border-radius: 0 0 0 0"><span>
+                            <img style="height: 30px; width:30px" src="static/assets/zoom.png" alt="">Zoom</span><i
+                            class="fas fa-info-circle" style="float:right;width: 50px;padding-top: 7px ;"
+                            data-toggle="tooltip" data-placement="top"
+                            title="Image zoom option used to zoom in and zoom out the internal content of the pixelated image keeping the length and breadth of the pixelated image fixed. Auto fit option used to automatically fit the pixelated image with best length and breadth.Automatically Enlarge in and Enlarge out the pixelated image using the slider."></i>
+                    </div>
+                    <div class="tab_container" style="background-image: linear-gradient(black, #191c1f); padding-top:10px; padding-right:10px;padding-left:10px; padding-bottom:20px;
+    margin: 0 auto; min-height:200px; overflow-x:hidden ; border-radius: 0 0 0px 20px">
+                        <div class="row mt-3">
+                            <div class="row">
+                                <div style="display:flex; justify-content: center;">
+                                    <label id="zoom_col-mob" class="form-label"
+                                        style="font-size:20px;position:relative;left:10px;">Image
+                                        Zoom (Crop): 100</label>
+                                </div>
+
+                                <div style="display:flex; justify-content: center; padding-bottom:10px;max-width:93%;">
+                                    <div style="width: 50px;position:relative;left:15px !important;">
+                                        <button id="zoomminus-mob" name="zoomminusbase_btn"
+                                            style="height: 25px; width: 25px;  font-family: Roboto Serif !important; border-radius: 100%; font-size:20px; padding: 0 0 10px 0 ">
+                                            -
+                                        </button>
+                                    </div>
+                                    <input class="blue-slider slider-progress" id="zoom-mob" name="zoom-mob" min="100"
+                                        max="500" value="{{ zoom }}" onchange="document.getElementById('para').submit()"
+                                        step="1" type="range" orient="horizontal" {#
+                                        style="background-color: transparent;position: relative; left: 10px;" #}
+                                        style="background-color: transparent;position:relative;left:10px;">
+                                    <div style="width: 50px;position:relative;left:15px !important;">
+                                        <button id="zoomplus-mob" name="zoomplusbase_btn"
+                                            style="height: 25px; width: 25px; float: left; font-family: Roboto Serif !important; border-radius: 100%; font-size:20px; padding: 0 0 10px 0 ">
+                                            +
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div style="display:flex; justify-content: center; margin-top:10px; padding-bottom:10px;">
+                                {% if autofit %}
+                                <input onchange="document.getElementById('para').submit()" name="autofit-mob"
+                                    style="margin-top:0px" id="autofit" type="checkbox" checked=true>
+                                {% else %}
+                                <input onchange="document.getElementById('para').submit()" name="autofit-mob"
+                                    style="margin-top:0px" id="autofit" type="checkbox">
+                                {% endif %}
+
+                                <label style="font-size:20px;position:relative;left:10px;">Auto-Fit</label>
+                            </div>
+                            <div class="row">
+                                <div style="display:flex; justify-content: center; padding-bottom:10px">
+                                    <label id="enlarge_col-mob" class="form-label" onchange="deepdive()"
+                                        style="font-size:20px;position:relative;left:10px;">Image
+                                        Enlarge: 1x</label>
+                                </div>
+                                <div style="display:flex; justify-content: center;max-width:93%;">
+
+                                    <input class="blue-slider slider-progress" type="range" min="1" max="4" value="1"
+                                        step="0.02" id="zoomer-mob" oninput="deepdive()"
+                                        style="background-color: transparent;  max-width:58%; margin: 0 auto ; padding-left:30px">
+                                    <input class="blue-slider slider-progress" id="enlarger-mob" min="1" max="100"
+                                        value="1" step="1" oninput="deepdive()" type="range" orient="horizontal"
+                                        style="font-size:20px;position:relative;left:10px;display: none; padding: 10px">
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        
+        
+    
+
+
+    </div>
+
+    <div class="col-lg-3 col-md-12 col-sm-12 right-pixelizer-controls" style="height: 75vh;">
+        <ul class="tabs" style=" border-radius: 20px 0 0 0 !important;">
+            <li rel="tab2" style="padding-top: 7px ;padding-left:10px;border-radius: 20px 0 0 0 !important; ">
+                <span style="float: center;"> <img style="height: 30px; width:30px" src="static/assets/enhancedet.png"
+                        alt="">Enhancements</span><i class="fas fa-info-circle"
+                    style="float:right;width: 50px;padding-top: 7px ; " data-toggle="tooltip" data-placement="top"
+                    title="Play around with the brightness, contrast and saturation of the image to bring out more details."></i>
+            </li>
+        </ul>
+        <div class="tab_container" style="background-image: linear-gradient(black, #191c1f);min-height: 400px;
+        display: flex;
+        height: 60%;
+        ">
+            <container class="row" style="max-width: 400px; margin: 0 auto;">
+                {% if bright %}
+                <div class="row mt-3">
+                    <div style="display:flex; justify-content: center">
+                        <label id="brightness_col" class="form-label"
+                            style="position:relative;left:10px;font-size:20px;">Brightness: 50</label>
+                    </div>
+                    <div style="display:flex; justify-content: center;max-width:93%;">
+                        <div style="width: 50px;position:relative;left:15px !important;">
+                            <button id="brightminus" name="brightminusbase_btn"
+                                style="height: 25px; width: 25px;  font-family: Roboto Serif !important; border-radius: 100%; font-size:20px; padding: 0 0 10px 0 ">
+                                -
+                            </button>
+                        </div>
+                        <input class="yellow-slider slider-progress" id="bright" name="bright" min="1" max="100"
+                            value="{{ bright }}" step="1" type="range"
+                            onchange="document.getElementById('para').submit()" orient="horizontal"
+                            style="background-color: transparent;position:relative;left:10px;">
+                        <div style="width: 50px;position:relative;left:15px !important;">
+                            <button id="brightplus" name="brightplusbase_btn"
+                                style="height: 25px; width: 25px; float: left; font-family: Roboto Serif !important; border-radius: 100%; font-size:20px; padding: 0 0 10px 0 ">
+                                +
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                {% endif %}
+                {% if contrast %}
+                <div class="row mt-3">
+                    <div style="display:flex; justify-content: center">
+                        <label id="contrast_col" class="form-label"
+                            style="position:relative;left:10px;font-size:20px;">Contrast: 50</label>
+                    </div>
+                    <div style="display:flex; justify-content: center;max-width:93%;">
+                        <div style="width: 50px;position:relative;left:15px !important;">
+                            <button id="contrastminus" name="contrastminusbase_btn"
+                                style="height: 25px; width: 25px;  font-family: Roboto Serif !important; border-radius: 100%; font-size:20px; padding: 0 0 10px 0 ">
+                                -
+                            </button>
+                        </div>
+                        <input class="red-slider slider-progress" id="contrast" name="contrast" min="1" max="100"
+                            value="{{ contrast }}" onchange="document.getElementById('para').submit()" step="1"
+                            type="range" orient="horizontal"
+                            style="background-color: transparent;position:relative;left:10px;">
+                        <div style="width: 50px;position:relative;left:15px !important;">
+                            <button id="contrastplus" name="contrastplusbase_btn"
+                                style="height: 25px; width: 25px; float: left; font-family: Roboto Serif !important; border-radius: 100%; font-size:20px; padding: 0 0 10px 0 ">
+                                +
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                {% endif %}
+                {% if saturation %}
+                <div class="row mt-3">
+                    <div style="display:flex; justify-content: center">
+                        <label id="saturation_col" class="form-label"
+                            style="position:relative;left:10px;font-size:20px;">Saturation: 50</label>
+                    </div>
+                    <div style="display:flex; justify-content: center;max-width:93%;">
+                        <div style="width: 50px;position:relative;left:15px !important;">
+                            <button id="saturationminus" name="saturationminusbase_btn"
+                                style="height: 25px; width: 25px;  font-family: Roboto Serif !important; border-radius: 100%; font-size:20px; padding: 0 0 10px 0 ">
+                                -
+                            </button>
+                        </div>
+                        <input class="blue-slider slider-progress" id="saturation" name="saturation" min="1" max="100"
+                            value="{{ saturation }}" onchange="document.getElementById('para').submit()" step="1"
+                            type="range" orient="horizontal"
+                            style="background-color: transparent;position:relative;left:10px;">
+                        <div style="width: 50px;position:relative;left:15px !important;">
+                            <button id="saturationplus" name="saturationplusbase_btn"
+                                style="height: 25px; width: 25px; float: left; font-family: Roboto Serif !important; border-radius: 100%; font-size:20px; padding: 0 0 10px 0 ">
+                                +
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                {% endif %}
+            </container>
+        </div>
+        <ul class="tabs">
+            <li rel="tab2" style="padding-top: 7px ;padding-left:10px ; border-radius: 0 0 0 0"><span> <img
+                        style="height: 30px; width:30px" src="static/assets/zoom.png" alt="">Zoom</span><i
+                    class="fas fa-info-circle" style="float:right;width: 50px;padding-top: 7px ;" data-toggle="tooltip"
+                    data-placement="top"
+                    title="Image zoom option used to zoom in and zoom out the internal content of the pixelated image keeping the length and breadth of the pixelated image fixed. Auto fit option used to automatically fit the pixelated image with best length and breadth.Automatically Enlarge in and Enlarge out the pixelated image using the slider."></i>
+            </li>
+
+        </ul>
+        <div class="tab_container" style="background-image: linear-gradient(black, #191c1f); padding-top:10px; padding-right:10px;padding-left:10px; padding-bottom:20px;
+    margin: 0 auto; min-height:200px; overflow-x:hidden ; border-radius: 0 0 0px 20px; height: 45%; display: flex;">
+            <div class="row mt-3">
+                <div class="row">
+                    <div style="display:flex; justify-content: center;">
+                        <label id="zoom_col" class="form-label"
+                            style="font-size:20px;position:relative;left:10px;">Image
+                            Zoom (Crop): 100</label>
+                    </div>
+
+                    <div style="display:flex; justify-content: center; padding-bottom:10px;max-width:93%;">
+                        <div style="width: 50px;position:relative;left:15px !important;">
+                            <button id="zoomminus" name="zoomminusbase_btn"
+                                style="height: 25px; width: 25px;  font-family: Roboto Serif !important; border-radius: 100%; font-size:20px; padding: 0 0 10px 0 ">
+                                -
+                            </button>
+                        </div>
+                        <input class="blue-slider slider-progress" id="zoom" name="zoom" min="100" max="500"
+                            value="{{ zoom }}" onchange="document.getElementById('para').submit()" step="1" type="range"
+                            orient="horizontal" {# style="background-color: transparent;position: relative; left: 10px;"
+                            #} style="background-color: transparent;position:relative;left:10px;">
+                        <div style="width: 50px;position:relative;left:15px !important;">
+                            <button id="zoomplus" name="zoomplusbase_btn"
+                                style="height: 25px; width: 25px; float: left; font-family: Roboto Serif !important; border-radius: 100%; font-size:20px; padding: 0 0 10px 0 ">
+                                +
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div style="display:flex; justify-content: center; margin-top:10px; padding-bottom:10px;height:40px !important">
+                    {% if autofit %}
+                    <input onchange="document.getElementById('para').submit()" name="autofit" style="margin-top:0px"
+                        id="autofit" type="checkbox" checked=true>
+                    {% else %}
+                    <input onchange="document.getElementById('para').submit()" name="autofit" style="margin-top:0px"
+                        id="autofit" type="checkbox">
+                    {% endif %}
+
+                    <label style="font-size:20px;position:relative;left:10px;">Auto-Fit</label>
+                </div>
+                <div class="row">
+                    <div style="display:flex; justify-content: center; padding-bottom:10px">
+                        <label id="enlarge_col" class="form-label" onchange="deepdive()"
+                            style="font-size:20px;position:relative;left:10px;">Image
+                            Enlarge: 1x</label>
+                    </div>
+                    <div style="display:flex; justify-content: center;max-width:93%;">
+
+                        <input class="blue-slider slider-progress" type="range" min="1" max="4" value="1" step="0.02"
+                            id="zoomer" oninput="deepdive()"
+                            style="background-color: transparent;  max-width:58%; margin: 0 auto ; padding-left:30px">
+                        <input class="blue-slider slider-progress" id="enlarger" min="1" max="100" value="1" step="1"
+                            oninput="deepdive()" type="range" orient="horizontal"
+                            style="font-size:20px;position:relative;left:10px;display: none; padding: 10px">
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <div class="col-lg-12 col-md-12 col-sm-12">
+
+        <div class="row">
+
+            <div class="col-md-12 col-lg-12">
+
+                {# <div style="display: flex; justify-content: center; padding-bottom: 20px">#}
+                    {# <div
+                        style="padding-left: 10px; display: flex; justify-content: center; align-content: center; align-items: center">
+                        #}
+                        {# <input class="btn" type="submit" name="nxt" value="Preview" style="width: 150px;">#}
+                        {# </div>#}
+                    {# <div
+                        style="padding-left: 10px; display: flex; justify-content: center; align-content: center; align-items: center">
+                        #}
+                        {# <button class="btn" type="submit" name="nxt" style="width: 150px;">#}
+                            {# <a href='https://www.thekoha.com/' #} {#
+                                style="text-decoration:none !important;color:#212529 !important;">#}
+                                {# Start Over#}
+                                {# </a>#}
+                            {# </button>#}
+                        {# </div>#}
+                    {# <div
+                        style="padding-left: 10px; display: flex; justify-content: center; align-content: center; align-items: center">
+                        #}
+                        {# <input class="btn" type="submit" name="nxt" value="Finish" style="width: 150px;">#}
+                        {# </div>#}
+                    {# </div>#}
+            </div>
+
+
+
+        </div>
+
+
+    </div>
+    <br />
+
+    {# <ul class="tabs">#}
+        {# <li class="active" rel="tab1">Image Filename</li>#}
+        {# <li rel="tab2" style="padding-top: 7px ;padding-left:10px "><span style="float: center;"> <img
+                    style="height: 30px; width:30px" src="static/assets/baseplate-size.png" alt="">Size</span><i
+                class="fas fa-info-circle" style="float:right;width: 50px;padding-top: 7px ;" data-toggle="tooltip" #}
+                {# data-placement="top" #} {#
+                title="((( The number of vertical baseplates ) * 25.6 cm) x (( The number of horizontal baseplates ) * 25.6 cm)) will determine the total size of the Final pixelated Image."></i>#}
+            {# </li>#}
+        {#
+        <!--<li rel="tab3" style="padding-top: 7px ;padding-left:10px "><span style="float: center;"> Image Adjustments</span><i class="fas fa-info-circle" style="float:right;width: 50px;padding-top: 7px ;" data-toggle="tooltip" data-placement="top"#}
+        {#                                       title="Image zoom option used to zoom in and zoom out the internal content of the pixelated image keeping the length and breadth of the pixelated image fixed. Auto fit option used to automatically fit the pixelated image with best length and breadth."></i>#}
+        {#            </li>-->#}
+        {# <li rel="tab2" style="padding-top: 7px ;padding-left:10px "><span style="float: center;"> <img
+                    style="height: 30px; width:30px" src="static/assets/colurs.png" alt="">Colours</span><i
+                class="fas fa-info-circle" style="float:right;width: 50px;padding-top: 7px ;" data-toggle="tooltip" #}
+                {# data-placement="top" #} {#
+                title="Automatically select the best colours using the slider . Manually select or deselect colours from the palette."></i>
+        </li>#}
+        {# <li rel="tab2" style="padding-top: 7px ;padding-left:10px "><span style="float: center;"> <img
+                    style="height: 30px; width:30px" src="static/assets/enhancedet.png" alt="">Enhancements</span><i
+                class="fas fa-info-circle" style="float:right;width: 50px;padding-top: 7px ;" data-toggle="tooltip" #}
+                {# data-placement="top" #} {#
+                title="Automatically select the best brightness , contrast and saturation of the pixelated image using the sliders ."></i>#}
+            {# </li>#}
+        {# <li rel="tab2" style="padding-top: 7px ;padding-left:10px "><span style="float: center;"> <img
+                    style="height: 30px; width:30px" src="static/assets/zoom.png" alt="">Zoom</span><i
+                class="fas fa-info-circle" style="float:right;width: 50px;padding-top: 7px ;" data-toggle="tooltip" #}
+                {# data-placement="top" #} {#
+                title="Image zoom option used to zoom in and zoom out the internal content of the pixelated image keeping the length and breadth of the pixelated image fixed. Auto fit option used to automatically fit the pixelated image with best length and breadth.Automatically Enlarge in and Enlarge out the pixelated image using the slider."></i>
+        </li>#}
+        {# <li rel="tab7"><img style="height: 30px; width:30px" src="static/assets/size.png" alt="">Total Size</li>#}
+        {# <li rel="tab8"><img style="height: 30px; width:30px" src="static/assets/rupee.png" alt="">Product Price</li>
+        #}
+        {# <li rel="tab9"><img style="height: 30px; width:30px" src="static/assets/nop.png" alt="">Product Quantity#}
+            {# </li>#}
+        {#
+    </ul>#}
+
+    {# <div class="tab_container" style="background-image: linear-gradient(black, #191c1f);">#}
+        {# <h3 class="d_active tab_drawer_heading" rel="tab1">Image Filename</h3>#}
+        {# <div id="tab1" class="tab_content">#}
+            {# <h2>Tab 1 content</h2>#}
+            {# <div style="display: none"><label for="imagefile" class="form-label" style="font-size:20px;">Image#}
+                    {# Filename: {{ imglb }}</label><br>#}
+                {##}
+                {# <input type="hidden" name="imglb" id="imglb" value="{{ imglb }}">#}
+                {# </div>#}
+            {# </div>#}
+        {# </div>#}
+    {##}
+    {#
+    <!-- #tab1 -->#}
+    {# <h3 class="d_active tab_drawer_heading" rel="tab2"><img style="height: 30px; width:30px" #} {#
+            src="static/assets/enhancedet.png" alt="">Enhance and Edit</h3>#}
+    {# <div id="tab2" class="tab_content" style="overflow-x: hidden">#}
+        {# <div class="row">#}
+            {# <div class="col-lg-3 col-md-3" rel="1">#}
+                {# <div class="row" style="width: 100%; display:flex ;justify-content: center; padding-bottom: 7px">#}
+                    {# <div style="width: 50px;position:relative;left:10px">#}
+                        {# <button id="vplus" name="base_btn" #} {#
+                            style="height: 25px; width: 25px; float: left; font-family: Roboto Serif !important; border-radius: 100%; font-size:20px; padding: 0 0 10px 0 ">#}
+                            {# +#}
+                            {# </button>#}
+                        {# </div>#}
+                    {# <div style="width: 50px;position:relative;left:10px">#}
+                        {##}
+                        {# <button id="hplus" name="base_btn" #} {#
+                            style="height: 25px; width: 25px; float: left; font-family: Roboto Serif !important; border-radius: 100%; font-size:20px; padding: 0 0 10px 0 ">#}
+                            {# +#}
+                            {# </button>#}
+                        {# </div>#}
+                    {##}
+                    {# </div>#}
+                {##}
+                {# <div class="row">#}
+                    {# <div style=" display:flex ;justify-content: center; ">#}
+                        {# <input id="range-X" #} {#
+                            style="visibility: hidden; display: none;height: 0px !important; ; width: 0px !important;"
+                            #} {# name="rangeX" min="1" max="20" value="{{ bX }}" #} {# step="1"
+                            onchange="document.getElementById('para').submit()" #} {# type="range" orient="vertical">#}
+                        {# <input
+                            style="visibility: hidden; display: none; height: 0px !important; ; width: 0px !important;"
+                            #} {# id="range-Y" name="rangeY" min="1" max="20" value="{{ bY }}" #} {# step="1"
+                            onchange="document.getElementById('para').submit()" #} {# type="range" orient="vertical">#}
+                        {# <div style="padding-left: 10px; padding-right: 10px; width:70px; padding-top: 10px">#}
+                            {# <div style="justify-content: center; display: flex">#}
+                                {# <i class="fas fa-arrows-alt-v" style="align-content: center"></i>#}
+                                {# </div>#}
+                            {# <div style="justify-content: center; display: flex; font-size:15px;">#}
+                                {# Vertical#}
+                                {# </div>#}
+                            {# </div>#}
+                        {# <label id="baseplate" name="baseplate" class="form-label" #} {#
+                            style="color: white; border: 2px solid white; padding: 10px; max-width: 120px; max-height: 435px; text-align: center"></label>#}
+                        {# <input type="hidden" style="width: 20%" name="rangeY" id="rangeY" #} {# value="{{ bY }}">#}
+                        {# <input type="hidden" style="width: 20%" name="rangeX" id="rangeX" #} {# value="{{ bX }}">#}
+                        {# <div style="padding-left: 10px; padding-right: 10px; width:80px; padding-top: 10px">#}
+                            {# <div style="justify-content: center; display: flex">#}
+                                {# <i class="fas fa-arrows-alt-h" style="align-content: center"></i>#}
+                                {# </div>#}
+                            {# <div style="justify-content: center; display: flex; font-size:15px;">#}
+                                {# Horizontal#}
+                                {# </div>#}
+                            {# </div>#}
+                        {##}
+                        {# </div>#}
+                    {##}
+                    {# </div>#}
+                {##}
+                {# <div class="row" style="width: 100%; display:flex ;justify-content: center;">#}
+                    {# <div style="width: 50px;position:relative;left:9.5px">#}
+                        {# <button id="vminus" name="base_btn" #} {#
+                            style="height: 25px; width: 25px;  font-family: Roboto Serif !important; border-radius: 100%; font-size:20px; padding: 0 0 10px 0 ">#}
+                            {# -#}
+                            {# </button>#}
+                        {##}
+                        {# </div>#}
+                    {# <div style="width: 50px;position:relative;left:9.5px">#}
+                        {##}
+                        {# <button id="hminus" name="base_btn" #} {#
+                            style="height: 25px; width: 25px;  font-family: Roboto Serif !important; border-radius: 100%; font-size:20px; padding: 0 0 10px 0 ">#}
+                            {# - <p><i class="fa-regular fa-circle-minus"></i></p>#}
+                            {# </button>#}
+                        {# </div>#}
+                    {##}
+                    {# </div>#}
+                {##}
+                {##}
+                {# </div>#}
+            {##}
+            {##}
+            {# <div class="col-lg-3 col-md-3">#}
+                {# {% if autoselect %}#}
+                {# <input onchange="document.getElementById('para').submit()" name="autoselect" #} {# id="autoselect"
+                    type="checkbox" checked=true>#}
+                {# {% else %}#}
+                {# <input onchange="document.getElementById('para').submit()" name="autoselect" #} {# id="autoselect"
+                    type="checkbox">#}
+                {# {% endif %}#}
+                {# <label style="position:relative;left:10px;font-size:20px;">Auto Colour Select</label><br><br>#}
+                {# <label id="user_col" class="form-label" #} {#
+                    style="position:relative;left:10px;font-size:20px;">Colours Used:#}
+                    {# 20</label><br>#}
+                {# <input class="blue-slider slider-progress" onchange="document.getElementById('para').submit()"
+                    id="rangeCol" #} {# name="rangeCol" #} {# min="1" max="50" value="{{ rangeCol }}" step="1"
+                    type="range" #} {# orient="horizontal"
+                    style="background-color: transparent;position:relative;left:10px;"><br>#}
+                {##}
+                {##}
+                {# <div>#}
+                    {# <label class="form-label" style="position:relative;left:10px;font-size:20px;">Manual#}
+                        {# Colours Select:</label>#}
+                    {# </div>#}
+                {# <div style="display:flex; justify-content: center">#}
+                    {# <container style="margin: 0 auto;">#}
+                        {# {% for i in range(5) %}#}
+                        {# <div style="float: top; max-width: 400px;margin:0 auto !important;">#}
+                            {# {% for ii in range(10) %}#}
+                            {# {% if palette[(i*10)+ii][1] %}#}
+                            {# <button type="submit" #} {#
+                                onclick="onbtnclick('btn{{ (i*10)+ii }}','btn{{ (i*10)+ii }}_val')" #} {#
+                                id="btn{{ (i*10)+ii }}" name="btncol" #} {#
+                                style="border: 2px solid red; background-color: rgb({{ palette[(i*10)+ii][0] }}); height: 30px; width: 30px; float: left; margin: 1px 1px;">#}
+                                {# <input type="hidden" name="btn{{ (i*10)+ii }}_col" #} {#
+                                    value="{{ palette[(i*10)+ii][0] }}">#}
+                                {# <input type="hidden" name="btn{{ (i*10)+ii }}_val" #} {# id="btn{{ (i*10)+ii }}_val"
+                                    #} {# value="1">#}
+                                {# </button>#}
+                            {# {% else %}#}
+                            {# <button type="submit" #} {#
+                                onclick="onbtnclick('btn{{ (i*10)+ii }}','btn{{ (i*10)+ii }}_val')" #} {#
+                                id="btn{{ (i*10)+ii }}" name="btncol" #} {#
+                                style="border: 2px solid white; background-color: rgb({{ palette[(i*10)+ii][0] }}); height: 30px; width: 30px; float: left; margin: 1px 1px;">#}
+                                {# <input type="hidden" name="btn{{ (i*10)+ii }}_col" #} {#
+                                    value="{{ palette[(i*10)+ii][0] }}">#}
+                                {# <input type="hidden" name="btn{{ (i*10)+ii }}_val" #} {# id="btn{{ (i*10)+ii }}_val"
+                                    #} {# value="0">#}
+                                {# </button>#}
+                            {# {% endif %}#}
+                            {# {% endfor %}#}
+                            {# </div>#}
+                        {# {% endfor %}#}
+                        {# </container>#}
+                    {# </div>#}
+                {# </div>#}
+            {##}
+            {# <div class="col-lg-3 col-md-3">#}
+                {# <container class="row" style="max-width: 400px; margin: 0 auto;">#}
+                    {# {% if bright %}#}
+                    {# <div class="row mt-3">#}
+                        {# <label id="brightness_col" class="form-label" #} {#
+                            style="position:relative;left:10px;font-size:20px;">User Brightness#}
+                            {# Selection: 50</label>#}
+                        {# <div>#}
+                            {# <input class="yellow-slider slider-progress" id="bright" name="bright" #} {# min="1"
+                                max="100" #} {# value="{{ bright }}" #} {# step="1" type="range" #} {#
+                                onchange="document.getElementById('para').submit()" #} {# orient="horizontal" #} {#
+                                style="position:relative;left:10px; height: 20% !important;width: 100% !important; padding: 0 !important; border-radius: 100%">#}
+                            {# </div>#}
+                        {# </div>#}
+                    {# {% endif %}#}
+                    {# {% if contrast %}#}
+                    {# <div class="row mt-3">#}
+                        {# <label id="contrast_col" class="form-label" #} {#
+                            style="position:relative;left:10px;font-size:20px;">User Contrast#}
+                            {# Selection: 50</label>#}
+                        {# <div>#}
+                            {# <input class="red-slider slider-progress" id="contrast" name="contrast" #} {# min="1"
+                                max="100" #} {# value="{{ contrast }}" #} {#
+                                onchange="document.getElementById('para').submit()" step="1" #} {# type="range"
+                                orient="horizontal" #} {#
+                                style="position:relative;left:10px; height: 20% !important;width: 100% !important; padding: 0 !important; border-radius: 100%">#}
+                            {# </div>#}
+                        {# </div>#}
+                    {# {% endif %}#}
+                    {# {% if saturation %}#}
+                    {# <div class="row mt-3">#}
+                        {# <label id="saturation_col" class="form-label" #} {#
+                            style="position:relative;left:10px;font-size:20px;">User Saturation#}
+                            {# Selection: 50</label>#}
+                        {# <div>#}
+                            {# <input class="blue-slider slider-progress" id="saturation" #} {# name="saturation"
+                                min="1" max="100" #} {# value="{{ saturation }}" #} {#
+                                onchange="document.getElementById('para').submit()" step="1" #} {# type="range" #} {#
+                                orient="horizontal" #} {#
+                                style="position:relative;left:10px; height: 20% !important;width: 100% !important; padding: 0 !important; border-radius: 100%">#}
+                            {# </div>#}
+                        {# </div>#}
+                    {# {% endif %}#}
+                    {# </container>#}
+                {# </div>#}
+            {##}
+            {# <div class="col-lg-3 col-md-3">#}
+                {# <div class="row">#}
+                    {# <label id="zoom_col" class="form-label" #} {#
+                        style="font-size:20px;position:relative;left:10px;">Image#}
+                        {# Zoom (Crop): 100</label><br />#}
+                    {# <div>#}
+                        {# <input class="blue-slider slider-progress" id="zoom" name="zoom" min="100" max="500" #} {#
+                            value="{{ zoom }}" #} {# onchange="document.getElementById('para').submit()" #} {# step="1"
+                            type="range" orient="horizontal" #} {#
+                            style="background-color: transparent;position: relative; left: 10px;">#}
+                        {# </div>#}
+                    {# </div>#}
+                {##}
+                {##}
+                {##}
+                {# {% if autofit %}#}
+                {# <input onchange="document.getElementById('para').submit()" name="autofit" #} {# id="autofit"
+                    type="checkbox" checked=true>#}
+                {# {% else %}#}
+                {# <input onchange="document.getElementById('para').submit()" name="autofit" #} {# id="autofit"
+                    type="checkbox">#}
+                {# {% endif %}#}
+                {# <label style="font-size:20px;position:relative;left:10px;">Auto-Fit</label><br>#}
+                {# <div class="row">#}
+                    {# <label id="enlarge_col" class="form-label" onchange="deepdive()" #} {#
+                        style="font-size:20px;position:relative;left:10px;">Image#}
+                        {# Enlarge: 1x</label><br />#}
+                    {# <div>#}
+                        {# <input class="blue-slider slider-progress" type="range" min="1" max="4" value="1" step="0.02"
+                            #} {# id="zoomer" oninput="deepdive()">#}
+                        {# <input class="blue-slider slider-progress" id="enlarger" min="1" max="100" #} {# value="1"
+                            step="1" oninput="deepdive()" #} {# type="range" orient="horizontal" #} {#
+                            style="background-color: black;position: relative; left: 10px; display: none">#}
+                        {# </div>#}
+                    {# </div>#}
+                {##}
+                {#</div>#}
+            {# </div>#}
+        {# </div>#}
+    {#
+    <!-- #tab2 -->#}
+    {#
+    <!--<h3 class="tab_drawer_heading" rel="tab3">Image Adjustments</h3>#}
+        {#        <div id="tab3" class="tab_content" style="overflow: hidden">#}
+        {#            <div style="padding-top: 10px;">#}
+        {#                <div>#}
+        {#<label class="form-label">Image Adjustment:</label>#}
+        {#                </div>#}
+        {#                <div>#}
+        {#                    <div class="row">#}
+        {#                        <label id="zoom_col" class="form-label"#}
+        {#                               style="font-size:20px;position:relative;left:10px;">Image#}
+        {#                            Zoom (Crop): 100</label><br/>#}
+        {#                        <div>#}
+        {#                            <input class="blue-slider slider-progress" id="zoom" name="zoom" min="100" max="500"#}
+        {#                                   value="{{ zoom }}"#}
+        {#                                   onchange="document.getElementById('para').submit()"#}
+        {#                                   step="1" type="range" orient="horizontal"#}
+        {#                                   style="background-color: black;position: relative; left: 10px;">#}
+        {#                        </div>#}
+        {#                    </div>#}
+        {##}
+        {#                    <br>#}
+        {##}
+        {#                    {% if autofit %}#}
+        {#                        <input onchange="document.getElementById('para').submit()" name="autofit"#}
+        {#                               id="autofit" type="checkbox" checked=true>#}
+        {#                    {% else %}#}
+        {#                        <input onchange="document.getElementById('para').submit()" name="autofit"#}
+        {#                               id="autofit" type="checkbox">#}
+        {#                    {% endif %}#}
+        {#                    <label style="font-size:20px;position:relative;left:10px;">Auto-Fit</label><br>#}
+        {##}
+        {#                </div>#}
+        {#            </div>#}
+        {#        </div>#}
+        {#        < #tab3 -->#}
+    {# <h3 class="tab_drawer_heading" rel="tab4"><img style="height: 30px; width:30px" src="static/assets/colurs.png" #}
+            {# alt="">Colours</h3>#}
+    {# <div id="tab4" class="tab_content" style="height: 360px ">#}
+        {# {% if autoselect %}#}
+        {# <input onchange="document.getElementById('para').submit()" name="autoselect" #} {# id="autoselect"
+            type="checkbox" checked=true>#}
+        {# {% else %}#}
+        {# <input onchange="document.getElementById('para').submit()" name="autoselect" #} {# id="autoselect"
+            type="checkbox">#}
+        {# {% endif %}#}
+        {# <label style="position:relative;left:10px;font-size:20px;">Auto Colour Select</label><br><br>#}
+        {# <label id="user_col" class="form-label" #} {# style="position:relative;left:10px;font-size:20px;">Colours
+            Used:#}
+            {# 20</label><br>#}
+        {# <input class="blue-slider slider-progress" onchange="document.getElementById('para').submit()" id="rangeCol"
+            #} {# name="rangeCol" #} {# min="1" max="50" value="{{ rangeCol }}" step="1" type="range" #} {#
+            orient="horizontal" style="background-color: black;position:relative;left:10px;"><br>#}
+        {##}
+        {##}
+        {# <div>#}
+            {# <label class="form-label" style="position:relative;left:10px;font-size:20px;">Manual#}
+                {# Colours Select:</label>#}
+            {# </div>#}
+        {# <div style="width: 100%; display: flex; align-content: center; text-align: center">#}
+            {# <container style="width: 320px;margin: 0 auto;">#}
+                {# {% for i in range(5) %}#}
+                {# <div style="float: top; max-width: 400px">#}
+                    {# {% for ii in range(10) %}#}
+                    {# {% if palette[(i*10)+ii][1] %}#}
+                    {# <button type="submit" #} {# onclick="onbtnclick('btn{{ (i*10)+ii }}','btn{{ (i*10)+ii }}_val')"
+                        #} {# id="btn{{ (i*10)+ii }}" name="btncol" #} {#
+                        style="border: 2px solid red; background-color: rgb({{ palette[(i*10)+ii][0] }}); height: 30px; width: 30px; float: left; margin: 1px 1px;">#}
+                        {# <input type="hidden" name="btn{{ (i*10)+ii }}_col" #} {#
+                            value="{{ palette[(i*10)+ii][0] }}">#}
+                        {# <input type="hidden" name="btn{{ (i*10)+ii }}_val" #} {# id="btn{{ (i*10)+ii }}_val" #} {#
+                            value="1">#}
+                        {# </button>#}
+                    {# {% else %}#}
+                    {# <button type="submit" #} {# onclick="onbtnclick('btn{{ (i*10)+ii }}','btn{{ (i*10)+ii }}_val')"
+                        #} {# id="btn{{ (i*10)+ii }}" name="btncol" #} {#
+                        style="border: 2px solid white; background-color: rgb({{ palette[(i*10)+ii][0] }}); height: 30px; width: 30px; float: left; margin: 1px 1px;">#}
+                        {# <input type="hidden" name="btn{{ (i*10)+ii }}_col" #} {#
+                            value="{{ palette[(i*10)+ii][0] }}">#}
+                        {# <input type="hidden" name="btn{{ (i*10)+ii }}_val" #} {# id="btn{{ (i*10)+ii }}_val" #} {#
+                            value="0">#}
+                        {# </button>#}
+                    {# {% endif %}#}
+                    {# {% endfor %}#}
+                    {# </div>#}
+                {# {% endfor %}#}
+                {# </container>#}
+            {# </div>#}
+        {##}
+        {# </div>#}
+    <!-- #tab4 -->
+   
+   
+ 
+
+
+        </div>
+    </div>
+</div>
+    <h3 class="tab_drawer_heading" style="display:none" rel="tab7"><img style="height: 30px; width:30px"
+            src="static/assets/size.png" alt="">Size</h3>
+    <div id="tab7" class="tab_content">
+        <div>
+            <label id="t_size" class="form-label">Size : 32 x
+                32</label><br />
+        </div>
+    </div>
+    <div id="tab8" class="tab_content">
+        <div>
+            <label id="p_price" class="form-label">Price : ₹
+                3996</label><br />
+        </div>
+    </div>
+    <h3 class="tab_drawer_heading" style="display:none" rel="tab9"><img style="height: 30px; width:30px"
+            src="static/assets/nop.png" alt="">Product Quantity</h3>
+    <div id="tab9" class="tab_content">
+        <div>
+            <!-- {# <input type="button" value="-" onclick="function addQty() {#}
+        {#var p_qty = document.getElementById('p_qty');#}
+        {#var x = parseInt(p_qty.innerHTML);#}
+        {#if(x >= 1){#}
+        {#    x--;#}
+
+        {#p_qty.innerHTML = x;#}
+        {#                                    }#}
+        {#                                    addQty()">#} -->
+            <div style="text-align: center">
+                <p style="color:#ffffff !important;">Number of Products: </p>
+                <input onkeyup='saveValue(this);' id="p_qty" onchange="document.getElementById('para').submit()"
+                    name="p_qty" type="number" min="1" style="height: 50px; width: 100px" value="1">
+            </div>
+            <!-- {# <input type="button" value="+">#}
+            {# <label id="p_price" class="form-label" #} {# style="position:relative;left:10px;font-size:20px;">Product
+                Price:#}
+                {# ₹ 3996</label><br />#} -->
+        </div>
+    </div>
+   
+    </div>
+    </form>
+    <!-- .tab_container -->
+    </div>
+
+    </div>
+
+
+
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
+    <script src="https://kit.fontawesome.com/9c20e164cb.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+		
+		<script>
+    function flashMessage() {
+      if ("{{ flash_message }}" == "True") {
+        alert("Your Product has been successfully added to the Cart");
+      }
+    }
+  </script>
+
+    <script>
+
+        
+
+        if(window.innerWidth > 768){
+            document.getElementById('mobileIndicator').checked = false;
+        
+        }else{
+            document.getElementById('mobileIndicator').checked = true;
+        
+        }
+
+
+        $(".tab_content").hide();
+        $(".tab_content:first").show();
+
+        /* if in tab mode */
+        $("ul.tabs li").click(function () {
+
+            $(".tab_content").hide();
+            var activeTab = $(this).attr("rel");
+            $("#" + activeTab).fadeIn();
+
+            $("ul.tabs li").removeClass("active");
+            $(this).addClass("active");
+
+            $(".tab_drawer_heading").removeClass("d_active");
+            $(".tab_drawer_heading[rel^='" + activeTab + "']").addClass("d_active");
+
+        });
+        /* if in drawer mode */
+        $(".tab_drawer_heading").click(function () {
+
+            $(".tab_content").hide();
+            var d_activeTab = $(this).attr("rel");
+            $("#" + d_activeTab).fadeIn();
+
+            $(".tab_drawer_heading").removeClass("d_active");
+            $(this).addClass("d_active");
+
+            $("ul.tabs li").removeClass("active");
+            $("ul.tabs li[rel^='" + d_activeTab + "']").addClass("active");
+        });
+
+
+        /* Extra class "tab_last"
+           to add border to right side
+           of last tab */
+        $('ul.tabs li').last().addClass("tab_last");
+
+        for (let e of document.querySelectorAll('input[type="range"].slider-progress')) {
+            e.style.setProperty('--value', e.value);
+            e.style.setProperty('--min', e.min == '' ? '0' : e.min);
+            e.style.setProperty('--max', e.max == '' ? '100' : e.max);
+            e.addEventListener('input', () => e.style.setProperty('--value', e.value));
+        }
+
+        // var enlarger = document.getElementById('enlarger');
+        var hubblepic = document.getElementById('hubblepic');
+
+        function deepdive() { // this is not being used
+
+            return;
+
+            var enlarger = document.getElementById('mobileIndicator').checked?document.getElementById('enlarger'):document.getElementById('enlarger-mob');
+
+            zoomlevel = enlarger.valueAsNumber;
+            var enlarge_col = document.getElementById('mobileIndicator').checked?document.getElementById("enlarge_col"):document.getElementById("enlarge_col-mob");
+            enlarge_col.innerHTML = 'Image Enlarge: ' + zoomlevel + 'x';
+            hubblepic.style.webkitTransform = "scale(" + zoomlevel + ")";
+            hubblepic.style.transform = "scale(" + zoomlevel + ")";
+            document.getElementById('para').submit();
+        }
+
+        $(function () {
+            $('[data-toggle=tooltip]').tooltip({
+                placement: 'left'
+            });
+        });
+
+        function onbtnclick(btn_name, btn_val) {
+            console.log(document.getElementById(btn_name).style.border, document.getElementById(btn_val).value)
+            if (document.getElementById(btn_name).style.border == "2px solid white") {
+                document.getElementById(btn_name).style.border = "2px solid red";
+                document.getElementById(btn_val).value = "1";
+                document.getElementById('autoselect').checked = false;
+                document.getElementById(btn_name + '-mob').style.border = "2px solid red";
+                document.getElementById(btn_val + '-mob').value = "1";
+                document.getElementById('autoselect-mob').checked = false;
+            } else {
+                document.getElementById(btn_name).style.border = "2px solid white";
+                document.getElementById(btn_val).value = "0";
+                document.getElementById('autoselect').checked = false;
+                document.getElementById(btn_name + '-mob').style.border = "2px solid white";
+                document.getElementById(btn_val + '-mob').value = "0";
+                document.getElementById('autoselect-mob').checked = false;
+            }
+        }
+
+        var zoomer = document.getElementById(window.innerWidth > 768?'zoomer':'zoomer-mob');
+        var hubblepic = document.getElementById('hubblepic');
+
+        function deepdive() {
+
+            zoomlevel = zoomer.valueAsNumber;
+            zoomlevel2 = zoomlevel / 20;
+
+            hubblepic.style.webkitTransform = "scale(" + zoomlevel + ")";
+            hubblepic.style.transform = "scale(" + zoomlevel + ")";
+
+            var enlarge_col = document.getElementById(window.innerWidth > 768?"enlarge_col":"enlarge_col-mob");
+            var k = zoomlevel;
+            var l = k.toFixed();
+            enlarge_col.innerHTML = 'Image Enlarge: ' + l + 'x';
+        }
+        var clicking = false;
+        var previousX;
+        var previousY;
+
+        $("#hubble-container").mousedown(function (e) {
+            e.preventDefault();
+            previousX = e.clientX;
+            previousY = e.clientY;
+            clicking = true;
+        });
+
+        $(document).mouseup(function () {
+
+            clicking = false;
+        });
+
+        $("#hubble-container").mousemove(function (e) {
+
+            if (clicking) {
+                e.preventDefault();
+                var directionX = (previousX - e.clientX) > 0 ? 1 : -1;
+                var directionY = (previousY - e.clientY) > 0 ? 1 : -1;
+                //$("#hubble-container").scrollLeft($("#hubble-container").scrollLeft() + 10 * directionX);
+                //$("#hubble-container").scrollTop($("#hubble-container").scrollTop() + 10 * directionY);
+                $("#hubble-container").scrollLeft($("#hubble-container").scrollLeft() + (previousX - e.clientX));
+                $("#hubble-container").scrollTop($("#hubble-container").scrollTop() + (previousY - e.clientY));
+                previousX = e.clientX;
+                previousY = e.clientY;
+            }
+        });
+
+
+        $("#hubble-container").mouseleave(function (e) {
+            clicking = false;
+        });
+
+
+    </script>
+</body>
+
+</html>

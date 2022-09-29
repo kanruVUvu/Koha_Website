@@ -1,0 +1,948 @@
+<?php
+include("php_script.php");
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Koha Website Our Story Page</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="kohafavicon.jpeg" rel="shortcut icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link
+            href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i&display=swap"
+            rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/home.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/owl.carousel.css"/>
+    <link rel="stylesheet" href="css/magnific-popup.css"/>
+    <link rel="stylesheet" href="css/animate.min.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+
+    <!-- =======================================================
+    * Template Name: Moderna - v4.8.0
+    * Template URL: https://bootstrapmade.com/free-bootstrap-template-corporate-moderna/
+    * Author: BootstrapMade.com
+    * License: https://bootstrapmade.com/license/
+    ======================================================== -->
+    <style> @font-face {
+  font-family: 'Georama';
+  font-style: italic;
+  font-weight: 100;
+  font-stretch: 100%;
+  src: url(https://fonts.gstatic.com/s/georama/v4/MCo_zAn438bIEyxFVaIC0ZMQ72G6xnvmodYVPOBB5nuzMdWs0rvF2zEHz_9Abg.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Georama';
+  font-style: italic;
+  font-weight: 100;
+  font-stretch: 100%;
+  src: url(https://fonts.gstatic.com/s/georama/v4/MCo_zAn438bIEyxFVaIC0ZMQ72G6xnvmodYVPOBB5nuzMdWs0rvF2zEGz_9Abg.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Georama';
+  font-style: italic;
+  font-weight: 100;
+  font-stretch: 100%;
+  src: url(https://fonts.gstatic.com/s/georama/v4/MCo_zAn438bIEyxFVaIC0ZMQ72G6xnvmodYVPOBB5nuzMdWs0rvF2zEIz_8.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Roboto Serif';
+  font-style: normal;
+  font-weight: 100;
+  font-stretch: 100%;
+  src: url(https://fonts.gstatic.com/s/robotoserif/v5/R71RjywflP6FLr3gZx7K8UyuXDs9zVwDmXCb8lxYgmuii32UGoVldX6UgfjL4-3sMM_kB_qXSEXTJQCFLH5-_bcEliosl698AM5f.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Roboto Serif';
+  font-style: normal;
+  font-weight: 100;
+  font-stretch: 100%;
+  src: url(https://fonts.gstatic.com/s/robotoserif/v5/R71RjywflP6FLr3gZx7K8UyuXDs9zVwDmXCb8lxYgmuii32UGoVldX6UgfjL4-3sMM_kB_qXSEXTJQCFLH5-_bcEliosl658AM5f.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Roboto Serif';
+  font-style: normal;
+  font-weight: 100;
+  font-stretch: 100%;
+  src: url(https://fonts.gstatic.com/s/robotoserif/v5/R71RjywflP6FLr3gZx7K8UyuXDs9zVwDmXCb8lxYgmuii32UGoVldX6UgfjL4-3sMM_kB_qXSEXTJQCFLH5-_bcEliosl6B8AA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+        /* Medium devices (landscape tablets, 768px and up) */
+        @media only screen and (min-width: 768px) {
+            .test1
+            {
+                position:relative;
+                right:174px;
+            }
+            .images{
+                height: 26vw;
+                width: 49vw;
+            }
+            .test2
+            {
+                position:relative;
+                right:105px;
+            }
+        }
+        .lets-pixelate {
+            background-color: #000c0a;
+            box-shadow: none;
+            border: 2px solid #ddb253;
+            border-radius: 10px;
+        }
+
+        .lets-pixelate a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .lets-pixelate a>i {
+            padding-top: 3px;
+        }
+
+        .lets-pixelate a>p {
+            margin-bottom: 0px;
+            padding-left: 8px;
+        }
+
+        .lets-pixelate:hover a>p {
+            color: #fce9c0;
+            transition: all .3s ease;
+            -webkit-transition: all .3s ease;
+        }
+        .p{
+            color: white
+        }
+
+
+        .flip-card {
+            background-color: transparent;
+            width: 300px;
+            height: 300px;
+            perspective: 1000px;
+        }
+
+        .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+
+        }
+
+        .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+
+        .flip-card-front,
+        .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+
+        .flip-card-front {
+            background-color: transparent;
+
+        }
+
+        .flip-card-back {
+            background-color: transparent;
+
+            transform: rotateY(180deg);
+        }
+
+        .active {
+            color: #ddb253 !important;
+        }
+
+        .member-info {
+            text-align: center;
+        }
+        /*--------------------------------------------------------------
+# Breadcrumbs
+--------------------------------------------------------------*/
+        .breadcrumbs {
+            padding: 15px 0;
+            background-color: #f3f8fa;
+            min-height: 40px;
+        }
+        .breadcrumbs h2 {
+            font-size: 28px;
+            font-weight: 300;
+        }
+        .breadcrumbs ol {
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .breadcrumbs ol li + li {
+            padding-left: 10px;
+        }
+        .breadcrumbs ol li + li::before {
+            display: inline-block;
+            padding-right: 10px;
+            color: #6c757d;
+            content: "/";
+        }
+        @media (max-width: 768px) {
+            .breadcrumbs .d-flex {
+                display: block !important;
+            }
+            .breadcrumbs ol {
+                display: block;
+            }
+            .breadcrumbs ol li {
+                display: inline-block;
+            }
+            .test3
+            {
+                width:30%;
+            }
+        }
+
+
+        .logo
+        {
+            width: 115px;
+            background-color: #000000;
+        }
+        .about-col2 img{
+            width: 400px;
+            height: 100%;
+            padding:10px;
+        }
+        .more {
+            margin: 30px;
+            padding: 10px;
+        }
+        .btn1 {
+            padding: 10px;
+            border-radius: 20px;
+            background: black;
+            color: white;
+            cursor: pointer;
+        }
+        .more2 {
+            margin: 30px;
+            padding: 10px;
+        }
+        .btn2 {
+            padding: 10px;
+            border-radius: 20px;
+            background: black;
+            color: white;
+            cursor: pointer;
+        }
+        /*  preloader*/
+
+        #preloder{
+            background: #000 url("logo1.jpeg") no-repeat center center;
+            background-size: 15%;
+            height: 100vh;
+            width: 100%;
+            position: fixed;
+            z-index: 100;
+            top: 0;
+            text-shadow:  0 0 0 50px rgb(234, 236, 233),
+            0 0 0 100px #fff,
+            0 0 0 150px #fff,
+            0 0 0 200px #fff,
+            0 0 0 250px #fff;
+            animation :animate 5s linear infinite;
+        }
+        @keyframes animate {
+            0%{
+                filter: hue-rotate(0deg);
+            }
+            100%{
+                filter: hue-rotate(360deg);
+            }
+
+        }
+        .dropdown{
+            background: #000;
+            color: rgba(194, 191, 188, 0.973);
+            border:none;
+        }
+        .footer-newsletter {
+            padding: 50px 0;
+            background: #000000;
+        }
+        .footer-newsletter h4 {
+            font-size: 24px;
+            margin: 0 0 20px 0;
+            padding: 0;
+            line-height: 1;
+            font-weight: 600;
+            color: #a2cce3;
+        }
+        p{
+            font-family: 'Georama' !important;
+            color: white !important;
+        }
+        h4,h3,h2,h1{
+            font-family: 'Georama' !important;
+            margin-bottom: 17px;
+            color: #ddb253;
+        }
+        .footer-newsletter form {
+            margin-top: 30px;
+            background: #fff;
+            padding: 6px 10px;
+            position: relative;
+            border-radius: 50px;
+        }
+        .footer-newsletter form input[type=email] {
+            border: 0;
+            padding: 4px;
+            width: calc(100% - 100px);
+        }
+        .footer-newsletter form input[type=submit] {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            border: 0;
+            background: none;
+            font-size: 16px;
+            padding: 0 20px;
+            margin: 3px;
+            background: #68A4C4;
+            color: #fff;
+            transition: 0.3s;
+            border-radius: 50px;
+        }
+        .footer-newsletter form input[type=submit]:hover {
+            background: #468db3;
+        }
+        .team h1 {
+            text-align: center;
+            margin-top: 25px;
+            font-family: 'Georama' !important;
+            /*font-style: italic;*/
+            font-size: 58px;
+        }
+        @media (min-width: 481px) and (max-width: 767px) {
+            .test1
+            {
+                position:relative;
+                right:30px;
+            }
+            .images{
+                height: auto;
+                width: 47vw;
+            }
+            .test2
+            {
+                position:relative;
+                right:30px;
+            }
+        }
+        @media (min-width: 320px) and (max-width: 480px) {
+            .test1
+            {
+                position:relative;
+                right:30px;
+            }
+            .images{
+                height: auto;
+                width: 47vw;
+            }
+            .test2
+            {
+                position:relative;
+                right:30px;
+            }
+        }
+        a,h5,h1,h2,h3,h4{
+            text-align: center;
+        }
+        p{
+            font-size: 25px !important;
+            text-align: justify !important;
+        }
+        h1,h2,h3{
+            font-size: 45px !important;
+        }
+
+        @font-face {
+            font-family: 'Georama';
+            src: url('fonts/Georama.eot'); /* IE9 Compat Modes */
+            src: url('fonts/Georama.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('fonts/Georama.woff2') format('woff2'), /* Super Modern Browsers */
+            url('fonts/Georama.woff') format('woff'), /* Pretty Modern Browsers */
+            url('fonts/Georama.ttf')  format('truetype'), /* Safari, Android, iOS */
+            url('fonts/Georama.svg#svgFontName') format('svg'); /* Legacy iOS */
+            font-weight: 400;
+            font-style: normal;
+        }
+         @font-face {
+  font-family: 'Georama';
+  font-style: italic;
+  font-weight: 100;
+  font-stretch: 100%;
+  src: url(https://fonts.gstatic.com/s/georama/v4/MCo_zAn438bIEyxFVaIC0ZMQ72G6xnvmodYVPOBB5nuzMdWs0rvF2zEHz_9Abg.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Georama';
+  font-style: italic;
+  font-weight: 100;
+  font-stretch: 100%;
+  src: url(https://fonts.gstatic.com/s/georama/v4/MCo_zAn438bIEyxFVaIC0ZMQ72G6xnvmodYVPOBB5nuzMdWs0rvF2zEGz_9Abg.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Georama';
+  font-style: italic;
+  font-weight: 100;
+  font-stretch: 100%;
+  src: url(https://fonts.gstatic.com/s/georama/v4/MCo_zAn438bIEyxFVaIC0ZMQ72G6xnvmodYVPOBB5nuzMdWs0rvF2zEIz_8.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Roboto Serif';
+  font-style: normal;
+  font-weight: 100;
+  font-stretch: 100%;
+  src: url(https://fonts.gstatic.com/s/robotoserif/v5/R71RjywflP6FLr3gZx7K8UyuXDs9zVwDmXCb8lxYgmuii32UGoVldX6UgfjL4-3sMM_kB_qXSEXTJQCFLH5-_bcEliosl698AM5f.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Roboto Serif';
+  font-style: normal;
+  font-weight: 100;
+  font-stretch: 100%;
+  src: url(https://fonts.gstatic.com/s/robotoserif/v5/R71RjywflP6FLr3gZx7K8UyuXDs9zVwDmXCb8lxYgmuii32UGoVldX6UgfjL4-3sMM_kB_qXSEXTJQCFLH5-_bcEliosl658AM5f.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Roboto Serif';
+  font-style: normal;
+  font-weight: 100;
+  font-stretch: 100%;
+  src: url(https://fonts.gstatic.com/s/robotoserif/v5/R71RjywflP6FLr3gZx7K8UyuXDs9zVwDmXCb8lxYgmuii32UGoVldX6UgfjL4-3sMM_kB_qXSEXTJQCFLH5-_bcEliosl6B8AA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+    </style>
+</head>
+
+<body style="overflow-x:hidden; background-color: black !important; font-family: 'Georama' ;color: #ddb253">
+<?php include 'includes_website/main.php'?>
+<script type="text/javascript">
+    AOS.init();
+</script>
+
+<main id="main" style=" background-color: black; color: white">
+
+    <!-- ======= Our Team Section ======= -->
+    <section class="breadcrumbs" style="background-color: black; color: #ddb253">
+        <div class="container">
+
+            <div class="d-flex justify-content-between align-items-center">
+                <!-- <h2>About Us</h2> -->
+                <ol>
+                    <li style="font-size: 25px !important;"><a href="index.php">Home</a></li>
+                    <li style="font-size: 25px !important;">About Us</li>
+                </ol>
+            </div>
+
+        </div>
+    </section>
+    <section class="about" data-aos="fade-up">
+        <div class="container" data-aos="fade-up"
+             data-aos-duration="20000">
+
+            <div class="row">
+                <div class="col-lg-12 pt-4 pt-lg-0">
+                    <h3 style="text-align:center;">The story behind KOHA</h3>
+                    <p style="color: #DDB253FF; font-family: 'Georama' !important; text-align: center">
+                        Luxury has a very clear definition. This is the reason why KOHA was
+                        established, To create genuine luxury products which are
+                        aesthetically pleasing and artistic.
+                        <br/>
+                        KOHA means gift in Māori , the indigenous language of the Māori
+                        People. The founders have envisioned KOHA as an Indian Home
+                        Decor brand that offers Minimalistic and Creative Iconic products.
+                           With   sustainability as one of its core values, KOHA has made a
+                        conscious effort towards recycling and minimalizing its impact on
+                        the environment. Each product is custom-made with an emphasis
+                        on Zero Waste Policy and    sustainable packaging.
+                        <br/>
+                        "We pride ourselves on our ability to create designs that are modern and timeless  and will appeal to a broad range of customers,"
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section><!-- End About Section -->
+    <section class="about" data-aos="fade-up">
+        <div class="container" data-aos="fade-up"
+             data-aos-duration="20000">
+
+            <div class="row">
+                <div class="col-lg-12 pt-4 pt-lg-0">
+                    <h3 style="text-align:center;">Product story</h3>
+                    <p  style="color: #DDB253FF; text-align: center"">
+                        Pixelate is a platform for artists to create positive impact around the
+                        world. We are all about uniting people and spreading happiness
+                        through art.
+                        <br/>
+                        The name KOHA is inspired by the concept of "koha" in Maori culture,
+                        which means giving without expecting anything in return. We want
+                        to bring this spirit into our platform and let artists tell their stories
+                        pixel by pixel.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section><!-- End About Section -->
+    <section class="about" data-aos="fade-up">
+        <div class="container" data-aos="fade-up"
+             data-aos-duration="20000">
+
+            <div class="row">
+                <div class="col-lg-12 pt-4 pt-lg-0">
+                    <h3 style="text-align:center; font-family: 'Georama'">Our Promise</h3>
+                    <p  style="color: #DDB253FF; text-align: center"">
+                        Our motive has always been to design and engineer products which are an intersection of art, technology, functionality and of the finest quality. Koha pays close attention to the quality of materials used in its products. Our meticulously engineered product is free from harmful chemicals, of the highest quality and to reduce our impact on the environment, Zero Waste Policy and Sustainable Packaging is adopted.
+                        <br/>Koha always strives to provide the best user experience, take care of each individual client and ensure that every order is handled with care and delivered on time.
+                    </p>
+<!--                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" style="margin: 20px 0 40px 0">-->
+<!--                        <img src="img/our_promise1.jpg" alt="">-->
+<!--                    </div>-->
+<!--                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" style="margin: 20px 0 40px 0">-->
+<!--                        <img src="img/our_promise2.jpg" alt="">-->
+<!--                    </div>-->
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <img class="images" src="img/our_promise1.jpg" alt="">
+    <img class="images" src="img/our_promise2.jpg" alt="">
+    </div>
+    <!--    <section class="about" data-aos="fade-up">-->
+    <!--        <div class="container">-->
+    <!---->
+    <!--            <div class="row">-->
+    <!--                <div class="col-lg-12 pt-4 pt-lg-0">-->
+    <!--                    <h3 style="text-align:center;">Sustainability</h3>-->
+    <!--                    <p class="fst-italic">-->
+    <!--                        Sustainability is a journey we're all taking together. And it's one that you can find your way through with us. We are finding new ways to make things last longer, and we're taking on an old enemy: plastic waste. Every step toward sustainability makes a difference. Join us in our journey and come up with new ideas for how to be more sustainable. We're stronger when we work together.-->
+    <!--                    </p>-->
+    <!--                </div>-->
+    <!--            </div>-->
+    <!---->
+    <!--        </div>-->
+    <!--    </section>-->
+    <!-- ======= Facts Section ======= -->
+
+    <section style="background-color: black; color: #ddb253" class="team" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
+        <div class="container" data-aos="fade-up"
+             data-aos-duration="20000">
+
+            <div class="row">
+                <h1 style="font-family: 'Georama' !important;">Meet our Team</h1>
+                <p class="px-4" style="color: #DDB253FF; text-align: center"">A word for the founders if needed Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Possimus ullam voluptates nemo laboriosam magnam pariatur quo totam consequuntur, excepturi repellendus
+                    aspernatur maiores ex officiis soluta similique ad fuga voluptatem quae expedita? Sapiente, doloremque
+                    assumenda? Autem iste error voluptas laborum quasi nam dolorem officiis architecto aspernatur laboriosam,
+                    voluptatum sint, cum obcaecati accusantium cumque? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Officia impedit dolorem eius autem sapiente tenetur at voluptatem quos, rerum veniam id dignissimos.</p>
+
+
+
+                <div class="col-lg-6 col-md-6 d-flex align-items-stretch justify-content-center">
+                    <div class="member">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <div class="member-img">
+                                        <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+                                <div class="flip-card-back">
+                                    <span><u style="font-size: 25px">Co-Founder</u></span>
+                                    <p style="color: #DDB253FF;font-size: 17px !important; text-align: center"">Animi est delectus alias quam repellendus nihil nobis dolor. Est sapiente occaecati et dolore. Omnis
+                                        aut ut nesciunt explicabo qui. Eius nam deleniti ut omnis repudiandae perferendis qui. Neque non
+                                        quidem sit sed pariatur quia modi ea occaecati. Incidunt ea non est corporis in.</p>
+                                    <a href=""><i class="bi bi-twitter"></i></a>&nbsp;&nbsp;&nbsp;
+                                    <a href=""><i class="bi bi-facebook"></i></a>&nbsp;&nbsp;&nbsp;
+                                    <a href=""><i class="bi bi-instagram"></i></a>&nbsp;&nbsp;&nbsp;
+                                    <a href=""><i class="bi bi-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <br/>
+                        <div class="member-info">
+                            <h4>Pavan Rajanna</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6 d-flex align-items-stretch justify-content-center">
+                    <div class="member">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <div class="member-img">
+                                        <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+                                <div class="flip-card-back">
+                                    <span><u style="font-size: 25px">Co-Founder</u></span>
+                                    <p style="color: #DDB253FF;font-size: 17px !important;">Animi est delectus alias quam repellendus nihil nobis dolor. Est sapiente occaecati et dolore. Omnis
+                                        aut ut nesciunt explicabo qui. Eius nam deleniti ut omnis repudiandae perferendis qui. Neque non
+                                        quidem sit sed pariatur quia modi ea occaecati. Incidunt ea non est corporis in.</p>
+                                    <a href=""><i class="bi bi-twitter"></i></a>&nbsp;&nbsp;&nbsp;
+                                    <a href=""><i class="bi bi-facebook"></i></a>&nbsp;&nbsp;&nbsp;
+                                    <a href=""><i class="bi bi-instagram"></i></a>&nbsp;&nbsp;&nbsp;
+                                    <a href=""><i class="bi bi-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <br/>
+                        <div class="member-info">
+                            <h4>Prayag Bellur</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <!-- ======= Team Section ======= -->
+                <!-- <section style="background-color: black; color: #ddb253" class="team" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
+                     <div class="container" data-aos="fade-up"
+                          data-aos-duration="20000">
+
+                         <div class="row">
+                             <h1>Our Backers</h1>
+                             <div class="col-lg-6 col-md-6 d-flex align-items-stretch justify-content-center">
+                                 <div class="member">
+                                     <div class="flip-card">
+                                         <div class="flip-card-inner">
+                                             <div class="flip-card-front">
+                                                 <div class="member-img">
+                                                     <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
+                                                 </div>
+                                             </div>
+                                             <div class="flip-card-back">
+                                                 <span><u>Investor</u></span>
+                                                 <p style="color: #DDB253FF">Animi est delectus alias quam repellendus nihil nobis dolor. Est sapiente occaecati et dolore. Omnis
+                                                     aut ut nesciunt explicabo qui. Eius nam deleniti ut omnis repudiandae perferendis qui. Neque non
+                                                     quidem sit sed pariatur quia modi ea occaecati. Incidunt ea non est corporis in.</p>
+                                                 <a href=""><i class="bi bi-twitter"></i></a>&nbsp;&nbsp;&nbsp;
+                                                 <a href=""><i class="bi bi-facebook"></i></a>&nbsp;&nbsp;&nbsp;
+                                                 <a href=""><i class="bi bi-instagram"></i></a>&nbsp;&nbsp;&nbsp;
+                                                 <a href=""><i class="bi bi-linkedin"></i></a>
+                                             </div>
+                                         </div>
+                                     </div>
+                                     <br/>
+                                     <div class="member-info">
+                                         <h4>Dr Gokul Kesavan</h4>
+                                     </div>
+                                 </div>
+                             </div>
+                             <div class="col-lg-6 col-md-6 d-flex align-items-stretch justify-content-center">
+                                 <div class="member">
+                                     <div class="flip-card">
+                                         <div class="flip-card-inner">
+                                             <div class="flip-card-front">
+                                                 <div class="member-img">
+                                                     <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
+                                                 </div>
+                                             </div>
+                                             <div class="flip-card-back">
+                                                 <span><u>Investor</u></span>
+                                                 <p style="color: #DDB253FF">Animi est delectus alias quam repellendus nihil nobis dolor. Est sapiente occaecati et dolore. Omnis
+                                                     aut ut nesciunt explicabo qui. Eius nam deleniti ut omnis repudiandae perferendis qui. Neque non
+                                                     quidem sit sed pariatur quia modi ea occaecati. Incidunt ea non est corporis in.</p>
+                                                 <a href=""><i class="bi bi-twitter"></i></a>&nbsp;&nbsp;&nbsp;
+                                                 <a href=""><i class="bi bi-facebook"></i></a>&nbsp;&nbsp;&nbsp;
+                                                 <a href=""><i class="bi bi-instagram"></i></a>&nbsp;&nbsp;&nbsp;
+                                                 <a href=""><i class="bi bi-linkedin"></i></a>
+                                             </div>
+                                         </div>
+                                     </div>
+                                     <br/>
+                                     <div class="member-info">
+                                         <h4>Dr. Midhun Ben Thomas </h4>
+                                     </div>
+                                 </div>
+                             </div>
+                         </div>
+
+                         <div class="row">
+                             <div class="col-lg-6 col-md-6 d-flex align-items-stretch justify-content-center">
+
+                                 <div class="member">
+                                     <div class="flip-card">
+                                         <div class="flip-card-inner">
+                                             <div class="flip-card-front">
+                                                 <div class="member-img">
+                                                     <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
+                                                 </div>
+                                             </div>
+                                             <div class="flip-card-back">
+                                                 <span><u>Investor</u></span>
+                                                 <p style="color: #DDB253FF">Animi est delectus alias quam repellendus nihil nobis dolor. Est sapiente occaecati et dolore. Omnis
+                                                     aut ut nesciunt explicabo qui. Eius nam deleniti ut omnis repudiandae perferendis qui. Neque non
+                                                     quidem sit sed pariatur quia modi ea occaecati. Incidunt ea non est corporis in.</p>
+                                                 <a href=""><i class="bi bi-twitter"></i></a>&nbsp;&nbsp;&nbsp;
+                                                 <a href=""><i class="bi bi-facebook"></i></a>&nbsp;&nbsp;&nbsp;
+                                                 <a href=""><i class="bi bi-instagram"></i></a>&nbsp;&nbsp;&nbsp;
+                                                 <a href=""><i class="bi bi-linkedin"></i></a>
+                                             </div>
+                                         </div>
+                                     </div>
+                                     <br/>
+                                     <div class="member-info">
+                                         <h4>Dr. Wenson David Rajan</h4>
+                                     </div>
+                                 </div>
+                             </div>
+                             <div class="col-lg-6 col-md-6 d-flex align-items-stretch justify-content-center">
+                                 <div class="member">
+                                     <div class="flip-card">
+                                         <div class="flip-card-inner">
+                                             <div class="flip-card-front">
+                                                 <div class="member-img">
+                                                     <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
+                                                 </div>
+                                             </div>
+                                             <div class="flip-card-back">
+                                                 <span><u>Investor</u></span>
+                                                 <p style="color: #DDB253FF">Animi est delectus alias quam repellendus nihil nobis dolor. Est sapiente occaecati et dolore. Omnis
+                                                     aut ut nesciunt explicabo qui. Eius nam deleniti ut omnis repudiandae perferendis qui. Neque non
+                                                     quidem sit sed pariatur quia modi ea occaecati. Incidunt ea non est corporis in.</p>
+                                                 <a href=""><i class="bi bi-twitter"></i></a>&nbsp;&nbsp;&nbsp;
+                                                 <a href=""><i class="bi bi-facebook"></i></a>&nbsp;&nbsp;&nbsp;
+                                                 <a href=""><i class="bi bi-instagram"></i></a>&nbsp;&nbsp;&nbsp;
+                                                 <a href=""><i class="bi bi-linkedin"></i></a>
+                                             </div>
+                                         </div>
+                                     </div>
+                                     <br/>
+                                     <div class="member-info">
+                                         <h4>Ayyappan Velu</h4>
+                                     </div>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                 </section><!-- End Team Section -->
+
+</main><!-- End #main -->
+
+<!-- ======= Footer ======= -->
+<!--<footer class="bg-primary text-white text-center text-lg-start" style="background-color:#000000;font-family:poppins;" id="testfooter">-->
+<!--    <!-- Grid container -->
+<!--    <div class="footer-newsletter" >-->
+<!--        <div class="container">-->
+<!--            <div class="row">-->
+<!--                <div class="col-lg-6" >-->
+<!--                    <h4 class="test1" style="text-align: center;">Our Newsletter</h4>-->
+<!--                    <p class="test2" style="text-align: center;">Stay in the loop for upcoming products</p>-->
+<!--                </div>-->
+<!--                <div class="col-lg-6">-->
+<!--                    <form action="reaction.php" id="newsletter-form" class="newsletter-email-form" enctype="multipart/form-data" method="post" style="background-color: black">-->
+<!--                        <input type="email" style="color: black; border-radius: 20px; text-align: center"-->
+<!--                               name="useremail" placeholder="YourEmail@email.com" class="email-box" maxlength="60"-->
+<!--                               id="email_data">-->
+<!--                        <br>-->
+<!--                        <span class="email-message" id="email_msg"></span>-->
+<!--                        <br>-->
+<!--                        <input type="hidden" name="hellotestnews2" value="hellotest2">-->
+<!--                        <input type="submit" class="submit-button"-->
+<!--                               style="background-color: aquamarine; border-radius: 20px; color: black;height:33px;"-->
+<!--                               id="email_submit" name="Subscribe">-->
+<!--                    </form>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <div class="text-center p-2" id="testmen" style="background-color:#000000;">-->
+<!--        <!--Grid row-->
+<!--        <div class="row">-->
+<!--            <div class="col-lg-6 col-md-12 mb-4 mb-md-0" style="text-align: center !important;">-->
+<!--                <h5 class="text-uppercase" style="text-decoration:underline; font-size: 20px !important;">KOHA</h5>-->
+<!---->
+<!--                <ul class="list-unstyled mb-0">-->
+<!--                    <li style="text-align: center !important;">-->
+<!--                        <a href="index.php" class="text-white" style="color:white;line-height:50px;">Home</a>-->
+<!--                    </li>-->
+<!--                    <li style="text-align: center !important;">-->
+<!--                        <a href="aboutus.php" class="text-white" style="color:white;line-height:50px;">How it All Started</a>-->
+<!--                    </li>-->
+<!--                    <li style="text-align: center !important;">-->
+<!--                        <a href="http://www.thekoha.in/" class="text-white" style="color:white;line-height:50px;">PIXEL ART</a>-->
+<!--                    </li style="text-align: center !important;">-->
+<!--                    <li style="text-align: center !important;">-->
+<!--                        <a href="howitworks.php" class="text-white" style="color:white;line-height:50px;">How It Works</a>-->
+<!--                    </li>-->
+<!--                </ul>-->
+<!--            </div>-->
+<!--            <!--Grid column-->
+<!---->
+<!--            <!--Grid column-->
+<!--            <div class="col-lg-6 col-md-12 mb-4 mb-md-0" style="text-align: center !important;">-->
+<!--                <h5 class="text-uppercase mb-0" style="text-decoration:underline; font-size: 20px !important;">MORE</h5>-->
+<!---->
+<!--                <ul class="list-unstyled mb-0">-->
+<!--                    <li  style="text-align: center !important;">-->
+<!--                        <a href="faq.php" class="text-white" style="color:white;line-height:50px;">FAQ</a>-->
+<!--                    </li>-->
+<!--                    <li  style="text-align: center !important;">-->
+<!--                        <a href="shippinginfo.php" class="text-white" style="color:white;line-height:50px;">Shipping Information</a>-->
+<!--                    </li  style="text-align: center !important;">-->
+<!--                    <li style="text-align: center !important;">-->
+<!--                        <a href="privacypolicy.php" class="text-white" style="color:white;line-height:50px;">Privacy Policy</a>-->
+<!--                    </li>-->
+<!--                    <li style="text-align: center !important;">-->
+<!--                        <a href="returnsandrefundspolicy.php" class="text-white" style="color:white;line-height:50px;">Return Policy</a>-->
+<!--                    </li>-->
+<!--                </ul>-->
+<!--            </div>-->
+<!--            <!--Grid column-->
+<!--        </div>-->
+<!--        <!--Grid row-->
+<!--    </div>-->
+<!--    <!-- Grid container -->
+<!--    <div class="text-center p-2" style="background-color:blue;">-->
+<!--        <!-- Section: Social media -->
+<!---->
+<!--        <!-- Facebook -->
+<!--        <a-->
+<!--                class="btn btn-link btn-floating btn-lg text-dark m-1"-->
+<!--                href="#!"-->
+<!--                role="button"-->
+<!--                data-mdb-ripple-color="dark"-->
+<!--        ><i class="fab fa-facebook-f" style="color:white;"></i-->
+<!--            ></a>-->
+<!---->
+<!--        <!-- Twitter -->
+<!--        <a-->
+<!--                class="btn btn-link btn-floating btn-lg text-dark m-1"-->
+<!--                href="#!"-->
+<!--                role="button"-->
+<!--                data-mdb-ripple-color="dark"-->
+<!--        ><i class="fab fa-twitter" style="color:white;"></i-->
+<!--            ></a>-->
+<!---->
+<!--        <!-- Google -->
+<!--        <a-->
+<!--                class="btn btn-link btn-floating btn-lg text-dark m-1"-->
+<!--                href="#!"-->
+<!--                role="button"-->
+<!--                data-mdb-ripple-color="dark"-->
+<!--        ><i class="fab fa-google" style="color:white;"></i-->
+<!--            ></a>-->
+<!---->
+<!--        <!-- Instagram -->
+<!--        <a-->
+<!--                class="btn btn-link btn-floating btn-lg text-dark m-1"-->
+<!--                href="#!"-->
+<!--                role="button"-->
+<!--                data-mdb-ripple-color="dark"-->
+<!--        ><i class="fab fa-instagram" style="color:white;"></i-->
+<!--            ></a>-->
+<!---->
+<!--        <!-- Linkedin -->
+<!--        <a-->
+<!--                class="btn btn-link btn-floating btn-lg text-dark m-1"-->
+<!--                href="#!"-->
+<!--                role="button"-->
+<!--                data-mdb-ripple-color="dark"-->
+<!--        ><i class="fab fa-linkedin" style="color:white;"></i-->
+<!--            ></a>-->
+<!--        <!-- Github -->
+<!--        <a-->
+<!--                class="btn btn-link btn-floating btn-lg text-dark m-1"-->
+<!--                href="#!"-->
+<!--                role="button"-->
+<!--                data-mdb-ripple-color="dark"-->
+<!--        ><i class="fab fa-github" style="color:white;"></i-->
+<!--            ></a>-->
+<!--        <!-- Section: Social media -->
+<!--    </div>-->
+<!--    <!-- Copyright -->
+<!--    <div class="text-center p-3" style="background-color:blue; font-family: 'Georama'">-->
+<!--        Copyright © 2022, Koha Website. All Rights Reserved –-->
+<!--        <a class="text-white" style="color:#FFFFFF;line-height:50px;" href="#">Developed and Designed by Bleam Technologies Private Limited</a>-->
+<!--    </div>-->
+<!--    <!-- Copyright -->
+<!--</footer>-->
+    <?php include 'includes_website/footer.php'?>
+
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+<!-- Vendor JS Files -->
+<script src="assets/vendor/purecounter/purecounter.js"></script>
+<script src="assets/vendor/aos/aos.js"></script>
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+<script src="assets/vendor/php-email-form/validate.js"></script>
+
+<!-- Template Main JS File -->
+<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
